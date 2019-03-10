@@ -48,4 +48,11 @@ MonoBehaviour:
   m_DamierTileBlack: {fileID: 1706165538885069103, guid: 37abb568e9a8d71438a9cb76123c7577,
     type: 3}
   m_Size: 8
+  m_Indicator: {fileID: 0}
+  m_Textures:
+  - {fileID: 2800000, guid: f6653f6e779c92b458af066876e0f93e, type: 3}
+  - {fileID: 2800000, guid: 5fa85f8bf5750a7488b20d0309bfa75f, type: 3}
+  - {fileID: 2800000, guid: 02e74b9d871aa594baf6d7919e33ca2b, type: 3}
+  - {fileID: 2800000, guid: aaefd01a5c09c594280bdbbcb5e2822d, type: 3}
+  - {fileID: 2800000, guid: e61cdf9a4391cd6488840929dd687a10, type: 3}
   m_Laby: {fileID: 11400000, guid: 5c213747e17ae7f448110c9c435a9153, type: 2}

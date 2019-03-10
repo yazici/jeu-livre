@@ -1,8 +1,10 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "LabyData", menuName = "GameSettings/Labyrinthe", order = 1)]
-public class LabyScriptableObject : ScriptableObject
+namespace ScriptableObjects
 {
-    public Vector2[] m_Pattern;
+    [CreateAssetMenu(fileName = "LabyData", menuName = "GameSettings/Labyrinthe", order = 1)]
+    public class LabyScriptableObject : ScriptableObject
+    {
+        public LabyPattern[] m_Patterns;
+    }
 }
