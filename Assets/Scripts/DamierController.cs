@@ -9,12 +9,17 @@ public class DamierController : MonoBehaviour
     [SerializeField] private GameObject m_DamierTileWhite;
     [SerializeField] private GameObject m_DamierTileBlack;
     [SerializeField] private int m_Size = 8;
-    [SerializeField] private GameObject m_Indicator;
+    [SerializeField] private Renderer m_IndicatorRenderer;
     [SerializeField] private Texture2D[] m_Textures;
+    [SerializeField] private float m_Timer = 10f;
 
     private GameObject[,] m_Tiles;
+    private DamierTileController[] m_TilesControllers;
+
     private LabyPattern m_LabyPattern;
     private int m_LastLabyPatternIndex;
+    private float m_TimeLeft;
+    private bool m_Win;
 
     public LabyScriptableObject m_Laby;
 
@@ -23,12 +28,26 @@ public class DamierController : MonoBehaviour
     private void Start()
     {
         GenerateDamier();
+
         // Draw a random pattern
         m_LastLabyPatternIndex = Random.Range(0, m_Laby.m_Patterns.Length);
         m_LabyPattern = m_Laby.m_Patterns[m_LastLabyPatternIndex];
+
         // Set the indicator letter
-        var indicatorRenderer = m_Indicator.GetComponent<Renderer>();
-        indicatorRenderer.material.SetTexture(MainTex, m_Textures[m_LastLabyPatternIndex]);
+        m_IndicatorRenderer.material.SetTexture(MainTex, m_Textures[m_LastLabyPatternIndex]);
+    }
+
+    private void Update()
+    {
+        if (m_Win || m_TimeLeft < 0f) return;
+
+        m_TimeLeft -= Time.deltaTime;
+
+        if (m_TimeLeft < 0f)
+        {
+            ResetDamier();
+            DrawRandomPattern();
+        }
     }
 
     private void GenerateDamier()
@@ -46,13 +65,35 @@ public class DamierController : MonoBehaviour
                 m_Tiles[i, j] = newTile;
             }
         }
+
+        m_TilesControllers = m_Tiles.Cast<GameObject>().Select(t => t.GetComponent<DamierTileController>()).ToArray();
     }
 
+    private void ResetDamier()
+    {
+        foreach (DamierTileController tileController in m_TilesControllers)
+        {
+            tileController.StartCoroutine(tileController.LightDown());
+        }
+    }
+
+    private void DrawRandomPattern()
+    {
+        // Exclude last pattern chosen
+        LabyPattern[] labyPatterns = m_Laby.m_Patterns.Where((pattern, i) => i != m_LastLabyPatternIndex).ToArray();
+
+        // Draw a random pattern
+        int index = Random.Range(0, m_Laby.m_Patterns.Length - 1);
+        m_LabyPattern = labyPatterns[index];
+        m_LastLabyPatternIndex = Array.IndexOf(m_Laby.m_Patterns, m_LabyPattern);
+
+        // Set the indicator letter
+        m_IndicatorRenderer.material.SetTexture(MainTex, m_Textures[m_LastLabyPatternIndex]);
+    }
 
     public void CheckNextTile(Vector2 pos)
     {
-        GameObject[] allTiles = m_Tiles.Cast<GameObject>().ToArray();
-        int lightenedTilesNb = allTiles.Count(t => t.GetComponent<DamierTileController>().m_IsLightened);
+        int lightenedTilesNb = m_TilesControllers.Count(tc => tc.m_IsLightened);
 
         // Shouldn't happen because of the success trigger but just in case
         if (lightenedTilesNb >= m_LabyPattern.m_Coords.Length)
@@ -65,9 +106,11 @@ public class DamierController : MonoBehaviour
             GameObject tile = m_Tiles[(int) pos.x, (int) pos.y];
             var tileController = tile.GetComponent<DamierTileController>();
             tileController.StartCoroutine(tileController.LightUp());
+            m_TimeLeft = m_Timer;
 
             if (lightenedTilesNb + 1 == m_LabyPattern.m_Coords.Length)
             {
+                m_Win = true;
                 print("WIN!");
             }
         }
@@ -75,24 +118,14 @@ public class DamierController : MonoBehaviour
         else
         {
             // Light down the entire damier
-            foreach (GameObject tile in allTiles)
-            {
-                var tileController = tile.GetComponent<DamierTileController>();
-                tileController.StartCoroutine(tileController.LightDown());
-            }
+            ResetDamier();
 
-            // If player has not (re)started to pattern yet
+            // If player has not (re)started to pattern yet, that's all
             if (lightenedTilesNb == 0)
                 return;
 
-            LabyPattern[] labyPatterns = m_Laby.m_Patterns.Where((pattern, i) => i != m_LastLabyPatternIndex).ToArray();
-            // Draw a random pattern
-            int index = Random.Range(0, m_Laby.m_Patterns.Length - 1);
-            m_LabyPattern = labyPatterns[index];
-            m_LastLabyPatternIndex = Array.IndexOf(m_Laby.m_Patterns, m_LabyPattern);
-            // Set the indicator letter
-            var indicatorRenderer = m_Indicator.GetComponent<Renderer>();
-            indicatorRenderer.material.SetTexture(MainTex, m_Textures[m_LastLabyPatternIndex]);
+            // Otherwise, re-pick another pattern
+            DrawRandomPattern();
         }
     }
 }

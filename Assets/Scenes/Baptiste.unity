@@ -929,6 +929,11 @@ PrefabInstance:
       propertyPath: m_Indicator
       value: 
       objectReference: {fileID: 1614336}
+    - target: {fileID: 1341416723729564546, guid: 015205623e2261f4cb8a2975de72c783,
+        type: 3}
+      propertyPath: m_IndicatorRenderer
+      value: 
+      objectReference: {fileID: 1614338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 015205623e2261f4cb8a2975de72c783, type: 3}
 --- !u!1001 &917616238491797969
