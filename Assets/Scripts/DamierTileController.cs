@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DamierTileController : MonoBehaviour
@@ -15,9 +14,9 @@ public class DamierTileController : MonoBehaviour
 
     private Renderer m_Renderer;
     private MaterialPropertyBlock m_PropBlock;
-    private bool isTransitionning = false;
+    private bool m_IsInTransition;
 
-    public bool m_IsLightened = false;
+    public bool m_IsLightened;
 
     private void Awake()
     {
@@ -27,11 +26,7 @@ public class DamierTileController : MonoBehaviour
 
     private void Start()
     {
-        // m_Material = GetComponent<Renderer>().material;
-        // m_Material.EnableKeyword("_EMISSION");
-        
         m_Renderer.GetPropertyBlock(m_PropBlock);
-        //print("PROP: " + m_PropBlock.GetColor());
         m_PropBlock.SetColor(EmissionColor, Color.black);
         m_Renderer.SetPropertyBlock(m_PropBlock);
 
@@ -47,49 +42,49 @@ public class DamierTileController : MonoBehaviour
 
     public IEnumerator LightUp()
     {
-        if (isTransitionning || m_IsLightened) yield break;
-        
+        if (m_IsInTransition || m_IsLightened) yield break;
+
         m_IsLightened = true;
-        isTransitionning = true;
+        m_IsInTransition = true;
         float t = 0f;
 
         while (t <= 1.0f)
         {
             float emission = Mathf.Lerp(0.0f, 1.0f, t);
             Color color = m_EmissionColor * Mathf.LinearToGammaSpace(emission);
-            
+
             m_Renderer.GetPropertyBlock(m_PropBlock);
             m_PropBlock.SetColor(EmissionColor, color);
             m_Renderer.SetPropertyBlock(m_PropBlock);
-            
+
             t += Time.deltaTime * m_LightUpSpeed;
             yield return null;
         }
 
-        isTransitionning = false;
+        m_IsInTransition = false;
     }
 
     public IEnumerator LightDown()
     {
-        if (isTransitionning || !m_IsLightened) yield break;
-        
+        if (m_IsInTransition || !m_IsLightened) yield break;
+
         m_IsLightened = false;
-        isTransitionning = true;
+        m_IsInTransition = true;
         float t = 0f;
 
         while (t <= 1.0f)
         {
             float emission = Mathf.Lerp(1.0f, 0.0f, t);
             Color color = m_EmissionColor * Mathf.LinearToGammaSpace(emission);
-            
+
             m_Renderer.GetPropertyBlock(m_PropBlock);
             m_PropBlock.SetColor(EmissionColor, color);
             m_Renderer.SetPropertyBlock(m_PropBlock);
-            
+
             t += Time.deltaTime * m_LightDownSpeed;
             yield return null;
         }
 
-        isTransitionning = false;
+        m_IsInTransition = false;
     }
 }

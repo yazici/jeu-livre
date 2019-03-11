@@ -119,6 +119,7 @@ public class DamierController : MonoBehaviour
         {
             // Light down the entire damier
             ResetDamier();
+            m_TimeLeft = -1f;
 
             // If player has not (re)started to pattern yet, that's all
             if (lightenedTilesNb == 0)
