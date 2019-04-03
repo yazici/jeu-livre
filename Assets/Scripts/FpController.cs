@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class FpController : MonoBehaviour
@@ -91,13 +92,17 @@ public class FpController : MonoBehaviour
         // FixedUpdate is a poor place to use GetButtonDown, since it doesn't necessarily run every frame and can miss the event)
         if (m_ToggleRun && m_Grounded && Input.GetButtonDown("Run"))
         {
-            m_Speed = (m_Speed == m_WalkSpeed ? m_RunSpeed : m_WalkSpeed);
+            m_Speed = Math.Abs(m_Speed - m_WalkSpeed) < float.Epsilon ? m_RunSpeed : m_WalkSpeed;
         }
     }
 
 
     private void FixedUpdate()
     {
+
+        // Prevent player movement if is typing
+        if (GameManager.m_Instance.m_IsConsoleTyping) return;
+        
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
@@ -161,16 +166,17 @@ public class FpController : MonoBehaviour
                 m_PlayerControl = true;
             }
 
-            // Jump! But only if the jump button has been released and player has been grounded for a given number of frames
-            if (!Input.GetButton("Jump"))
-            {
-                m_JumpTimer++;
-            }
-            else if (m_JumpTimer >= m_AntiBunnyHopFactor)
-            {
-                m_MoveDirection.y = m_JumpSpeed;
-                m_JumpTimer = 0;
-            }
+            // UNUSED JUMP SECTION
+            // // Jump! But only if the jump button has been released and player has been grounded for a given number of frames
+            // if (!Input.GetButton("Jump"))
+            // {
+            //     m_JumpTimer++;
+            // }
+            // else if (m_JumpTimer >= m_AntiBunnyHopFactor)
+            // {
+            //     m_MoveDirection.y = m_JumpSpeed;
+            //     m_JumpTimer = 0;
+            // }
         }
         else
         {

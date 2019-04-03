@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3592545194684353580}
   - component: {fileID: 3592545194684353554}
   - component: {fileID: 3592545194684353552}
+  - component: {fileID: 881380384390337009}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -113,6 +114,20 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &881380384390337009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545194684353581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0539089cbdcd408489bae653884677e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RangeArm: 2
+  m_RangeToFoot: 2
 --- !u!1 &3592545196681220797
 GameObject:
   m_ObjectHideFlags: 0

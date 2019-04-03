@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 7a35bedbed3bfa945be548c0a5a72e2c
+  productGUID: f0ecaa68819525342a3fcb6157dcb6dc
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 1
+  m_ActiveColorSpace: 0
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
@@ -105,7 +105,7 @@ PlayerSettings:
   xboxOneLoggingLevel: 1
   xboxOneDisableEsram: 0
   xboxOnePresentImmediateThreshold: 0
-  switchQueueCommandMemory: 1048576
+  switchQueueCommandMemory: 0
   switchQueueControlMemory: 16384
   switchQueueComputeMemory: 262144
   switchNVNShaderPoolsGranularity: 33554432
@@ -236,8 +236,8 @@ PlayerSettings:
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
   appleEnableProMotion: 0
-  clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
-  templatePackageId: com.unity.template.3d@1.0.4
+  clonedFromGUID: 371f3981bd1f5a34793bb979ce7e7005
+  templatePackageId: 
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
@@ -594,31 +594,7 @@ PlayerSettings:
   XboxOneGameRating: {}
   XboxOneIsContentPackage: 0
   XboxOneEnableGPUVariability: 0
-  XboxOneSockets:
-    WwiseCommandSocket:
-      m_Name: WwiseCommandSocket
-      m_Port: 24025
-      m_Protocol: 0
-      m_Usages: 00000000010000000400000007000000
-      m_TemplateName: WwiseCommand
-      m_SessionRequirment: 0
-      m_DeviceUsages: 00000000
-    WwiseDiscoverySocket:
-      m_Name: WwiseDiscoverySocket
-      m_Port: 24024
-      m_Protocol: 1
-      m_Usages: 00000000010000000400000007000000
-      m_TemplateName: WwiseDiscovery
-      m_SessionRequirment: 0
-      m_DeviceUsages: 00000000
-    WwiseNotificationSocket:
-      m_Name: WwiseNotificationSocket
-      m_Port: 24026
-      m_Protocol: 0
-      m_Usages: 00000000010000000400000007000000
-      m_TemplateName: WwiseNotification
-      m_SessionRequirment: 0
-      m_DeviceUsages: 00000000
+  XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
