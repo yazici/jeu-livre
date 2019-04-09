@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using ScriptableObjects;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -6,9 +9,18 @@ public class UIManager : MonoBehaviour
     // Singleton
     public static UIManager m_Instance;
 
-    // UI elements
-    [SerializeField] private Image m_ReticuleOn;
-    [SerializeField] private Image m_ReticuleOff;
+    public MainSettings m_MainSettings;
+
+    public RectTransform m_LabelTextRectTransform;
+
+    [SerializeField] private TMP_Text m_LabelText;
+
+    private IEnumerator m_CurrentLabelTypingCoroutine;
+    private bool m_IsLabelTyping;
+
+    [SerializeField] private Animator m_ReticuleAnimator;
+
+    private static readonly int Active = Animator.StringToHash("active");
 
     // Singleton initialization
     private void Awake()
@@ -22,13 +34,15 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         SetReticule(false);
+        m_LabelText.text = "";
     }
 
     // Set the reticule black or white
     public void SetReticule(bool active = true)
     {
-        m_ReticuleOn.enabled = active;
-        m_ReticuleOff.enabled = !active;
+        //m_ReticuleOn.enabled = active;
+        //m_ReticuleOff.enabled = !active;
+        m_ReticuleAnimator.SetBool(Active, active);
     }
 
     // // Hide the reticule when holding an object
@@ -37,4 +51,52 @@ public class UIManager : MonoBehaviour
     //     m_ReticuleOn.enabled = false;
     //     m_ReticuleOff.enabled = false;
     // }
+
+    public string GetCurrentLabelText()
+    {
+        return m_LabelText.text;
+    }
+
+    public void ChangeLabelText(string message)
+    {
+        if (m_CurrentLabelTypingCoroutine != null) return;
+
+        m_CurrentLabelTypingCoroutine = TypeLabelText(message);
+        StartCoroutine(m_CurrentLabelTypingCoroutine);
+    }
+
+    public void ResetLabelText()
+    {
+        if (m_CurrentLabelTypingCoroutine != null)
+            StopCoroutine(m_CurrentLabelTypingCoroutine);
+        m_CurrentLabelTypingCoroutine = null;
+        m_IsLabelTyping = false;
+        m_LabelText.text = "";
+    }
+
+
+    private IEnumerator TypeLabelText(string message)
+    {
+        if (m_IsLabelTyping) yield break;
+        m_IsLabelTyping = true;
+
+        foreach (char letter in message)
+        {
+            // Stop immediately
+            if (!m_IsLabelTyping)
+            {
+                m_IsLabelTyping = false;
+                yield break;
+            }
+
+            m_LabelText.text += letter;
+            // TODO: handle SFX
+            //if (typeSound1 && typeSound2)
+            //    SoundManager.instance.RandomizeSfx(typeSound1, typeSound2);
+            yield return new WaitForSeconds(m_MainSettings.m_LetterDelay);
+        }
+
+
+        m_IsLabelTyping = false;
+    }
 }

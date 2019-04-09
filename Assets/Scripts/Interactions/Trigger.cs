@@ -11,7 +11,7 @@ namespace Interactions
 
         // [SerializeField]
         // private string soundName = "";
-
+        
         protected bool CanBeActivated()
         {
             if (m_IsInfiniteTrigger) return true;
