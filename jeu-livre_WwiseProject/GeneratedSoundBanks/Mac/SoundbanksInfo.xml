@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\Jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\Jeu-livre\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\Jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\Jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -20,6 +20,42 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="923015438" Name="Play_Drone_Motor" ObjectPath="\Events\Default Work Unit\Play_Drone_Motor"/>
+				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
+				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
+				<Event Id="585720868" Name="Stop_Drone_Motor" ObjectPath="\Events\Default Work Unit\Stop_Drone_Motor" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="279537869" Language="SFX">
+					<ShortName>123253__skullsmasha__mechanicalclamp.wav</ShortName>
+					<Path>SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem</Path>
+				</File>
+				<File Id="333790195" Language="SFX">
+					<ShortName>323158__mrfineppine__canon-310xl-super-8-camera-motor-sound.wav</ShortName>
+					<Path>SFX\323158__mrfineppine__canon-310xl-super-8-camera-motor-sound_40215794.wem</Path>
+				</File>
+				<File Id="348502007" Language="SFX">
+					<ShortName>digital_typing.wav</ShortName>
+					<Path>SFX\digital_typing_0F7EFACF.wem</Path>
+				</File>
+				<File Id="383724321" Language="SFX">
+					<ShortName>182742__thaismontanaricabral__motor-geladeira.wav</ShortName>
+					<Path>SFX\182742__thaismontanaricabral__motor-geladeira_E18A3E7C.wem</Path>
+				</File>
+				<File Id="507438740" Language="SFX">
+					<ShortName>Transportation Car Drive Interior 01.wav</ShortName>
+					<Path>SFX\Transportation Car Drive Interior 01_D50ACA79.wem</Path>
+				</File>
+				<File Id="817482986" Language="SFX">
+					<ShortName>Ambience Ceiling Fan 01.wav</ShortName>
+					<Path>SFX\Ambience Ceiling Fan 01_90DCB559.wem</Path>
+				</File>
+				<File Id="977182220" Language="SFX">
+					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>
+					<Path>SFX\Ambience Air Conditioner 180 01_F0678BD7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

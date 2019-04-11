@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -71,6 +72,11 @@ public class FpController : MonoBehaviour
     private bool m_PlayerControl = false;
     private int m_JumpTimer;
 
+    private bool m_IsMoving;
+    private bool m_IsRunning;
+    [SerializeField] private float m_AccelerationSoundFactor = 0.1f;
+    [SerializeField] private float m_MaxDroneSpeed = 5f;
+    private float m_DroneSpeed;
 
     private void Start()
     {
@@ -94,15 +100,39 @@ public class FpController : MonoBehaviour
         {
             m_Speed = Math.Abs(m_Speed - m_WalkSpeed) < float.Epsilon ? m_RunSpeed : m_WalkSpeed;
         }
+
+
+        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+        {
+            // Start moving
+            if (!m_IsMoving)
+            {
+                m_IsMoving = true;
+                AudioManager.m_Instance.PlaySFX("Drone_Motor");
+            }
+
+            // Running
+            if (Input.GetKey(KeyCode.LeftShift) && !m_IsRunning)
+            {
+                StartCoroutine(StartRunning());
+            }
+        }
+        // Stop moving
+        else
+        {
+            if (!m_IsMoving) return;
+
+            m_IsMoving = false;
+            AudioManager.m_Instance.StopSFX("Drone_Motor");
+        }
     }
 
 
     private void FixedUpdate()
     {
-
         // Prevent player movement if is typing
         if (GameManager.m_Instance.m_IsConsoleTyping) return;
-        
+
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
@@ -216,5 +246,21 @@ public class FpController : MonoBehaviour
     private void OnFell(float fallDistance)
     {
         print("Ouch! Fell " + fallDistance + " units!");
+    }
+
+    private IEnumerator StartRunning()
+    {
+        m_IsRunning = true;
+        m_DroneSpeed = 0;
+        while (Input.GetKey(KeyCode.LeftShift))
+        {
+            m_DroneSpeed = Mathf.Min(m_MaxDroneSpeed, m_DroneSpeed + m_AccelerationSoundFactor);
+            AudioManager.m_Instance.SetRTPC("Drone_Speed", m_DroneSpeed);
+            yield return null;
+        }
+
+        m_DroneSpeed = 0;
+        AudioManager.m_Instance.SetRTPC("Drone_Speed", m_DroneSpeed);
+        m_IsRunning = false;
     }
 }

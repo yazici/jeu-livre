@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{2C77C427-0CDC-4EEB-BA04-3AF527C0A846}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{2C77C427-0CDC-4EEB-BA04-3AF527C0A846}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2C77C427-0CDC-4EEB-BA04-3AF527C0A846}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2C77C427-0CDC-4EEB-BA04-3AF527C0A846}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{D7880912-BD90-4193-A573-73F6598B2BB1}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Labo_Room_Tone" ID="{10F38309-6271-49AB-A2C3-EBD21C0C50F2}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Typing" ID="{C9B99EAA-E834-4270-BC05-B1EBD897617D}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Drone_Motor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Drone_Speed" ID="{2B5A5736-C920-4732-AA27-09251EAD9E5A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

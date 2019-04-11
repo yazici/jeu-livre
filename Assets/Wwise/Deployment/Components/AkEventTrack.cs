@@ -25,8 +25,6 @@ public class AkEventTrack : UnityEngine.Timeline.TrackAsset
 		var Settings = WwiseSettings.LoadSettings();
 		var WprojPath = AkUtilities.GetFullPath(UnityEngine.Application.dataPath, Settings.WwiseProjectPath);
 		AkUtilities.EnableBoolSoundbankSettingInWproj("SoundBankGenerateEstimatedDuration", WprojPath);
-
-		AkWwiseXMLWatcher.Instance.XMLUpdated += OnXMLUpdated;
 #endif
 		var playable = UnityEngine.Playables.ScriptPlayable<AkEventPlayableBehavior>.Create(graph);
 		UnityEngine.Playables.PlayableExtensions.SetInputCount(playable, inputCount);
@@ -36,6 +34,11 @@ public class AkEventTrack : UnityEngine.Timeline.TrackAsset
 	}
 
 #if UNITY_EDITOR
+	public void Awake()
+	{
+		AkWwiseXMLWatcher.Instance.XMLUpdated += OnXMLUpdated;
+	}
+
 	public void OnDestroy()
 	{
 		AkWwiseXMLWatcher.Instance.XMLUpdated -= OnXMLUpdated;
@@ -119,7 +122,8 @@ public class AkEventTrack : UnityEngine.Timeline.TrackAsset
 		var clips = GetClips();
 		foreach (var clip in clips)
 		{
-			((AkEventPlayable)clip.asset).Refresh();
+			// The setter of OwningClip call Refresh() in Editor mode
+			((AkEventPlayable)clip.asset).OwningClip = clip;
 		}
 	}
 #endif

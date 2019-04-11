@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayTypingBip" ID="{C9B99EAA-E834-4270-BC05-B1EBD897617D}">
+					<ChildrenList>
+						<Action Name="" ID="{4B0CDAF2-5EA9-4BE6-9880-456A8D446192}" ShortID="842896484">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="digital_typing" ID="{6E2A4511-597E-4789-B340-6EB3CEE40069}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

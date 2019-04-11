@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}" SchemaVersion="94">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}" PersistMode="Standalone">
 			<ChildrenList>
@@ -9,6 +9,18 @@
 							<ObjectRef Name="System" ID="{F0B36EAE-B195-46A3-815E-D4E0F583FC69}" WorkUnitID="{372748A4-E869-48FF-B218-D1C3BCCBC9CE}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}"/>
+						<Bus Name="Room Tones" ID="{B71D5E69-0183-46D8-8D2B-4F1F875020D0}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

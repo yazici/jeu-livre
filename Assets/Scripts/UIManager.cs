@@ -79,6 +79,7 @@ public class UIManager : MonoBehaviour
     {
         if (m_IsLabelTyping) yield break;
         m_IsLabelTyping = true;
+        AudioManager.m_Instance.PlaySFX("Typing");
 
         foreach (char letter in message)
         {
@@ -90,9 +91,6 @@ public class UIManager : MonoBehaviour
             }
 
             m_LabelText.text += letter;
-            // TODO: handle SFX
-            //if (typeSound1 && typeSound2)
-            //    SoundManager.instance.RandomizeSfx(typeSound1, typeSound2);
             yield return new WaitForSeconds(m_MainSettings.m_LetterDelay);
         }
 

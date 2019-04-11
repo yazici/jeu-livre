@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B77E8803-6DC5-4948-B89D-084574CC27C6}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{B77E8803-6DC5-4948-B89D-084574CC27C6}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{B77E8803-6DC5-4948-B89D-084574CC27C6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B77E8803-6DC5-4948-B89D-084574CC27C6}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Drone_Speed" ID="{2B5A5736-C920-4732-AA27-09251EAD9E5A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

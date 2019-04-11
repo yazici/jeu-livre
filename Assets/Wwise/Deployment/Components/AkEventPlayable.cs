@@ -47,9 +47,9 @@ public class AkEventPlayable : UnityEngine.Playables.PlayableAsset, UnityEngine.
 	private float easeOutDuration;
 	public UnityEngine.ExposedReference<UnityEngine.GameObject> emitterObjectRef;
 
-	[UnityEngine.SerializeField] private float eventDurationMax = -1.0f;
+	[UnityEngine.SerializeField] private float eventDurationMax = -1f;
 
-	[UnityEngine.SerializeField] private float eventDurationMin = -1.0f;
+	[UnityEngine.SerializeField] private float eventDurationMin = -1f;
 
 	public bool overrideTrackEmitterObject = false;
 
@@ -186,6 +186,13 @@ public class AkEventPlayable : UnityEngine.Playables.PlayableAsset, UnityEngine.
 		if (owningClip != null && akEvent != null)
 		{
 			owningClip.displayName = akEvent.Name;
+
+			var newMaxDuration = AkWwiseXMLWatcher.Instance.GetEventMaxDuration(akEvent.Id);
+			if (newMaxDuration.HasValue)
+			{
+				EventDurationMax = newMaxDuration.Value;
+				owningClip.duration = EventDurationMax;
+			}
 		}
 	}
 #endif
@@ -350,18 +357,24 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 	{
 		if (eventTracker != null)
 		{
+			var previousTime = UnityEngine.Playables.PlayableExtensions.GetPreviousTime(playable);
+			var currentTime = UnityEngine.Playables.PlayableExtensions.GetTime(playable);
+
+			if (previousTime == 0.0 && System.Math.Abs(currentTime - previousTime) > 1.0)
+			{
+				return false;
+			}
+
 			// If max and min duration values from metadata are equal, we can assume a deterministic event.
 			if (akEventMaxDuration == akEventMinDuration && akEventMinDuration != -1.0f)
 			{
-				return (float) UnityEngine.Playables.PlayableExtensions.GetTime(playable) < akEventMaxDuration ||
-				       eventShouldRetrigger;
+				return currentTime < akEventMaxDuration || eventShouldRetrigger;
 			}
 
-			var currentTime = (float) UnityEngine.Playables.PlayableExtensions.GetTime(playable) -
-			                  eventTracker.previousEventStartTime;
+			currentTime = currentTime - eventTracker.previousEventStartTime;
 			var currentDuration = eventTracker.currentDuration;
 			var maxDuration = currentDuration == -1.0f
-				? (float) UnityEngine.Playables.PlayableExtensions.GetDuration(playable)
+				? (float)UnityEngine.Playables.PlayableExtensions.GetDuration(playable)
 				: currentDuration;
 			return currentTime < maxDuration || eventShouldRetrigger;
 		}

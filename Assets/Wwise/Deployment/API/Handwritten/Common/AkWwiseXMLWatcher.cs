@@ -14,7 +14,9 @@ public class AkWwiseXMLWatcher
 	private bool fireEvent = false;
 
 	public event System.Action XMLUpdated;
+
 	public System.Func<bool> PopulateXML;
+	public System.Func<uint, float?> GetEventMaxDuration;
 
 	public static AkWwiseXMLWatcher Instance
 	{
@@ -73,6 +75,8 @@ public class AkWwiseXMLWatcher
 				{
 					callback();
 				}
+
+				AkBankManager.ReloadAllBanks();
 			}
 
 			fireEvent = false;

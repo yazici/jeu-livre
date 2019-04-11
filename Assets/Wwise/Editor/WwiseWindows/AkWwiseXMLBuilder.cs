@@ -13,6 +13,17 @@ public class AkWwiseXMLBuilder
 	static AkWwiseXMLBuilder()
 	{
 		AkWwiseXMLWatcher.Instance.PopulateXML = Populate;
+
+		AkWwiseXMLWatcher.Instance.GetEventMaxDuration = (uint eventID) =>
+		{
+			var eventInfo = AkWwiseProjectInfo.GetData().GetEventInfo(eventID);
+			if (eventInfo != null)
+			{
+				return eventInfo.maxDuration;
+			}
+
+			return null;
+		};
 	}
 
 	public static bool Populate()

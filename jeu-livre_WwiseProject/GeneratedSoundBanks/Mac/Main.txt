@@ -1,3 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	585720868	Stop_Drone_Motor			\Default Work Unit\Stop_Drone_Motor	
+	923015438	Play_Drone_Motor			\Default Work Unit\Play_Drone_Motor	
+	1659138091	Play_Typing			\Default Work Unit\Play_Typing	
+	2983988087	Play_Labo_Room_Tone			\Default Work Unit\Play_Labo_Room_Tone	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1382379429	Drone_Speed			\Default Work Unit\Drone_Speed	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	334815916	Random Pitch LFO			\Default Work Unit\Random Pitch LFO	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	2183308795	Room Tones			\Default Work Unit\Master Audio Bus\Room Tones	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	279537869	Mechanical Clamp	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Drone Motor\Mechanical Clamp		217932
+	333790195	Camera Motor Sound	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\323158__mrfineppine__canon-310xl-super-8-camera-motor-sound_40215794.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Drone Motor\Camera Motor Sound		4090126
+	348502007	Digital Typing	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\digital_typing_0F7EFACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		142100
+	383724321	Motor Geladeira	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\182742__thaismontanaricabral__motor-geladeira_E18A3E7C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Drone Motor\Motor Geladeira		2647236
+	507438740	Car Drive Interior	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Transportation Car Drive Interior 01_D50ACA79.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Drone Motor\Car Drive Interior		3621492
+	817482986	Ambience Ceiling Fan 01	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan 01		17298560
+	977182220	Ambience Air Conditioner 180 01	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner 180 01		17302376
 
