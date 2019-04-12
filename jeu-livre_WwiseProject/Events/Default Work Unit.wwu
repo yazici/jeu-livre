@@ -74,6 +74,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Synth_Bips_Sequence" ID="{BE099AA8-927B-479F-BF19-B9043FE1A0D2}">
+					<ChildrenList>
+						<Action Name="" ID="{149B25CD-75DD-4350-B51E-CF54DCEB53D1}" ShortID="564618134">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Synth Bips Sequence" ID="{4333E929-E442-48E1-B4B4-F4336FE34C51}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Electric_Motor" ID="{DEA64AFB-CCA2-4707-8539-C922C509F199}">
+					<ChildrenList>
+						<Action Name="" ID="{61E1D0AB-B303-4CFC-8DE2-649C0530B1AD}" ShortID="523764726">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Electric Motor" ID="{EB1246B3-2F58-4B66-896E-016688A5D8B1}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

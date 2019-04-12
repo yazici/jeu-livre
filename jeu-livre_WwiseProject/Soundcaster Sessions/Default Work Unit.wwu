@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Synth_Bips_Sequence" ID="{BE099AA8-927B-479F-BF19-B9043FE1A0D2}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Typing" ID="{C9B99EAA-E834-4270-BC05-B1EBD897617D}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="1" Y="0"/>
 						</Module>
