@@ -18,15 +18,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	126686386	Electric Motor	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Electric Motor		1027720
-	279537869	Mechanical Clamp	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Mechanical Clamp		217932
-	333790195	Camera Motor Sound	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\323158__mrfineppine__canon-310xl-super-8-camera-motor-sound_40215794.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Camera Motor Sound		4090126
-	348502007	Digital Typing	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\digital_typing_0F7EFACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		142100
-	383724321	Motor Geladeira	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\182742__thaismontanaricabral__motor-geladeira_E18A3E7C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Motor Geladeira		2647236
-	407648760	Bip1	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Bip1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Synth Bips Random\Bip1		1209664
-	507438740	Car Drive Interior	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Transportation Car Drive Interior 01_D50ACA79.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Car Drive Interior		3621492
-	615951393	Bip2	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Bip2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Synth Bips Random\Bip2		1209664
-	817482986	Ambience Ceiling Fan 01	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan 01		17298560
-	977182220	Ambience Air Conditioner 180 01	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner 180 01		17302376
-	1000259395	Bip3	C:\Users\Pyriceti\Documents\Unity Projects\Collisions\jeu-livre_WwiseProject\.cache\Mac\SFX\Bip3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Synth Bips Random\Bip3		1209664
+	101773938	Beep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\beep-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Beep		9722
+	126686386	Electric Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Electric Motor		1027720
+	348502007	Digital Typing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\digital_typing_0F7EFACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		142100
+	817482986	Ambience Ceiling Fan 01	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan 01		17298560
+	826280766	Rolling_Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Rolling_Motor_8812C084.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Rolling_Motor		3344368
+	977182220	Ambience Air Conditioner 180 01	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner 180 01		17302376
 

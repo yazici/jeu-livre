@@ -8,6 +8,7 @@
 						<BlendContainer Name="Labo Room Tone" ID="{53CE5ABC-01E2-4CBB-B6E7-15548116566A}" ShortID="183717795">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -108,13 +109,12 @@
 								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>330</Value>
+										<Value>340</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{0DB73B9E-66D3-438F-8B1B-7AFB7E744E27}">
 												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="20"/>
 													<Property Name="Min" Type="Real64" Value="-20"/>
 												</PropertyList>
@@ -179,9 +179,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{EEC2C9B1-4117-4A6F-BDC8-E39FCC887E96}">
@@ -196,7 +193,7 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{121DE12F-1BAC-41FB-836F-4F4A41D2D59C}">
@@ -209,6 +206,11 @@
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -223,6 +225,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Synth Bips Random" ID="{0BB0128E-B390-440D-89FF-6A076791DF55}" ShortID="399099042">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>46</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
@@ -309,9 +323,34 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<Sound Name="Beep" ID="{318BB68E-B16C-44A7-8D03-270F3C49F916}" ShortID="591690719">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="beep-07" ID="{FB10657D-D561-42CC-AEAD-680DD326DF8C}" ShortID="101773938">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>beep-07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="beep-07" ID="{FB10657D-D561-42CC-AEAD-680DD326DF8C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<Playlist>
-										<ItemRef Name="Synth Bips Random" ID="{0BB0128E-B390-440D-89FF-6A076791DF55}"/>
+										<ItemRef Name="Beep" ID="{318BB68E-B16C-44A7-8D03-270F3C49F916}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 								<Sound Name="Electric Motor" ID="{EB1246B3-2F58-4B66-896E-016688A5D8B1}" ShortID="444571674">
@@ -443,6 +482,11 @@
 								</Sound>
 								<Sound Name="Car Drive Interior" ID="{B5C05DAE-0A8D-4816-98B0-35D0E4047CED}" ShortID="1070050251">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -482,6 +526,11 @@
 								</Sound>
 								<Sound Name="Mechanical Clamp" ID="{C429F854-CC61-420B-826C-8DDC27536D04}" ShortID="716945710">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
@@ -584,6 +633,11 @@
 								</Sound>
 								<Sound Name="Motor Geladeira" ID="{F6844E9B-B9A5-4F6D-A0B0-5CF89BC6AA47}" ShortID="288625728">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -651,6 +705,11 @@
 								</Sound>
 								<Sound Name="Camera Motor Sound" ID="{214F6B2D-2336-42B4-BA09-3505F3009BDA}" ShortID="42209618">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
@@ -721,6 +780,113 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Industry Ambience Generator Motor 02" ID="{A6CD6A26-C93F-4CF6-B47B-B54D33D9691E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rolling_Motor" ID="{D2EA784E-BA05-46FB-A147-4D373D17BCC4}" ShortID="507281775">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-400</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7A75422D-1222-4FCE-8E23-2FE648A47272}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{6A669646-993C-4EF1-AFCB-28E717A1DCBA}" ShortID="189544914">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Drone_Speed" ID="{2B5A5736-C920-4732-AA27-09251EAD9E5A}" WorkUnitID="{B77E8803-6DC5-4948-B89D-084574CC27C6}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{69AF170B-2427-4E1B-8A98-B6B15586A918}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>300</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+												<RTPC Name="" ID="{DA777B6E-3B63-41AB-9232-EE5F43DE5E7C}" ShortID="574227156">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Random Pitch LFO" ID="{91F0C54B-820A-4EF6-8B0E-BECF2D02D152}" WorkUnitID="{F7D54401-8E13-4BDC-91B5-0841A757283E}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{22B8985A-0273-4F92-AEA0-340C7C96D77B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-20</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>20</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rolling_Motor" ID="{73342C6B-15B2-4556-850A-E4106ACB53C0}" ShortID="826280766">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="1388.489"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.613356338572417"/>
+												<Property Name="LoopBegin" Type="Real64" Value="9.61854258215836"/>
+												<Property Name="LoopEnd" Type="Real64" Value="17.4248959821709"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.14674718500346"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Rolling_Motor.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rolling_Motor" ID="{73342C6B-15B2-4556-850A-E4106ACB53C0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
