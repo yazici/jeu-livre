@@ -5,7 +5,10 @@ using UnityEngine;
 public class automaticDoor : MonoBehaviour
 {
 
-    public Animator doorAnim; 
+    public Animator doorAnim;
+    public string openAnim;
+    public string closeAnim; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class automaticDoor : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            doorAnim.SetTrigger("isOpen");
+            doorAnim.SetTrigger(openAnim);
         }
     }
 
@@ -30,7 +33,7 @@ public class automaticDoor : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            doorAnim.SetTrigger("isClosed");
+            doorAnim.SetTrigger(closeAnim);
         }
     }
 }
