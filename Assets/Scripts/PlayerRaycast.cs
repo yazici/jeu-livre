@@ -13,7 +13,7 @@ public class PlayerRaycast : MonoBehaviour
         m_FpCamera = GetComponentInChildren<Camera>();
     }
 
-    public void AttemptRaycast(float range)
+    public void AttemptRaycast(Lookable from, float range)
     {
         RaycastHit target;
         Transform camTransform = m_FpCamera.transform;
@@ -22,15 +22,19 @@ public class PlayerRaycast : MonoBehaviour
             1 << 10))
         {
             var lookable = target.transform.GetComponent<Lookable>();
+
+            // Don't do anything if the target isn't the requester of the raycast
+            if (from != lookable) return;
+
             var interactive = target.transform.GetComponent<Interactive>();
 
-            if (lookable)
+            if (lookable && lookable.enabled)
             {
                 lookable.Look();
                 m_LastLookable = lookable;
             }
 
-            if (interactive && Input.GetButtonDown("Fire1"))
+            if (interactive && Input.GetButtonDown("Fire1") && interactive.enabled)
                 interactive.Interact();
         }
         else if (m_LastLookable)

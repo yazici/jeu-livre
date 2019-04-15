@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66cd91b327856144998595a0e1b313e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MainSettings: {fileID: 11400000, guid: bd68b40c02df905439e3f4684e2211b1, type: 2}
   m_WalkSpeed: 3
   m_RunSpeed: 11
   m_LimitDiagonalSpeed: 1
@@ -95,6 +96,8 @@ MonoBehaviour:
   m_AirControl: 0
   m_AntiBumpFactor: 0.75
   m_AntiBunnyHopFactor: 1
+  m_AccelerationSoundFactor: 0.1
+  m_MaxDroneSpeed: 5
 --- !u!114 &3592545194684353552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0539089cbdcd408489bae653884677e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RangeArm: 2
-  m_RangeToFoot: 2
 --- !u!1 &3592545196681220797
 GameObject:
   m_ObjectHideFlags: 0

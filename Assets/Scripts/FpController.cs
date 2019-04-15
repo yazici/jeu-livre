@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections;
+using ScriptableObjects;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class FpController : MonoBehaviour
 {
+    public MainSettings m_MainSettings;
+
     [Tooltip("How fast the player moves when walking (default move speed).")] [SerializeField]
     private float m_WalkSpeed = 6.0f;
 
@@ -83,6 +86,10 @@ public class FpController : MonoBehaviour
         // Saving component references to improve performance.
         m_Transform = GetComponent<Transform>();
         m_Controller = GetComponent<CharacterController>();
+
+        // Override settings with Game settings
+        m_WalkSpeed = m_MainSettings.m_WalkSpeed;
+        m_RunSpeed = m_MainSettings.m_RunSpeed;
 
         // Setting initial values.
         m_Speed = m_WalkSpeed;

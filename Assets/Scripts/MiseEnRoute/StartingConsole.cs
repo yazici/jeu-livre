@@ -1,70 +1,70 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine.Events;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class StartingConsole : MonoBehaviour
+namespace MiseEnRoute
 {
-
-    public InputField inputField;
-    public Text consoleText;
-    public ScrollRect scrollRect;
-
-    private bool isUserValide = false;
-
-    // Start is called before the first frame update
-    void Start()
+    public class StartingConsole : MonoBehaviour
     {
-        inputField.Select();
-        inputField.ActivateInputField();
-    }
+        public Text m_ConsoleText;
+        private InputField m_InputField;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        [SerializeField] private string m_IdName = "aurorechamrouge";
+        [SerializeField] private string m_Password = "%SRghatN895";
 
-    public void displayConsoleText()
-    {
-        if (!isUserValide)
+        private bool m_IsUserValide;
+
+        private void Start()
         {
-            if (inputField.text == "aurorechamrouge")
+            m_InputField = GetComponent<InputField>();
+            m_InputField.Select();
+            m_InputField.ActivateInputField();
+        }
+
+        public void DisplayConsoleText()
+        {
+            // Username Step
+            if (!m_IsUserValide)
             {
-                consoleText.text = consoleText.text + " " + inputField.text + "\nIdentifiant valide\n\nMot de passe :";
-                cleanInputField();
-                isUserValide = true;
+                if (m_InputField.text == m_IdName)
+                {
+                    m_ConsoleText.text = string.Format("{0} {1}\nIdentifiant valide\n\nMot de passe :",
+                        m_ConsoleText.text, m_InputField.text);
+                    CleanInputField();
+                    m_IsUserValide = true;
+                }
+                else
+                {
+                    m_ConsoleText.text = string.Format("{0} {1}\n\nUtilisateur non reconnu.\n\nIdentifiant : ",
+                        m_ConsoleText.text, m_InputField.text);
+                    CleanInputField();
+                }
             }
+            // Password Step
             else
             {
-                consoleText.text = consoleText.text + " " + inputField.text + "\n\nUtilisateur non reconnu.\n\nIdentifiant : ";
-                cleanInputField();
-            }
-        }else
-        {
-            if (inputField.text == "%SRghatN895")
-            {
-                consoleText.text = consoleText.text + "\n\nUtilisateur connecté.";
-                cleanInputField();
+                if (m_InputField.text == m_Password)
+                {
+                    m_ConsoleText.text = string.Format("{0}\n\nUtilisateur connecté.", m_ConsoleText.text);
+                    CleanInputField();
+                    
+                    // TODO: loading
 
-                SceneManager.LoadScene("Mise en route");
-
-            }
-            else
-            {
-                consoleText.text = consoleText.text + "\n\nERREUR.\nMot de passe :";
-                cleanInputField();
+                    SceneManager.LoadScene("Mise en route");
+                }
+                else
+                {
+                    m_ConsoleText.text = string.Format("{0}\n\nERREUR.\nMot de passe :", m_ConsoleText.text);
+                    CleanInputField();
+                }
             }
         }
-       
-    }
 
-    public void cleanInputField()
-    {
-        inputField.text = "";
-        inputField.Select();
-        inputField.ActivateInputField();
+        private void CleanInputField()
+        {
+            m_InputField.text = "";
+            m_InputField.Select();
+            m_InputField.ActivateInputField();
+        }
     }
 }

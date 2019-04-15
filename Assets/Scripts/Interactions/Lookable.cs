@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Interactions
 {
@@ -17,6 +18,7 @@ namespace Interactions
         private float m_RangeArm;
 
         private bool m_IsLooking;
+        private bool m_IsRewritingLabel;
 
         protected void Start()
         {
@@ -45,7 +47,7 @@ namespace Interactions
             }
 
             // Otherwise try to raycast
-            m_PlayerRaycast.AttemptRaycast(maxDistance);
+            m_PlayerRaycast.AttemptRaycast(this, maxDistance);
         }
 
 
@@ -60,8 +62,9 @@ namespace Interactions
             }
 
             // Calculate label positioning
-            Vector3 worldPos = transform.TransformPoint(m_Collider.center);
-            worldPos.y += m_Collider.size.y / 2;
+            Transform tr = transform;
+            Vector3 worldPos = tr.TransformPoint(m_Collider.center);
+            worldPos.y += m_Collider.size.y * tr.localScale.y / 2;
             Vector3 viewPos = m_MainCamera.WorldToViewportPoint(worldPos);
 
             float offset = m_LabelMargin / 100;
@@ -101,6 +104,23 @@ namespace Interactions
             //         ms.StandardMat();
             //     }
             // }
+        }
+
+        protected void SetLabel(string label)
+        {
+            m_Label = label;
+            if (!m_IsLooking) return;
+            StartCoroutine(ForceRewriteLabel());
+        }
+
+        private IEnumerator ForceRewriteLabel()
+        {
+            if (m_IsRewritingLabel) yield break;
+            m_IsRewritingLabel = true;
+            m_UIManager.ResetLabelText();
+            yield return null;
+            m_UIManager.ChangeLabelText(m_Label);
+            m_IsRewritingLabel = false;
         }
     }
 }
