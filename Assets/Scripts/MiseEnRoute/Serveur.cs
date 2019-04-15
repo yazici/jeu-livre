@@ -7,11 +7,9 @@ public class Serveur : MonoBehaviour
 {
 
     public Text displayText;
-
     private bool hovered = false;
 
     public static bool plugged = false;
-
     public static string serverPlugged = "none";
 
     private void OnMouseEnter()

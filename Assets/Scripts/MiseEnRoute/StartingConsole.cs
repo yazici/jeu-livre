@@ -5,16 +5,14 @@ using UnityEngine.Events;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ConsoleLog : MonoBehaviour
+public class StartingConsole : MonoBehaviour
 {
 
     public InputField inputField;
-
     public Text consoleText;
-
     public ScrollRect scrollRect;
 
-    private bool isuserok = false;
+    private bool isUserValide = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,47 +29,42 @@ public class ConsoleLog : MonoBehaviour
 
     public void displayConsoleText()
     {
-        if (!isuserok)
+        if (!isUserValide)
         {
             if (inputField.text == "aurorechamrouge")
             {
                 consoleText.text = consoleText.text + " " + inputField.text + "\nIdentifiant valide\n\nMot de passe :";
-                //scrollRect.normalizedPosition = new Vector2(0, 0);
-                inputField.text = "";
-                inputField.Select();
-                inputField.ActivateInputField();
-                isuserok = true;
+                cleanInputField();
+                isUserValide = true;
             }
             else
             {
                 consoleText.text = consoleText.text + " " + inputField.text + "\n\nUtilisateur non reconnu.\n\nIdentifiant : ";
-                //scrollRect.normalizedPosition = new Vector2(0, 0);
-                inputField.text = "";
-                inputField.Select();
-                inputField.ActivateInputField();
+                cleanInputField();
             }
         }else
         {
             if (inputField.text == "%SRghatN895")
             {
                 consoleText.text = consoleText.text + "\n\nUtilisateur connecté.";
-                //scrollRect.normalizedPosition = new Vector2(0, 0);
-                inputField.text = "";
-                inputField.Select();
-                inputField.ActivateInputField();
+                cleanInputField();
 
-                SceneManager.LoadScene("pouet");
+                SceneManager.LoadScene("Mise en route");
 
             }
             else
             {
                 consoleText.text = consoleText.text + "\n\nERREUR.\nMot de passe :";
-                //scrollRect.normalizedPosition = new Vector2(0, 0);
-                inputField.text = "";
-                inputField.Select();
-                inputField.ActivateInputField();
+                cleanInputField();
             }
         }
        
+    }
+
+    public void cleanInputField()
+    {
+        inputField.text = "";
+        inputField.Select();
+        inputField.ActivateInputField();
     }
 }
