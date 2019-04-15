@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +18,18 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        HideCursor();
+    }
+
+    public void ShowCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void HideCursor()
+    {
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
