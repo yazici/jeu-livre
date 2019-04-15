@@ -41724,6 +41724,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnim: {fileID: 427952254}
+  openAnim: isOpen
+  closeAnim: isClosed
 --- !u!65 &2041637575
 BoxCollider:
   m_ObjectHideFlags: 0
