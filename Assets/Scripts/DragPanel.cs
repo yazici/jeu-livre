@@ -4,7 +4,9 @@ using UnityEngine.EventSystems;
 using System.Collections;
 
 public class DragPanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
-	
+
+    public Transform panel;
+
 	private Vector2 originalLocalPointerPosition;
 	private Vector3 originalPanelLocalPosition;
 	private RectTransform panelRectTransform;
@@ -16,6 +18,7 @@ public class DragPanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
 	}
 	
 	public void OnPointerDown (PointerEventData data) {
+        panel.SetSiblingIndex(1);
 		originalPanelLocalPosition = panelRectTransform.localPosition;
 		RectTransformUtility.ScreenPointToLocalPointInRectangle (parentRectTransform, data.position, data.pressEventCamera, out originalLocalPointerPosition);
 	}
