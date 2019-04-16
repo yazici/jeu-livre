@@ -43,3 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1edb2b10ae822468a82470cf36569c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PuzzleStep: 0
+  m_ServerPlugged: 
+  m_Servers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_RightServerName: server1
+  m_InitDrone: {fileID: 0}

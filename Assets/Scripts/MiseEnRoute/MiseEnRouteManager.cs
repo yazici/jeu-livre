@@ -20,6 +20,8 @@ namespace MiseEnRoute
 
         [SerializeField] private string m_RightServerName;
 
+        [SerializeField] private InitDrone m_InitDrone;
+
         // Singleton
         public static MiseEnRouteManager m_Instance;
 
@@ -30,6 +32,11 @@ namespace MiseEnRoute
                 m_Instance = this;
             else if (m_Instance != this)
                 Destroy(gameObject);
+        }
+
+        private void Start()
+        {
+            m_InitDrone.Init();
         }
 
         public void Plug(string serverName)
