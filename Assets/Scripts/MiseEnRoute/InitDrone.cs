@@ -37,7 +37,7 @@ namespace MiseEnRoute
                 float v = Mathf.Lerp(-100, 0, t);
                 m_ColorGradingLayer.saturation.value = v;
                 m_ColorGradingLayer.contrast.value = v;
-                t += 0.01f * m_AnimSpeed;
+                t += 0.5f * Time.deltaTime * m_AnimSpeed;
                 yield return null;
             }
             
