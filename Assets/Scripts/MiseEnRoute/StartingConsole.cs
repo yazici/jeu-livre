@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -7,18 +8,24 @@ namespace MiseEnRoute
     public class StartingConsole : MonoBehaviour
     {
         public Text m_ConsoleText;
+        public Slider m_LoadingBarSlider;
+        public Animation m_LoadingBarAnimation;
+
         private InputField m_InputField;
 
         [SerializeField] private string m_IdName = "aurorechamrouge";
         [SerializeField] private string m_Password = "%SRghatN895";
 
         private bool m_IsUserValide;
+        private AsyncOperation m_AsyncLoad;
+        [SerializeField] private bool m_SceneIsReady;
 
         private void Start()
         {
             m_InputField = GetComponent<InputField>();
             m_InputField.Select();
             m_InputField.ActivateInputField();
+            m_LoadingBarSlider.gameObject.SetActive(false);
         }
 
         public void DisplayConsoleText()
@@ -32,6 +39,7 @@ namespace MiseEnRoute
                         m_ConsoleText.text, m_InputField.text);
                     CleanInputField();
                     m_IsUserValide = true;
+                    StartCoroutine(WaitAsyncLoad());
                 }
                 else
                 {
@@ -47,10 +55,9 @@ namespace MiseEnRoute
                 {
                     m_ConsoleText.text = string.Format("{0}\n\nUtilisateur connecté.", m_ConsoleText.text);
                     CleanInputField();
-                    
-                    // TODO: loading
-
-                    SceneManager.LoadScene("Mise en route");
+                    m_LoadingBarSlider.gameObject.SetActive(true);
+                    m_InputField.enabled = false;
+                    StartCoroutine(PlayLoadBar());
                 }
                 else
                 {
@@ -60,11 +67,53 @@ namespace MiseEnRoute
             }
         }
 
+        private IEnumerator WaitAsyncLoad()
+        {
+            m_AsyncLoad = SceneManager.LoadSceneAsync("Mise en route");
+            // Don't let the Scene activate until we allow it to
+            m_AsyncLoad.allowSceneActivation = false;
+
+            // Wait until the asynchronous scene fully loads
+            while (!m_AsyncLoad.isDone)
+            {
+                if (m_AsyncLoad.progress >= 0.9f)
+                {
+                    m_SceneIsReady = true;
+                }
+
+                yield return null;
+            }
+        }
+
+        private IEnumerator PlayLoadBar()
+        {
+            m_LoadingBarSlider.value = 0;
+
+            // Wait until the asynchronous scene fully loads
+            while (!m_SceneIsReady)
+            {
+                yield return null;
+            }
+
+            m_LoadingBarAnimation.Play();
+            yield return WaitForAnimation();
+
+            m_AsyncLoad.allowSceneActivation = true;
+        }
+
         private void CleanInputField()
         {
             m_InputField.text = "";
             m_InputField.Select();
             m_InputField.ActivateInputField();
+        }
+
+        private IEnumerator WaitForAnimation()
+        {
+            do
+            {
+                yield return null;
+            } while (m_LoadingBarAnimation.isPlaying);
         }
     }
 }
