@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Baptiste.unity
     guid: a5a6da63bad379243b69e63cda6cddee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartingConsole.unity
     guid: bb040130f911de744bc299c8618605c1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mise en route.unity
     guid: 032782792940fef4da4ac44aab4caf95
+  - enabled: 1
+    path: Assets/Scenes/Camille.unity
+    guid: 4e5c5f4cd65ce9141960d34416fe7cac
   m_configObjects: {}
