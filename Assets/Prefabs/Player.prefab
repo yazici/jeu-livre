@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 3592545196681220769}
   - component: {fileID: 3592545196155746549}
   - component: {fileID: 3592545196155746550}
+  - component: {fileID: 7745278373110440245}
   - component: {fileID: 2067182804}
   m_Layer: 0
   m_Name: Main Camera
@@ -261,6 +262,24 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &7745278373110440245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545196681220797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e34a57c8804af47a076d1f86317d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Frequency: 15
+  m_MaximumTranslationShake: {x: 0.5, y: 0.5, z: 0.5}
+  m_MaximumAngularShake: {x: 2, y: 2, z: 0.5}
+  m_RecoverySpeed: 0.35
+  m_TraumaExponent: 2
+  m_Trauma: 1
 --- !u!114 &2067182804
 MonoBehaviour:
   m_ObjectHideFlags: 0
