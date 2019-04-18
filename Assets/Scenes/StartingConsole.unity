@@ -991,8 +991,8 @@ MonoBehaviour:
   m_ConsoleText: {fileID: 1128347930}
   m_LoadingBarSlider: {fileID: 539164161}
   m_LoadingBarAnimation: {fileID: 539164162}
-  m_IdName: a
-  m_Password: z
+  m_IdName: aurorechamrouge
+  m_Password: '%SRghatN895'
   m_SceneIsReady: 0
 --- !u!1 &1128347928
 GameObject:
@@ -1029,7 +1029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.85, y: 1}
-  m_AnchoredPosition: {x: 12, y: -0.00000012890811}
+  m_AnchoredPosition: {x: 12, y: 0.000001377092}
   m_SizeDelta: {x: 24, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128347930

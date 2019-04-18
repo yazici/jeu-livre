@@ -16,5 +16,5 @@ MonoBehaviour:
   m_RunSpeed: 11
   m_MarginObjectLabel: 10
   m_LetterDelay: 0.015
-  m_RangeArm: 2
-  m_RangeToFoot: 2
+  m_RangeArm: 3
+  m_RangeToFoot: 3
