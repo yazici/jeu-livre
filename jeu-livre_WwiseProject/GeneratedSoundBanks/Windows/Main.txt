@@ -18,9 +18,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	60223780	Digital Typing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\digital_label_D3CE5047.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		161004
 	101773938	Beep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\beep-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Beep		9722
 	126686386	Electric Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Electric Motor		1027720
-	348502007	Digital Typing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\digital_typing_0F7EFACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		142100
 	817482986	Ambience Ceiling Fan 01	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan 01		17298560
 	826280766	Rolling_Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Rolling_Motor_19F31676.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone Motor\Rolling_Motor		3344368
 	977182220	Ambience Air Conditioner 180 01	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner 180 01		17302376

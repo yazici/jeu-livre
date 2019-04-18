@@ -29,6 +29,10 @@
 				<Event Id="585720868" Name="Stop_Drone_Motor" ObjectPath="\Events\Default Work Unit\Stop_Drone_Motor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="60223780" Language="SFX">
+					<ShortName>digital_label.wav</ShortName>
+					<Path>SFX\digital_label_D3CE5047.wem</Path>
+				</File>
 				<File Id="101773938" Language="SFX">
 					<ShortName>beep-07.wav</ShortName>
 					<Path>SFX\beep-07_10C4C929.wem</Path>
@@ -36,10 +40,6 @@
 				<File Id="126686386" Language="SFX">
 					<ShortName>Electric Motor 2-SoundBible.com-352105994.wav</ShortName>
 					<Path>SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem</Path>
-				</File>
-				<File Id="348502007" Language="SFX">
-					<ShortName>digital_typing.wav</ShortName>
-					<Path>SFX\digital_typing_0F7EFACF.wem</Path>
 				</File>
 				<File Id="817482986" Language="SFX">
 					<ShortName>Ambience Ceiling Fan 01.wav</ShortName>

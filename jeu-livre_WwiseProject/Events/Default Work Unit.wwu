@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Digital Typing" ID="{6E2A4511-597E-4789-B340-6EB3CEE40069}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+									<ObjectRef Name="Digital Typing" ID="{331213E5-37E6-4158-8F8A-C5845C8906E1}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
