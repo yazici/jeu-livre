@@ -1622,5 +1622,195 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3385212490176525723, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474797211087123784, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "table de r\xE9union"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125051129458130867, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114678464614763964, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau
+      objectReference: {fileID: 0}
+    - target: {fileID: 842168364307687315, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "hotte mol\xE9culator 3000"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742152862245046372, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Paillasse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960757870357766278, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "table caf\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967879855769140293, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072978185669173354, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Fauteuil
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506717508670896136, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "\xE9tag\xE8re paillasse"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1538180333949489257, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: imprimante
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305284564240701283, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Mezanine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072451483985180545, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439183784708134932, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Tableau
+      objectReference: {fileID: 0}
+    - target: {fileID: 404770688366330772, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Mezanine
+      objectReference: {fileID: 0}
+    - target: {fileID: 747955761503758429, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489351500353990669, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190169535506352217, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: table basse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149678389558009735, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607621001456338873, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 809588103336329864, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "Mol\xE9culator3000"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3922623398749126050, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403095679961173255, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "\xE9tag\xE8re paillasse"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079522950478075119, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362326284437849569, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095884577384543211, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503705801568136792, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100025089486681712, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531361381774281749, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 295901511464405801, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: imprimante
+      objectReference: {fileID: 0}
+    - target: {fileID: 764215002491297428, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936896738166725060, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "hotte mol\xE9culator 3000"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503107865090647119, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: plafond
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424053156624856617, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Frigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160316843123707726, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: "Canap\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 299751096613999442, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: paillasse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524472867912166295, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612924272135977814, guid: 093a59a537485c342b0659c0e4fb6749,
+        type: 3}
+      propertyPath: m_Name
+      value: pillier
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093a59a537485c342b0659c0e4fb6749, type: 3}
