@@ -15,6 +15,7 @@ public class Moleculator : MonoBehaviour
 
     public Text consoleText;
     public Button validateButton;
+    public ScrollRect scrollView;
 
     private int score = 0;
     private static GameObject[] droppedItems;
@@ -162,21 +163,24 @@ public class Moleculator : MonoBehaviour
         switch (score)
         {
             case 0:
-                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide à 0%";
+                consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 0%";
                 break;
             case 1:
-                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide à 33%";
+                consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 33%";
                 break;
             case 2:
-                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide à 66%";
+                consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 66%";
                 break;
             case 3:
-                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide à 100%";
+                consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 100%";
                 break;
             default:
-                consoleText.text += "\n\nAnalyse de la solution...\n\nERREUR - Veuillez recommencer la procédure";
+                consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nERREUR - Veuillez recommencer la procédure";
                 break;
         }
+
+        Canvas.ForceUpdateCanvases();
+        scrollView.verticalNormalizedPosition = 0f;
 
     }
 
