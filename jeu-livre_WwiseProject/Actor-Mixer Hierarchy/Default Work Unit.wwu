@@ -1323,6 +1323,310 @@
 								</ActorMixer>
 							</ChildrenList>
 						</Folder>
+						<BlendContainer Name="Earthquake" ID="{80C0E86F-BA0D-4C35-B14F-0AE4A1801F78}" ShortID="224404401">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Earthquake" ID="{D6365067-71A1-4263-ADB4-60ECC97A1609}" ShortID="373048362">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Earthquake" ID="{874F7B6A-77FA-4013-9189-278418CB9DBD}" ShortID="365799027">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Earthquake.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Earthquake" ID="{874F7B6A-77FA-4013-9189-278418CB9DBD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="Temple Drone" ID="{0FFCBB20-C5E5-42A3-90C7-497D41E4E810}" ShortID="211570798">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Temple Drone Base" ID="{B6AF3A2B-922A-4A12-8F44-9F07477AC81E}" ShortID="1873740">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>70</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Synth Temple Attenuation" ID="{302391AD-7A77-4458-A9CB-290942146366}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TempleDrone" ID="{F0C58005-F566-4A60-9A68-CDB51B2E0BD5}" ShortID="42958009">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2030.075"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.36421966408756"/>
+														<Property Name="LoopEnd" Type="Real64" Value="27.8407246650311"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>TempleDrone.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="911937066"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TempleDrone" ID="{F0C58005-F566-4A60-9A68-CDB51B2E0BD5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Temple Drone Choirs" ID="{E289971A-96B3-4647-9E8C-BC1D99BFF046}" ShortID="91546084">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Synth Temple Attenuation" ID="{302391AD-7A77-4458-A9CB-290942146366}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TempleDroneChoirs" ID="{4CF46474-877B-4AF9-8DEA-A6A3A7A0F01F}" ShortID="677967395">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="3753.383"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.41498395923759"/>
+														<Property Name="LoopEnd" Type="Real64" Value="40.3910171730515"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>TempleDroneChoirs.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="384809016"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TempleDroneChoirs" ID="{4CF46474-877B-4AF9-8DEA-A6A3A7A0F01F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Temple Drone Tonal Rumble" ID="{B36A3359-5919-4569-9DEF-2767D614D828}" ShortID="984293038">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drone_SciFi_TonalRumble_01_01" ID="{834276BC-68F8-4C9D-9760-82DBE4DE4AB5}" ShortID="754596535">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1490.581"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.20870227086872"/>
+														<Property Name="LoopEnd" Type="Real64" Value="41.9592359744426"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drone_SciFi_TonalRumble_01_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="152619115"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drone_SciFi_TonalRumble_01_01" ID="{834276BC-68F8-4C9D-9760-82DBE4DE4AB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="Chimes1" ID="{7ECF575E-511C-4914-93F0-5EB66358477D}" ShortID="32568582">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Synth Temple Attenuation" ID="{302391AD-7A77-4458-A9CB-290942146366}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chimes1" ID="{C010B5E3-361E-4F60-A22A-EDFDAA5A18C5}" ShortID="342002175">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Chimes1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="566412347"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chimes1" ID="{C010B5E3-361E-4F60-A22A-EDFDAA5A18C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Chimes3" ID="{33C37219-2BE2-4C33-BBE7-5C4B23793E4A}" ShortID="444034473">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Synth Temple Attenuation" ID="{302391AD-7A77-4458-A9CB-290942146366}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chimes3" ID="{D361F094-CDD4-459C-B8D9-FC0B4197E6D3}" ShortID="297457450">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Chimes3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1002218341"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chimes3" ID="{D361F094-CDD4-459C-B8D9-FC0B4197E6D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
