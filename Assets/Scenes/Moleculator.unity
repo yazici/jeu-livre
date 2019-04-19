@@ -352,6 +352,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -373,11 +378,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -492,6 +492,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -513,11 +518,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -625,6 +625,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de1dba2079b4eb4dab3d5f5306c4759, type: 3}
+--- !u!1 &141027425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 993799499078712533, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 1851462905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &178694521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,6 +638,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -653,11 +664,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1409,6 +1415,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1430,11 +1441,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2152,7 +2158,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2168,7 +2174,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 681092652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1720464014893603664}
+        m_MethodName: Validate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &681092652
@@ -2510,6 +2527,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1851462905}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &761315259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 993799499078712533, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 1885600347670551940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &764297971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2517,6 +2540,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2538,11 +2566,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3146,6 +3169,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007905118}
   m_CullTransparentMesh: 0
+--- !u!1 &1034978458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 993799499078712533, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046005909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1046005909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3153,6 +3182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3174,11 +3208,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3387,6 +3416,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3408,11 +3442,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3520,6 +3549,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de1dba2079b4eb4dab3d5f5306c4759, type: 3}
+--- !u!1 &1216075138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1885600348545347244, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 1885600347670551940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216075142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216075138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
 --- !u!1 &1231798885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,6 +3716,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3688,11 +3742,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3853,9 +3902,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1332246127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a95e0a044abfc473394c6c61eb343e4a, type: 3}
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1720464014893603664}
+          m_MethodName: setFocus
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1332246128}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &1332246130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3982,9 +4050,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1347265873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a95e0a044abfc473394c6c61eb343e4a, type: 3}
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1720464014893603664}
+          m_MethodName: setFocus
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1347265874}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!224 &1371951324 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
@@ -3998,6 +4085,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4019,11 +4111,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4617,6 +4704,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4638,11 +4730,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4757,6 +4844,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4793,11 +4885,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5120,6 +5207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5141,11 +5233,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5260,6 +5347,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5281,11 +5373,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5609,6 +5696,12 @@ MonoBehaviour:
   dropZone0: {fileID: 1729772295}
   dropZone1: {fileID: 69680867}
   dropZone2: {fileID: 342391340}
+  goodItems:
+  - {fileID: 761315259}
+  - {fileID: 1034978458}
+  - {fileID: 141027425}
+  consoleText: {fileID: 288266208}
+  validateButton: {fileID: 681092651}
 --- !u!1001 &1885600347670551940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5616,6 +5709,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605611000}
     m_Modifications:
+    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DragSlot
+      objectReference: {fileID: 0}
     - target: {fileID: 993799499078712535, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5632,11 +5730,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 68dd5a35385b44447964ab725932b2ed,
         type: 3}
-    - target: {fileID: 5905599231112984419, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
-        type: 3}
-      propertyPath: m_Name
-      value: DragSlot
-      objectReference: {fileID: 0}
     - target: {fileID: 5964627892441572004, guid: 4de1dba2079b4eb4dab3d5f5306c4759,
         type: 3}
       propertyPath: m_LocalPosition.x
