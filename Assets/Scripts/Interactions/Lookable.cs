@@ -6,6 +6,7 @@ namespace Interactions
     public class Lookable : MonoBehaviour
     {
         [SerializeField] private string m_Label;
+        [SerializeField] private bool m_IsLabelCentered;
 
         private Camera m_MainCamera;
         private PlayerRaycast m_PlayerRaycast;
@@ -70,8 +71,17 @@ namespace Interactions
             float offset = m_LabelMargin / 100;
 
             RectTransform rectTransform = m_UIManager.m_LabelTextRectTransform;
-            rectTransform.anchorMin = new Vector2(viewPos.x, viewPos.y + offset);
-            rectTransform.anchorMax = new Vector2(viewPos.x, viewPos.y + offset);
+            if (m_IsLabelCentered)
+            {
+                rectTransform.anchorMin = new Vector2(0.5f, 0.5f + offset);
+                rectTransform.anchorMax = new Vector2(0.5f, 0.5f + offset);
+            }
+            else
+            {
+                rectTransform.anchorMin = new Vector2(viewPos.x, viewPos.y + offset);
+                rectTransform.anchorMax = new Vector2(viewPos.x, viewPos.y + offset);
+            }
+
 
             // Type text if different
             if (m_UIManager.GetCurrentLabelText() != m_Label)

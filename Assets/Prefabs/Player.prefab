@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MaximumAngularShake: {x: 2, y: 2, z: 0.5}
   m_RecoverySpeed: 0.35
   m_TraumaExponent: 2
-  m_Trauma: 1
+  m_Trauma: 0
 --- !u!114 &2067182804
 MonoBehaviour:
   m_ObjectHideFlags: 0

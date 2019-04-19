@@ -69,7 +69,7 @@ namespace MiseEnRoute
 
         private IEnumerator WaitAsyncLoad()
         {
-            m_AsyncLoad = SceneManager.LoadSceneAsync("VerticalSlice");
+            m_AsyncLoad = SceneManager.LoadSceneAsync("Mise en route");
             // Don't let the Scene activate until we allow it to
             m_AsyncLoad.allowSceneActivation = false;
 

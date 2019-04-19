@@ -11,15 +11,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}"/>
-						<Bus Name="Room Tones" ID="{B71D5E69-0183-46D8-8D2B-4F1F875020D0}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-16</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-						</Bus>
+						<Bus Name="Room Tones" ID="{B71D5E69-0183-46D8-8D2B-4F1F875020D0}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

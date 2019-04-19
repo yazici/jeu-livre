@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID PLAY_ELECTRIC_MOTOR = 2519717329U;
         static const AkUniqueID PLAY_LABO_ROOM_TONE = 2983988087U;
         static const AkUniqueID PLAY_SYNTH_BIPS_SEQUENCE = 3849115581U;
+        static const AkUniqueID PLAY_TEMPLE_CHIMES = 1371242783U;
+        static const AkUniqueID PLAY_TEMPLE_DRONE = 1164784286U;
         static const AkUniqueID PLAY_TYPING = 1659138091U;
         static const AkUniqueID STOP_DRONE_MOTOR = 585720868U;
     } // namespace EVENTS

@@ -25,10 +25,16 @@
 				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Play_Electric_Motor" MaxAttenuation="20.000000"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
 				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
+				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
+				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Play_Temple_Drone" MaxAttenuation="20.000000"/>
 				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
 				<Event Id="585720868" Name="Stop_Drone_Motor" ObjectPath="\Events\Default Work Unit\Stop_Drone_Motor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="32040915" Language="SFX">
+					<ShortName>Chimes6.wav</ShortName>
+					<Path>SFX\Chimes6_10C4C929.wem</Path>
+				</File>
 				<File Id="60223780" Language="SFX">
 					<ShortName>digital_label.wav</ShortName>
 					<Path>SFX\digital_label_D3CE5047.wem</Path>
@@ -41,6 +47,22 @@
 					<ShortName>Electric Motor 2-SoundBible.com-352105994.wav</ShortName>
 					<Path>SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem</Path>
 				</File>
+				<File Id="367767701" Language="SFX">
+					<ShortName>Chimes5.wav</ShortName>
+					<Path>SFX\Chimes5_10C4C929.wem</Path>
+				</File>
+				<File Id="566412347" Language="SFX">
+					<ShortName>Chimes1.wav</ShortName>
+					<Path>SFX\Chimes1_10C4C929.wem</Path>
+				</File>
+				<File Id="641032399" Language="SFX">
+					<ShortName>Chimes4.wav</ShortName>
+					<Path>SFX\Chimes4_10C4C929.wem</Path>
+				</File>
+				<File Id="792982152" Language="SFX">
+					<ShortName>Chimes7.wav</ShortName>
+					<Path>SFX\Chimes7_10C4C929.wem</Path>
+				</File>
 				<File Id="817482986" Language="SFX">
 					<ShortName>Ambience Ceiling Fan 01.wav</ShortName>
 					<Path>SFX\Ambience Ceiling Fan 01_90DCB559.wem</Path>
@@ -49,9 +71,21 @@
 					<ShortName>Rolling_Motor.wav</ShortName>
 					<Path>SFX\Rolling_Motor_19F31676.wem</Path>
 				</File>
+				<File Id="911937066" Language="SFX">
+					<ShortName>TempleDrone.wav</ShortName>
+					<Path>SFX\TempleDrone_69A2AAE7.wem</Path>
+				</File>
 				<File Id="977182220" Language="SFX">
 					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>
 					<Path>SFX\Ambience Air Conditioner 180 01_F0678BD7.wem</Path>
+				</File>
+				<File Id="1002218341" Language="SFX">
+					<ShortName>Chimes3.wav</ShortName>
+					<Path>SFX\Chimes3_10C4C929.wem</Path>
+				</File>
+				<File Id="1024225483" Language="SFX">
+					<ShortName>Chimes2.wav</ShortName>
+					<Path>SFX\Chimes2_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

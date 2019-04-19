@@ -18,8 +18,16 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Temple_Drone" ID="{538E842B-85E1-4454-883B-181E17DB3AA2}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Drone_Motor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Temple_Chimes" ID="{BB08D4BB-497E-4377-BF52-B0C9F18DBD20}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>

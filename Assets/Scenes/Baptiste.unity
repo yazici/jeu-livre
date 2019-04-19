@@ -5772,24 +5772,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 284075316}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &288704525 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7699492490614097642, guid: 84309b13081b1c54197e754317730274,
-    type: 3}
-  m_PrefabInstance: {fileID: 7699492489391402280}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &288704528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288704525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcb57c1300b494f4c881d88c4820bac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &290569974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9484,8 +9466,10 @@ GameObject:
   - component: {fileID: 473282384}
   - component: {fileID: 473282383}
   - component: {fileID: 473282389}
+  - component: {fileID: 473282391}
+  - component: {fileID: 473282390}
   m_Layer: 0
-  m_Name: Synth
+  m_Name: Moleculator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9640,6 +9624,74 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 587edc4c80fd0c4428aa74899846eab0,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &473282390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473282382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6623eb6b49b8f4d8d601a0a5b40781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2e628d2a1e2791f4289766715c0266d5,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &473282391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473282382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6623eb6b49b8f4d8d601a0a5b40781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 262de2312915eb04aa1443a91b9c9ec6,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -10520,6 +10572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Label: Moniteur passif
+  m_IsLabelCentered: 0
 --- !u!1001 &520868993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33042,6 +33095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Label: Moniteur actif
+  m_IsLabelCentered: 0
   m_IsInfiniteTrigger: 1
   m_NbLimit: 0
 --- !u!1001 &1722538016
@@ -42661,21 +42715,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7699492490614097643, guid: 84309b13081b1c54197e754317730274,
-        type: 3}
-      propertyPath: triggerList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7699492490614097643, guid: 84309b13081b1c54197e754317730274,
-        type: 3}
-      propertyPath: triggerList.Array.data[0]
-      value: 1151176110
-      objectReference: {fileID: 0}
-    - target: {fileID: 7699492490614097643, guid: 84309b13081b1c54197e754317730274,
-        type: 3}
-      propertyPath: triggerList.Array.data[1]
-      value: 1281810935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84309b13081b1c54197e754317730274, type: 3}

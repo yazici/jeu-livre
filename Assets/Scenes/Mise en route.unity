@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.43709105, g: 0.4848035, b: 0.5650687, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -174,13 +174,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.4860967, y: 0.508784, z: -0.4493432, w: 0.5503994}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 82.9, y: 85.5, z: 0}
 --- !u!1001 &218427056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +603,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8032084558577678428, guid: 3758f470f8c0742409fc5f1a59a54f46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3758f470f8c0742409fc5f1a59a54f46, type: 3}
 --- !u!1001 &1972832802846523086
@@ -697,6 +702,11 @@ PrefabInstance:
       propertyPath: m_InitDrone
       value: 
       objectReference: {fileID: 3592545196681220801}
+    - target: {fileID: 1787092651793707198, guid: d2be567fdba42134c964f9a8c60f1c5c,
+        type: 3}
+      propertyPath: m_RightServerName
+      value: server2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2be567fdba42134c964f9a8c60f1c5c, type: 3}
 --- !u!1001 &3592545196155746547

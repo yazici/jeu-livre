@@ -58,7 +58,7 @@
 									</ModifierList>
 								</Property>
 								<Property Name="FadeOutCurve" Type="int16" Value="8"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5">
+								<Property Name="FadeTime" Type="Real64" Value="2">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{931CC694-93A4-45AF-BA15-4E6A45FA21C3}"/>
@@ -97,6 +97,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Electric Motor" ID="{EB1246B3-2F58-4B66-896E-016688A5D8B1}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Temple_Drone" ID="{538E842B-85E1-4454-883B-181E17DB3AA2}">
+					<ChildrenList>
+						<Action Name="" ID="{49CE2AAF-004D-48F7-887D-69019FBE0E60}" ShortID="212889431">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temple Drone Base" ID="{01862B29-20AD-400A-AB5F-D897654BA4DE}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Temple_Chimes" ID="{BB08D4BB-497E-4377-BF52-B0C9F18DBD20}">
+					<ChildrenList>
+						<Action Name="" ID="{668885D3-CB3B-428F-B03A-3858EDC09E64}" ShortID="870731497">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Temple Chimes" ID="{CD52A796-380C-402E-8331-FA8AB8275298}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
