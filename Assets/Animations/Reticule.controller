@@ -108,7 +108,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ActivateReticle
-  m_Speed: 1.15
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101706841344531406}
@@ -135,7 +135,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: InactivateReticle
-  m_Speed: -1.15
+  m_Speed: -1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101706566289165688}

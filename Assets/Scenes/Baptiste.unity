@@ -9468,7 +9468,8 @@ GameObject:
   - component: {fileID: 473282389}
   - component: {fileID: 473282391}
   - component: {fileID: 473282390}
-  m_Layer: 0
+  - component: {fileID: 473282392}
+  m_Layer: 10
   m_Name: Moleculator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9561,7 +9562,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3b9badf6ebcc921488274316bb76b15c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9705,6 +9706,22 @@ MonoBehaviour:
   multiPositionTypeLabel: 0
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &473282392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473282382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be606e2bb0197c4eb16b70fd70fc8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Label: "Mol\xE9culator 3000"
+  m_IsLabelCentered: 0
+  m_IsInfiniteTrigger: 1
+  m_NbLimit: 0
 --- !u!1001 &473566010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30679,6 +30696,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global Post-process Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 4964689845290142626, guid: 10c7332fd778ee34e83ba010f955fc29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4964689845290142652, guid: 10c7332fd778ee34e83ba010f955fc29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42646,6 +42668,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592545196681220771, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067182804, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29, type: 3}

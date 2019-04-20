@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 namespace Interactions
@@ -21,6 +22,10 @@ namespace Interactions
         private bool m_IsLooking;
         private bool m_IsRewritingLabel;
 
+        private Renderer m_Renderer;
+        private Shader m_DefaultShader;
+        private Shader m_OutlineShader;
+
         protected void Start()
         {
             m_MainCamera = Camera.main;
@@ -31,6 +36,10 @@ namespace Interactions
 
             m_RangeArm = m_UIManager.m_MainSettings.m_RangeArm;
             m_RangeToFoot = m_UIManager.m_MainSettings.m_RangeToFoot;
+
+            m_Renderer = GetComponent<Renderer>();
+            m_DefaultShader = m_Renderer.material.shader;
+            m_OutlineShader = Shader.Find("Outlined/UltimateOutline");
         }
 
         protected void Update()
@@ -87,13 +96,8 @@ namespace Interactions
             if (m_UIManager.GetCurrentLabelText() != m_Label)
                 m_UIManager.ChangeLabelText(m_Label);
 
-            // foreach(MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
-            // {
-            //     if (ms != null)
-            //     {
-            //         ms.HighLightMat();
-            //     }
-            // }
+            // Change shader
+            m_Renderer.materials.ToList().ForEach(material => material.shader = m_OutlineShader);
         }
 
         public void StopLooking()
@@ -107,13 +111,8 @@ namespace Interactions
             // Reset text
             m_UIManager.ResetLabelText();
 
-            // foreach (MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
-            // {
-            //     if (ms != null)
-            //     {
-            //         ms.StandardMat();
-            //     }
-            // }
+            // Reset shader
+            m_Renderer.materials.ToList().ForEach(material => material.shader = m_DefaultShader);
         }
 
         protected void SetLabel(string label)
