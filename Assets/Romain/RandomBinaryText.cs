@@ -34,7 +34,7 @@ public class RandomBinaryText : MonoBehaviour
             //float waitTime = Random.Range(2f, 10f);
             if (binaryText.Length == 104)
             {
-                binaryText = binaryText.Substring(26);
+                binaryText = binaryText.Substring(52);
             }
 
             yield return new WaitForSeconds(.02f);

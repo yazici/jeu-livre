@@ -17,7 +17,7 @@ public class LoadInterface : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             StartCoroutine(OpenInterface("moleculatorUI"));
         }
@@ -29,6 +29,8 @@ public class LoadInterface : MonoBehaviour
 
     public IEnumerator OpenInterface(string objectToLoad)
     {
+        GameManager.m_Instance.ShowCursor();
+
         StartCoroutine(PlayLoadingAnimation());
         StartCoroutine(AlphaFadeOut(robotUICanvasGroup, 0.2f, 3f));
 
@@ -39,8 +41,6 @@ public class LoadInterface : MonoBehaviour
         yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
         yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, 3f));
 
-        GameManager.m_Instance.ShowCursor();
- 
         yield return null; 
     }
 
@@ -55,6 +55,7 @@ public class LoadInterface : MonoBehaviour
     {
         Instantiate(Resources.Load("LoadingBar"));
         loadingBar = GameObject.Find("LoadingBar(Clone)");
+        loadingBar.transform.SetParent(robotUI.transform);
         loadingBarAnim = loadingBar.GetComponentInChildren<Animation>();
         loadingBarAnim.Play();
 
