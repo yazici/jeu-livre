@@ -15,6 +15,18 @@ public class LoadInterface : MonoBehaviour
 
     private CanvasGroup canvasGroup;
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            StartCoroutine(OpenInterface("moleculatorUI"));
+        }
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            StartCoroutine(CloseInterface());
+        }
+    }
+
     public IEnumerator OpenInterface(string objectToLoad)
     {
         StartCoroutine(PlayLoadingAnimation());
@@ -25,15 +37,17 @@ public class LoadInterface : MonoBehaviour
         Destroy(loadingBar);
 
         yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
-        StartCoroutine(AlphaFadeIn(canvasGroup, 1f, 3f));
- 
+        yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, 3f));
 
+        GameManager.m_Instance.ShowCursor();
+ 
         yield return null; 
     }
 
     public IEnumerator CloseInterface()
     {
         yield return StartCoroutine(AlphaFadeOut(canvasGroup, 0f, 3f));
+        GameManager.m_Instance.HideCursor();
         StartCoroutine(AlphaFadeIn(robotUICanvasGroup, 1f, 3f));
     }
 
