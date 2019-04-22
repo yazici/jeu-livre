@@ -36,7 +36,7 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        if (Cursor.lockState == CursorLockMode.None) return;
+        if (Cursor.lockState == CursorLockMode.None || GameManager.m_Instance.m_CinematicMode) return;
 
         if (axes == RotationAxes.MouseXAndY)
         {

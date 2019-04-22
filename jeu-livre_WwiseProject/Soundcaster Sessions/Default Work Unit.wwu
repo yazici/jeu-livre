@@ -33,6 +33,10 @@
 							<ObjectRef Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_InitDrone" ID="{419CE858-A715-45AF-8D1C-B454C17AB303}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

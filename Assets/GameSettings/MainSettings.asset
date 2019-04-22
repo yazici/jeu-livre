@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e72fd66ba2153448274c469df1ce0d, type: 3}
   m_Name: MainSettings
   m_EditorClassIdentifier: 
+  m_MainScene: Scenes/ProtoTests/MiseEnRoute
   m_WalkSpeed: 6
   m_RunSpeed: 11
   m_MarginObjectLabel: 10
   m_LetterDelay: 0.015
   m_RangeArm: 3
   m_RangeToFoot: 3
+  m_IdName: aurorechamrouge
+  m_Password: '%SRghatN895'

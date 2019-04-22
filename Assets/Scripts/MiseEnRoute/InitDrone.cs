@@ -23,6 +23,8 @@ namespace MiseEnRoute
 
         public void Init()
         {
+            GameManager.m_Instance.m_CinematicMode = true;
+            AudioManager.m_Instance.PlaySFX("InitDrone");
             m_Animation.Play();
             m_ColorGradingLayer.saturation.value = -100f;
             m_ColorGradingLayer.contrast.value = -100f;
@@ -31,7 +33,7 @@ namespace MiseEnRoute
 
         private IEnumerator PlayColorAnim()
         {
-            float t = 0f;
+            var t = 0f;
             while (t <= 1)
             {
                 float v = Mathf.Lerp(-100, 0, t);
@@ -44,6 +46,7 @@ namespace MiseEnRoute
             m_ColorGradingLayer.saturation.value = 0;
             m_ColorGradingLayer.contrast.value = 0;
             m_PixelBoy.enabled = false;
+            GameManager.m_Instance.m_CinematicMode = false;
         }
     }
 }

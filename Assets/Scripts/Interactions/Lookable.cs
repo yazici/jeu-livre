@@ -37,9 +37,10 @@ namespace Interactions
             m_RangeArm = m_UIManager.m_MainSettings.m_RangeArm;
             m_RangeToFoot = m_UIManager.m_MainSettings.m_RangeToFoot;
 
-            m_Renderer = GetComponent<Renderer>();
-            m_DefaultShader = m_Renderer.material.shader;
-            m_OutlineShader = Shader.Find("Outlined/UltimateOutline");
+            // TODO: debug this with multiple material objects
+            // m_Renderer = GetComponent<Renderer>();
+            // m_DefaultShader = m_Renderer.material.shader;
+            // m_OutlineShader = Shader.Find("Outlined/UltimateOutline");
         }
 
         protected void Update()
@@ -96,8 +97,8 @@ namespace Interactions
             if (m_UIManager.GetCurrentLabelText() != m_Label)
                 m_UIManager.ChangeLabelText(m_Label);
 
-            // Change shader
-            m_Renderer.materials.ToList().ForEach(material => material.shader = m_OutlineShader);
+            // Change shader (TODO: debug this with multiple material objects)
+            // m_Renderer.materials.ToList().ForEach(material => material.shader = m_OutlineShader);
         }
 
         public void StopLooking()
@@ -111,8 +112,8 @@ namespace Interactions
             // Reset text
             m_UIManager.ResetLabelText();
 
-            // Reset shader
-            m_Renderer.materials.ToList().ForEach(material => material.shader = m_DefaultShader);
+            // Reset shader (TODO: debug this with multiple material objects)
+            // m_Renderer.materials.ToList().ForEach(material => material.shader = m_DefaultShader);
         }
 
         protected void SetLabel(string label)

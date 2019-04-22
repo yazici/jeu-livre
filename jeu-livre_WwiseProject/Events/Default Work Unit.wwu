@@ -130,6 +130,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_InitDrone" ID="{419CE858-A715-45AF-8D1C-B454C17AB303}">
+					<ChildrenList>
+						<Action Name="" ID="{A72F0ED7-E135-42AA-861C-E7FC5A747BAB}" ShortID="468061172">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InitDrone" ID="{D80ABD88-6A8C-4362-8E8E-0433BF731F97}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

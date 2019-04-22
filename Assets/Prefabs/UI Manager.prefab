@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 1201313547}
   m_Layer: 0
   m_Name: UI Manager
-  m_TagString: Untagged
+  m_TagString: UIManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201313544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 608.32074, y: 774.27277, z: -3.804336}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1784503084}
@@ -594,7 +594,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   y: {fileID: 1433394719}
   x: {fileID: 714303986}
-  player: {fileID: 0}
 --- !u!114 &2091820089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +695,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3623727903343213285, guid: 70c0aedf668862a4c9c2d004e9258a28,
+        type: 3}
+      propertyPath: m_textInfo.textComponent
+      value: 
+      objectReference: {fileID: 3623727902969269843}
     - target: {fileID: 3212491609462375000, guid: 70c0aedf668862a4c9c2d004e9258a28,
         type: 3}
       propertyPath: m_LabelTextRectTransform
@@ -711,11 +715,11 @@ PrefabInstance:
       propertyPath: m_ReticuleAnimator
       value: 
       objectReference: {fileID: 4956901239867245285}
-    - target: {fileID: 3623727903343213285, guid: 70c0aedf668862a4c9c2d004e9258a28,
+    - target: {fileID: 7023531808272824770, guid: 70c0aedf668862a4c9c2d004e9258a28,
         type: 3}
-      propertyPath: m_textInfo.textComponent
-      value: 
-      objectReference: {fileID: 3623727902969269843}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c0aedf668862a4c9c2d004e9258a28, type: 3}
 --- !u!1 &2158267533461734943 stripped

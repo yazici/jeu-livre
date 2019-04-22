@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,14 +8,14 @@ namespace MiseEnRoute
 {
     public class StartingConsole : MonoBehaviour
     {
-        public Text m_ConsoleText;
-        public Slider m_LoadingBarSlider;
-        public Animation m_LoadingBarAnimation;
+        [SerializeField] private TMP_Text m_ConsoleText;
+        [SerializeField] private Slider m_LoadingBarSlider;
+        [SerializeField] private Animation m_LoadingBarAnimation;
+        [SerializeField] private TMP_InputField m_InputField;
+        [SerializeField] private ScrollRect m_ScrollRect;
 
-        private InputField m_InputField;
-
-        [SerializeField] private string m_IdName = "aurorechamrouge";
-        [SerializeField] private string m_Password = "%SRghatN895";
+        private string m_IdName;
+        private string m_Password;
 
         private bool m_IsUserValide;
         private AsyncOperation m_AsyncLoad;
@@ -22,10 +23,12 @@ namespace MiseEnRoute
 
         private void Start()
         {
-            m_InputField = GetComponent<InputField>();
             m_InputField.Select();
             m_InputField.ActivateInputField();
             m_LoadingBarSlider.gameObject.SetActive(false);
+
+            m_IdName = GameManager.m_Instance.m_MainSettings.m_IdName;
+            m_Password = GameManager.m_Instance.m_MainSettings.m_Password;
         }
 
         public void DisplayConsoleText()
@@ -43,7 +46,7 @@ namespace MiseEnRoute
                 }
                 else
                 {
-                    m_ConsoleText.text = string.Format("{0} {1}\n\nUtilisateur non reconnu.\n\nIdentifiant : ",
+                    m_ConsoleText.text = string.Format("{0} {1}\n\nUtilisateur non reconnu.\n\nIdentifiant :",
                         m_ConsoleText.text, m_InputField.text);
                     CleanInputField();
                 }
@@ -65,11 +68,13 @@ namespace MiseEnRoute
                     CleanInputField();
                 }
             }
+            
+            m_ScrollRect.verticalNormalizedPosition = 0f;
         }
 
         private IEnumerator WaitAsyncLoad()
         {
-            m_AsyncLoad = SceneManager.LoadSceneAsync("Mise en route");
+            m_AsyncLoad = SceneManager.LoadSceneAsync(GameManager.m_Instance.m_MainSettings.m_MainScene);
             // Don't let the Scene activate until we allow it to
             m_AsyncLoad.allowSceneActivation = false;
 

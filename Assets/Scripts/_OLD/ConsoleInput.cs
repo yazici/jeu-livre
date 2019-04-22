@@ -22,7 +22,7 @@ public class ConsoleInput : MonoBehaviour
     private void Update()
     {
         // Open Console
-        if (Input.GetKeyDown(KeyCode.C) && !GameManager.m_Instance.m_IsConsoleTyping && !m_Win)
+        //if (Input.GetKeyDown(KeyCode.C) && !GameManager.m_Instance.m_IsConsoleTyping && !m_Win)
         {
             InitConsole();
         }
@@ -30,7 +30,7 @@ public class ConsoleInput : MonoBehaviour
 
     private void InitConsole()
     {
-        GameManager.m_Instance.m_IsConsoleTyping = true;
+        //GameManager.m_Instance.m_IsConsoleTyping = true;
         m_TmpInputField.text = "";
         m_TmpInputField.ActivateInputField();
         m_TmpInputField.Select();
@@ -100,7 +100,7 @@ public class ConsoleInput : MonoBehaviour
 
     public void OnDeselect()
     {
-        GameManager.m_Instance.m_IsConsoleTyping = false;
+        //GameManager.m_Instance.m_IsConsoleTyping = false;
         m_TmpPlaceholder.text = "Presser C pour écrire dans la console";
     }
 }

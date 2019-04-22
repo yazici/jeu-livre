@@ -1,4 +1,5 @@
 ﻿using Interactions;
+using UnityEngine.SceneManagement;
 
 namespace MiseEnRoute
 {
@@ -15,7 +16,7 @@ namespace MiseEnRoute
             if (MiseEnRouteManager.m_Instance.m_PuzzleStep == 2)
             {
                 MiseEnRouteManager.m_Instance.m_PuzzleStep = 3;
-                print("WIN");
+                SceneManager.LoadScene("Scenes/ProtoTests/Molecules");
             }
         }
     }

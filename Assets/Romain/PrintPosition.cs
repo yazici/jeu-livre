@@ -11,16 +11,15 @@ public class PrintPosition : MonoBehaviour
     private float yRotation; 
     private float xRotation;
 
-    public GameObject player;
+    private GameObject player;
     private Camera cam; 
 
-    // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main; 
+        player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
         yRotation = Mathf.Round(player.transform.rotation.y * 180);

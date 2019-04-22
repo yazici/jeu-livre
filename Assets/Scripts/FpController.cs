@@ -101,6 +101,8 @@ public class FpController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.m_Instance.m_CinematicMode) return;
+        
         // If the run button is set to toggle, then switch between walk/run speed. (We use Update for this...
         // FixedUpdate is a poor place to use GetButtonDown, since it doesn't necessarily run every frame and can miss the event)
         if (m_ToggleRun && m_Grounded && Input.GetButtonDown("Run"))
@@ -137,8 +139,7 @@ public class FpController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Prevent player movement if is typing
-        if (GameManager.m_Instance.m_IsConsoleTyping) return;
+        if (GameManager.m_Instance.m_CinematicMode) return;
 
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");

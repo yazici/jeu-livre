@@ -5,15 +5,29 @@ namespace MiseEnRoute
 {
     public class MiseEnRouteManager : MonoBehaviour
     {
-        /**
-         * Puzzle step representing player progression:
-         * 0 = Re-plug the server
-         * 1 = Push the light switch button
-         * 2 = Interact with the keyboard
-         * 3 = Win
-         */
-        //[HideInInspector]
-        public int m_PuzzleStep;
+        /// <summary>
+        /// Puzzle step representing player progression:
+        /// <list type="bullet">
+        /// <item>
+        /// <term>0 :</term>
+        /// <description>Re-plug the server</description>
+        /// </item>
+        /// <item>
+        /// <term>1 :</term>
+        /// <description>Push the light switch button</description>
+        /// </item>
+        /// <item>
+        /// <term>2 :</term>
+        /// <description>Interact with the keyboard</description>
+        /// </item>
+        /// <item>
+        /// <term>3 :</term>
+        /// <description>Win</description>
+        /// </item>
+        /// </list>
+        /// </summary>
+        [HideInInspector] public int m_PuzzleStep;
+
         [HideInInspector] public string m_ServerPlugged;
 
         [SerializeField] public Server[] m_Servers;
