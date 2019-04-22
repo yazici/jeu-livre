@@ -594,21 +594,79 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.349
       objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7038301
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.067994595
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06799459
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70383
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 772728620511591803, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.036
+      objectReference: {fileID: 0}
     - target: {fileID: 772728621874382299, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.107
       objectReference: {fileID: 0}
+    - target: {fileID: 772728620317569511, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ef07af8bba7592488536d96046c4238,
+        type: 3}
+    - target: {fileID: 772728620511591802, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 080a75b1ac5d6334d80d4873cbf895ab,
+        type: 3}
     - target: {fileID: 772728620554502552, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 772728620599975542, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 772728620709534379, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd3428f550c321444bd9834b750da1fd,
+        type: 3}
     - target: {fileID: 772728620758072680, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_Layer
@@ -617,12 +675,18 @@ PrefabInstance:
     - target: {fileID: 772728620815824018, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 772728621058655301, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96d9aef6d3b701e42acbb78e88ea277e,
+        type: 3}
     - target: {fileID: 772728621448900911, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 127008034579717908, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
@@ -674,6 +738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moleculator
       objectReference: {fileID: 0}
+    - target: {fileID: 772728620680145801, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Name
+      value: Vitamine B2 part 2
+      objectReference: {fileID: 0}
     - target: {fileID: 772728621874382296, guid: 9939eddfd930d024ca1415cace7b1e84,
         type: 3}
       propertyPath: m_Size.x
@@ -719,6 +788,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 772728620680145807, guid: 9939eddfd930d024ca1415cace7b1e84,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3546d3d0289322444bc1505a9e8e1bce,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 772728620758072687, guid: 9939eddfd930d024ca1415cace7b1e84, type: 3}
     - {fileID: 772728621874382297, guid: 9939eddfd930d024ca1415cace7b1e84, type: 3}
