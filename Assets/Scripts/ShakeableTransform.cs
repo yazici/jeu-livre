@@ -2,7 +2,7 @@
 
 public class ShakeableTransform : MonoBehaviour
 {
-    // Add as a new field.
+    // TODO: fix it so it takes in account the current camera transform, so it resets it correctly at the end
     [SerializeField] private float m_Frequency = 25;
     [SerializeField] private Vector3 m_MaximumTranslationShake = Vector3.one * 0.5f;
     [SerializeField] private Vector3 m_MaximumAngularShake = Vector3.one * 2;

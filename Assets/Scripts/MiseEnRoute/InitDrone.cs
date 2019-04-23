@@ -14,6 +14,8 @@ namespace MiseEnRoute
 
         [SerializeField] private float m_AnimSpeed = 1;
 
+        [SerializeField] private bool m_SkipAnim;
+
         private void Awake()
         {
             var volume = gameObject.GetComponent<PostProcessVolume>();
@@ -23,6 +25,8 @@ namespace MiseEnRoute
 
         public void Init()
         {
+            if (m_SkipAnim) return;
+            m_PixelBoy.enabled = true;
             GameManager.m_Instance.m_CinematicMode = true;
             AudioManager.m_Instance.PlaySFX("InitDrone");
             m_Animation.Play();

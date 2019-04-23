@@ -15,13 +15,18 @@ namespace AK
     {
         static const AkUniqueID PLAY_DRONE_MOTOR = 923015438U;
         static const AkUniqueID PLAY_ELECTRIC_MOTOR = 2519717329U;
+        static const AkUniqueID PLAY_ERRORBEEP = 1304387364U;
         static const AkUniqueID PLAY_INITDRONE = 3653257362U;
         static const AkUniqueID PLAY_LABO_ROOM_TONE = 2983988087U;
+        static const AkUniqueID PLAY_LEVER = 3196500978U;
+        static const AkUniqueID PLAY_SERVERMOTOR = 2296544690U;
         static const AkUniqueID PLAY_SYNTH_BIPS_SEQUENCE = 3849115581U;
         static const AkUniqueID PLAY_TEMPLE_CHIMES = 1371242783U;
         static const AkUniqueID PLAY_TEMPLE_DRONE = 1164784286U;
         static const AkUniqueID PLAY_TYPING = 1659138091U;
+        static const AkUniqueID PLAY_VALIDATIONBEEP = 136370607U;
         static const AkUniqueID STOP_DRONE_MOTOR = 585720868U;
+        static const AkUniqueID STOP_SERVERMOTOR = 1529120824U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

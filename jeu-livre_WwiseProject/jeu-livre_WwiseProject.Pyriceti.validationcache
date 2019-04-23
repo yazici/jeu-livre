@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555757412" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556031076" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1555677267" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
@@ -8,11 +8,11 @@
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1555063208" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Effects\Factory Effects.wwu" DateLow="1555677267" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555677267" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Effects\Factory Effects.wwu" DateLow="1556024995" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Events\Default Work Unit.wwu" DateLow="1556031076" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1555757388" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\jeu-livre_WwiseProject.Pyriceti.wsettings" DateLow="1555590882" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\jeu-livre_WwiseProject.Pyriceti.wsettings" DateLow="1555758275" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\jeu-livre_WwiseProject.wproj" DateLow="1555063209" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555677267" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1555063208" DateHigh="0"/>
@@ -21,7 +21,7 @@
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1555063209" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Queries\Factory Queries.wwu" DateLow="1555063209" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1555063209" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555677270" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1556027309" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\States\Default Work Unit.wwu" DateLow="1555063209" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1555063209" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1555063209" DateHigh="0"/>

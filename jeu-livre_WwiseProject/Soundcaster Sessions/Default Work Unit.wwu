@@ -14,12 +14,20 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_ServerMotor" ID="{366DEF7C-7CC8-4D32-AD51-7A9912576C23}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Typing" ID="{C9B99EAA-E834-4270-BC05-B1EBD897617D}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Temple_Drone" ID="{538E842B-85E1-4454-883B-181E17DB3AA2}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_ServerMotor" ID="{53A823F9-9EE6-442E-8131-ABAE47D5B982}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Drone_Motor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
@@ -30,12 +38,20 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Lever" ID="{8279F23C-8C8A-46C2-A2F8-49EC5A953999}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_InitDrone" ID="{419CE858-A715-45AF-8D1C-B454C17AB303}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ValidationBeep" ID="{CD084AE0-0C1A-404C-88FC-4AB9D4722D9C}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

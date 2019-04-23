@@ -13,10 +13,16 @@ namespace MiseEnRoute
 
         protected override void AfterTrigger()
         {
+            // Win
             if (MiseEnRouteManager.m_Instance.m_PuzzleStep == 2)
             {
                 MiseEnRouteManager.m_Instance.m_PuzzleStep = 3;
+                AudioManager.m_Instance.PlaySFX("ValidationBeep");
                 SceneManager.LoadScene("Scenes/ProtoTests/Molecules");
+            }
+            else
+            {
+                AudioManager.m_Instance.PlaySFX("ErrorBeep");
             }
         }
     }

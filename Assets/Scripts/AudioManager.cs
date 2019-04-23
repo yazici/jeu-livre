@@ -17,14 +17,14 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void PlaySFX(string sfxName)
+    public void PlaySFX(string sfxName, GameObject gameObj = null)
     {
-        AkSoundEngine.PostEvent("Play_" + sfxName, gameObject);
+        AkSoundEngine.PostEvent("Play_" + sfxName, gameObj == null ? gameObject : gameObj);
     }
 
-    public void StopSFX(string sfxName)
+    public void StopSFX(string sfxName, GameObject gameObj = null)
     {
-        AkSoundEngine.PostEvent("Stop_" + sfxName, gameObject);
+        AkSoundEngine.PostEvent("Stop_" + sfxName, gameObj == null ? gameObject : gameObj);
     }
 
     public void SetRTPC(string rtpcName, float value)

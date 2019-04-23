@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 0c434ac578f5df341bf178131720e531
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Attache
+    100002: Attache001
+    100004: Attache002
+    100006: Attache003
+    100008: Container
+    100010: //RootNode
+    100012: Container 1
+    100014: Cylinder001
+    100016: Cylinder002
+    100018: Cylinder003
+    100020: Cylinder004
+    100022: NoVerrou
+    100024: NoVerrou 1
+    100026: Porte
+    100028: Porte 1
+    100030: Porte001
+    100032: Porte002
+    100034: Rampe
+    100036: Verrou
+    100038: Verrou001
+    100040: Verrou002
+    100042: Verrou003
+    100044: Verrou004
+    100046: Verrou005
+    100048: Verrou006
+    100050: Verrou007
+    400000: Attache
+    400002: Attache001
+    400004: Attache002
+    400006: Attache003
+    400008: Container
+    400010: //RootNode
+    400012: Container 1
+    400014: Cylinder001
+    400016: Cylinder002
+    400018: Cylinder003
+    400020: Cylinder004
+    400022: NoVerrou
+    400024: NoVerrou 1
+    400026: Porte
+    400028: Porte 1
+    400030: Porte001
+    400032: Porte002
+    400034: Rampe
+    400036: Verrou
+    400038: Verrou001
+    400040: Verrou002
+    400042: Verrou003
+    400044: Verrou004
+    400046: Verrou005
+    400048: Verrou006
+    400050: Verrou007
+    2100000: No Name
+    2300000: Attache
+    2300002: Attache001
+    2300004: Attache002
+    2300006: Attache003
+    2300008: Container 1
+    2300010: Cylinder001
+    2300012: Cylinder002
+    2300014: Cylinder003
+    2300016: Cylinder004
+    2300018: Porte 1
+    2300020: Porte001
+    2300022: Rampe
+    2300024: Verrou
+    2300026: Verrou001
+    2300028: Verrou002
+    2300030: Verrou003
+    2300032: Verrou004
+    2300034: Verrou005
+    2300036: Verrou006
+    2300038: Verrou007
+    3300000: Attache
+    3300002: Attache001
+    3300004: Attache002
+    3300006: Attache003
+    3300008: Container 1
+    3300010: Cylinder001
+    3300012: Cylinder002
+    3300014: Cylinder003
+    3300016: Cylinder004
+    3300018: Porte 1
+    3300020: Porte001
+    3300022: Rampe
+    3300024: Verrou
+    3300026: Verrou001
+    3300028: Verrou002
+    3300030: Verrou003
+    3300032: Verrou004
+    3300034: Verrou005
+    3300036: Verrou006
+    3300038: Verrou007
+    4300000: Rampe
+    4300002: Container
+    4300004: Verrou004
+    4300006: Verrou005
+    4300008: Verrou006
+    4300010: Verrou007
+    4300012: Porte001
+    4300014: Attache002
+    4300016: Attache003
+    4300018: Cylinder003
+    4300020: Cylinder004
+    4300022: Verrou
+    4300024: Verrou001
+    4300026: Verrou002
+    4300028: Verrou003
+    4300030: Porte
+    4300032: Cylinder002
+    4300034: Cylinder001
+    4300036: Attache001
+    4300038: Attache
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,6 +17,8 @@ public class LoadInterface : MonoBehaviour
 
     [SerializeField] private float fadeTime = 1.5f;
 
+    private bool visibleInterface;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -25,7 +27,8 @@ public class LoadInterface : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Escape))
         {
-            StartCoroutine(CloseInterface());
+            if (visibleInterface)
+                StartCoroutine(CloseInterface());
         }
     }
 
@@ -43,11 +46,12 @@ public class LoadInterface : MonoBehaviour
         yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
         yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, fadeTime));
 
-        yield return null; 
+        visibleInterface = true;
     }
 
     public IEnumerator CloseInterface()
     {
+        visibleInterface = false;
         yield return StartCoroutine(AlphaFadeOut(canvasGroup, 0f, fadeTime));
         GameManager.HideCursor();
         StartCoroutine(AlphaFadeIn(robotUICanvasGroup, 1f, fadeTime));

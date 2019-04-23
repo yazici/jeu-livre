@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -23,13 +23,18 @@
 			<IncludedEvents>
 				<Event Id="923015438" Name="Play_Drone_Motor" ObjectPath="\Events\Default Work Unit\Play_Drone_Motor"/>
 				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Play_Electric_Motor" MaxAttenuation="20.000000"/>
+				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\Play_ErrorBeep"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
+				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\Play_Lever"/>
+				<Event Id="2296544690" Name="Play_ServerMotor" ObjectPath="\Events\Default Work Unit\Play_ServerMotor" MaxAttenuation="20.000000"/>
 				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
 				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
 				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Play_Temple_Drone" MaxAttenuation="20.000000"/>
 				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
+				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\Play_ValidationBeep"/>
 				<Event Id="585720868" Name="Stop_Drone_Motor" ObjectPath="\Events\Default Work Unit\Stop_Drone_Motor" MaxAttenuation="0.000000"/>
+				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\Stop_ServerMotor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="32040915" Language="SFX">
@@ -68,6 +73,10 @@
 					<ShortName>TempleDroneChoirs.wav</ShortName>
 					<Path>SFX\TempleDroneChoirs_BDB0F7CA.wem</Path>
 				</File>
+				<File Id="468596089" Language="SFX">
+					<ShortName>ValidationBeep.wav</ShortName>
+					<Path>SFX\ValidationBeep_B250FB99.wem</Path>
+				</File>
 				<File Id="566412347" Language="SFX">
 					<ShortName>Chimes1.wav</ShortName>
 					<Path>SFX\Chimes1_21C98E47.wem</Path>
@@ -75,6 +84,10 @@
 				<File Id="641032399" Language="SFX">
 					<ShortName>Chimes4.wav</ShortName>
 					<Path>SFX\Chimes4_21C98E47.wem</Path>
+				</File>
+				<File Id="653038980" Language="SFX">
+					<ShortName>Lever.wav</ShortName>
+					<Path>SFX\Lever_FE030C28.wem</Path>
 				</File>
 				<File Id="792982152" Language="SFX">
 					<ShortName>Chimes7.wav</ShortName>
@@ -91,6 +104,10 @@
 				<File Id="911937066" Language="SFX">
 					<ShortName>TempleDrone.wav</ShortName>
 					<Path>SFX\TempleDrone_69A2AAE7.wem</Path>
+				</File>
+				<File Id="929521614" Language="SFX">
+					<ShortName>ErrorBeep.wav</ShortName>
+					<Path>SFX\ErrorBeep_DC765304.wem</Path>
 				</File>
 				<File Id="977182220" Language="SFX">
 					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>

@@ -58,7 +58,7 @@
 									</ModifierList>
 								</Property>
 								<Property Name="FadeOutCurve" Type="int16" Value="8"/>
-								<Property Name="FadeTime" Type="Real64" Value="2">
+								<Property Name="FadeTime" Type="Real64" Value="0.5">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{931CC694-93A4-45AF-BA15-4E6A45FA21C3}"/>
@@ -139,6 +139,81 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="InitDrone" ID="{D80ABD88-6A8C-4362-8E8E-0433BF731F97}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ServerMotor" ID="{366DEF7C-7CC8-4D32-AD51-7A9912576C23}">
+					<ChildrenList>
+						<Action Name="" ID="{866D2188-BB66-468A-89AB-B22F8FB7F419}" ShortID="841324">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ServerMotor" ID="{DB6EAD57-4717-4BB2-B4A2-2AA5E274AC9A}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_ServerMotor" ID="{53A823F9-9EE6-442E-8131-ABAE47D5B982}">
+					<ChildrenList>
+						<Action Name="" ID="{CBF3BAD1-F299-4715-AC57-8AB512DFDC7A}" ShortID="288590494">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ServerMotor" ID="{DB6EAD57-4717-4BB2-B4A2-2AA5E274AC9A}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Lever" ID="{8279F23C-8C8A-46C2-A2F8-49EC5A953999}">
+					<ChildrenList>
+						<Action Name="" ID="{F419EEA8-BFF5-4737-8B2C-AE89B076A6FE}" ShortID="793255378">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lever" ID="{C1200820-C42E-4127-BF71-E0BFE8C82E76}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ValidationBeep" ID="{CD084AE0-0C1A-404C-88FC-4AB9D4722D9C}">
+					<ChildrenList>
+						<Action Name="" ID="{BE0BCD2B-F972-40F3-92B7-9DBFC6BEDC38}" ShortID="74134904">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ValidationBeep" ID="{4E613E0C-9143-4527-9E3D-73466BBFE102}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ErrorBeep" ID="{4A53CF1E-543D-44A9-80F4-ECF7277DF3B2}">
+					<ChildrenList>
+						<Action Name="" ID="{C214A7B6-0434-4C03-897D-1D6AB4A6618F}" ShortID="496615775">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ErrorBeep" ID="{523DD48C-0359-432B-91A4-2FBD2C80DECA}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

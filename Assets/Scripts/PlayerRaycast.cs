@@ -30,11 +30,14 @@ public class PlayerRaycast : MonoBehaviour
 
             if (lookable && lookable.enabled)
             {
-                lookable.Look();
-                m_LastLookable = lookable;
+                if (!interactive || interactive.m_CanInteractWith)
+                {
+                    lookable.Look();
+                    m_LastLookable = lookable;
+                }
             }
 
-            if (interactive && Input.GetButtonDown("Fire1") && interactive.enabled)
+            if (interactive && Input.GetButtonDown("Fire1") && interactive.enabled && interactive.m_CanInteractWith)
                 interactive.Interact();
         }
         else if (m_LastLookable)
