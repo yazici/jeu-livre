@@ -163,18 +163,23 @@ namespace Moleculator
             {
                 case 0:
                     consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 0%";
+                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
                     break;
                 case 1:
                     consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 33%";
+                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
                     break;
                 case 2:
                     consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 66%";
+                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
                     break;
                 case 3:
                     consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 100%";
+                    AudioManager.m_Instance.PlaySFX("ValidationBeep");
                     break;
                 default:
                     consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nERREUR - Veuillez recommencer la procédure";
+                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
                     break;
             }
 

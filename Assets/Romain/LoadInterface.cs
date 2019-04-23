@@ -23,9 +23,9 @@ public class LoadInterface : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            StartCoroutine(OpenInterface("moleculatorUI"));
+            // StartCoroutine(OpenInterface("moleculatorUI"));
         }
-        if(Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Escape))
         {
             if (visibleInterface)
                 StartCoroutine(CloseInterface());
