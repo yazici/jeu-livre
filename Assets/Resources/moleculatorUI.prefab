@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 3886858612454024609}
   - component: {fileID: 3886858612454024608}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "Adr\xE9naline"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ph\xE9nylpropanolamine"
+  m_Text: Nigerose
 --- !u!1 &3886858612486901562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 3886858612665585357}
   - component: {fileID: 3886858612665585356}
   m_Layer: 5
-  m_Name: DragText
+  m_Name: Vitamine B2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1577,7 +1577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tr\xE9halulose"
+  m_Text: Fucosyllactose
 --- !u!1 &3886858612729156060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,7 +1960,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vitamine B2
+  m_Text: Vitamine B3
 --- !u!1 &3886858612771639107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +2381,7 @@ GameObject:
   - component: {fileID: 3886858612936249496}
   - component: {fileID: 3886858612936249499}
   m_Layer: 5
-  m_Name: DragText
+  m_Name: Nigerose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2592,9 +2592,9 @@ MonoBehaviour:
   dropZone1: {fileID: 3886858612697684035}
   dropZone2: {fileID: 3886858613735391629}
   goodItems:
-  - {fileID: 3886858613308021979}
-  - {fileID: 3886858613291006865}
-  - {fileID: 3886858612455191965}
+  - {fileID: 3886858613177168994}
+  - {fileID: 3886858612665585358}
+  - {fileID: 3886858614082527502}
   consoleText: {fileID: 3886858613058919148}
   validateButton: {fileID: 3886858613281869690}
   scrollView: {fileID: 3886858613567137192}
@@ -2876,7 +2876,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886858613128803274}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3087,7 +3087,7 @@ GameObject:
   - component: {fileID: 3886858613177168993}
   - component: {fileID: 3886858613177168992}
   m_Layer: 5
-  m_Name: DragText
+  m_Name: "Adr\xE9naline"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3554,7 +3554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vitamine B3
+  m_Text: Vitamine B2
 --- !u!1 &3886858613281869693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,7 +4347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nigerose
+  m_Text: "Ph\xE9nylpropanolamine"
 --- !u!114 &3886858613319272711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4817,7 +4817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fucosyllactose
+  m_Text: "Tr\xE9halulose"
 --- !u!1 &3886858613554707710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,7 +6376,7 @@ GameObject:
   - component: {fileID: 3886858614082527501}
   - component: {fileID: 3886858614082527500}
   m_Layer: 5
-  m_Name: DragText
+  m_Name: Fucosyllactose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6884,7 +6884,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3886858612678990748}
   m_HandleRect: {fileID: 3886858612678990751}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
