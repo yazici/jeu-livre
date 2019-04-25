@@ -2876,7 +2876,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886858613128803274}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -5969,7 +5969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3886858613924324269}
   m_Layer: 0
-  m_Name: MoleculatorUI
+  m_Name: moleculatorUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6885,7 +6885,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3886858612678990751}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
