@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &100538378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,16 +547,11 @@ PrefabInstance:
     - target: {fileID: 3623727902969269843, guid: 482f87972cce241d1967a661cab252f7,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3623727902969269843, guid: 482f87972cce241d1967a661cab252f7,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092053458062850550, guid: 482f87972cce241d1967a661cab252f7,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -909,12 +904,12 @@ PrefabInstance:
     - target: {fileID: 3592545196681220801, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
         type: 3}
       propertyPath: m_SkipAnim
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3592545196681220799, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 870466218, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29, type: 3}
       propertyPath: m_Enabled

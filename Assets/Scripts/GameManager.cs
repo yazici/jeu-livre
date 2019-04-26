@@ -31,11 +31,13 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        UIManager.m_Instance.m_Reticule.SetActive(false);
     }
 
     public static void HideCursor()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        UIManager.m_Instance.m_Reticule.SetActive(true);
     }
 }

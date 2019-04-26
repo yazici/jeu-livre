@@ -56,6 +56,13 @@ namespace Interactions
                 StopLooking();
                 return;
             }
+            
+            // If in interface
+            if (Cursor.lockState == CursorLockMode.None)
+            {
+                StopLooking();
+                return;
+            }
 
             // Otherwise try to raycast
             m_PlayerRaycast.AttemptRaycast(this, maxDistance);

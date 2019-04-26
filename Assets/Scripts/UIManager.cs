@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
 
     private static readonly int Active = Animator.StringToHash("active");
 
+    public GameObject m_Reticule;
+
     // Singleton initialization
     private void Awake()
     {

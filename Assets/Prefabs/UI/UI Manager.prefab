@@ -302,6 +302,7 @@ MonoBehaviour:
   m_LabelTextRectTransform: {fileID: 7854225022135243011}
   m_LabelText: {fileID: 3623727902969269843}
   m_ReticuleAnimator: {fileID: 4956901239867245285}
+  m_Reticule: {fileID: 4072217480636617910}
 --- !u!114 &5436352974754773619
 MonoBehaviour:
   m_ObjectHideFlags: 0
