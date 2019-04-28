@@ -10,8 +10,6 @@ namespace Moleculator
         public RectTransform dropZone1;
         public RectTransform dropZone2;
 
-        public GameObject[] goodItems;
-
         public Text consoleText;
         public Button validateButton;
         public ScrollRect scrollView;
@@ -36,7 +34,6 @@ namespace Moleculator
         public void doDrag(GameObject gameObject)
         {
             gameObject.transform.position = Input.mousePosition;
-            print("on drag sur : " + gameObject);
 
         }
 
@@ -145,44 +142,19 @@ namespace Moleculator
 
         public void Validate()
         {
-
-            score = 0;
-
-            for(int i=0; i<3; i++)
+            
+            if(droppedItems[0].GetComponentInChildren<Text>().text == "Fucosyllactose" 
+                && droppedItems[1].GetComponentInChildren<Text>().text == "Adrénaline"
+                && droppedItems[2].GetComponentInChildren<Text>().text == "Vitamine B2")
             {
-                for (int j=0; j<3; j++) {
-
-                    if (droppedItems[i] == goodItems[j])
-                    {
-                        score++;
-                    }
-                }
-            }
-
-            switch (score)
+                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide, la synthèse peut commencer";
+                AudioManager.m_Instance.PlaySFX("ValidationBeep");
+            }else
             {
-                case 0:
-                    consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 0%";
-                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
-                    break;
-                case 1:
-                    consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 33%";
-                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
-                    break;
-                case 2:
-                    consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 66%";
-                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
-                    break;
-                case 3:
-                    consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nRésultat : solution valide à 100%";
-                    AudioManager.m_Instance.PlaySFX("ValidationBeep");
-                    break;
-                default:
-                    consoleText.text += "\n\nAnalyse de la solution : " + droppedItems[0].GetComponentInChildren<Text>().text + " + " + droppedItems[1].GetComponentInChildren<Text>().text + " + " + droppedItems[2].GetComponentInChildren<Text>().text + "\n\nERREUR - Veuillez recommencer la procédure";
-                    AudioManager.m_Instance.PlaySFX("ErrorBeep");
-                    break;
+                consoleText.text += "\n\nAnalyse de la solution...\n\nERREUR - Synthétisation impossible";
+                AudioManager.m_Instance.PlaySFX("ErrorBeep");
             }
-
+            
             Canvas.ForceUpdateCanvases();
             scrollView.verticalNormalizedPosition = 0f;
 

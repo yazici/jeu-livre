@@ -18,16 +18,17 @@ public class LoadInterface : MonoBehaviour
     [SerializeField] private float fadeTime = 1.5f;
 
     private bool visibleInterface;
+    private bool activeInterface;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
-           //StartCoroutine(OpenInterface("moleculatorUI"));
+           StartCoroutine(OpenInterface("ScannerUI",false));
         }
         if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Escape))
         {
-            if (visibleInterface)
+            if (activeInterface)
                 StartCoroutine(CloseInterface());
         }
     }
@@ -47,13 +48,37 @@ public class LoadInterface : MonoBehaviour
         yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, fadeTime));
 
         visibleInterface = true;
+        activeInterface = true;
+    }
+
+    public IEnumerator OpenInterface(string objectToLoad, bool isFixed)
+    {
+        if (!isFixed)
+        {
+        StartCoroutine(PlayLoadingAnimation());
+        StartCoroutine(AlphaFadeOut(robotUICanvasGroup, 0.2f, fadeTime));
+
+        yield return WaitForAnimation();
+
+        Destroy(loadingBar);
+
+        yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
+        yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, fadeTime));
+
+        visibleInterface = false;
+        activeInterface = true;
+        }else
+        {
+            OpenInterface(objectToLoad);
+        }
     }
 
     public IEnumerator CloseInterface()
     {
         visibleInterface = false;
-        yield return StartCoroutine(AlphaFadeOut(canvasGroup, 0f, fadeTime));
+        activeInterface = false;
         GameManager.HideCursor();
+        yield return StartCoroutine(AlphaFadeOut(canvasGroup, 0f, fadeTime));
         StartCoroutine(AlphaFadeIn(robotUICanvasGroup, 1f, fadeTime));
     }
 

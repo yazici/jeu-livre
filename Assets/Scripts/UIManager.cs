@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
     private static readonly int Active = Animator.StringToHash("active");
 
     public GameObject m_Reticule;
+    private LoadInterface m_LoadInterface;
 
     // Singleton initialization
     private void Awake()
@@ -37,6 +38,7 @@ public class UIManager : MonoBehaviour
     {
         SetReticule(false);
         m_LabelText.text = "";
+        m_LoadInterface = GameObject.FindWithTag("UIManager").GetComponent<LoadInterface>();
     }
 
     // Set the reticule black or white
