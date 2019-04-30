@@ -119,7 +119,7 @@ public class MouseLook : MonoBehaviour
         transform.localRotation = m_OriginalRotation * xQuaternion * yQuaternion;
 
         // Start mouse looking
-        if (Math.Abs(Input.GetAxis("Mouse X")) > float.Epsilon || Math.Abs(Input.GetAxis("Mouse Y")) > float.Epsilon)
+        if (Math.Abs(Input.GetAxis("Mouse X")) > 0.2f || Math.Abs(Input.GetAxis("Mouse Y")) > 0.2f)
         {
             if (_isMouseLooking) return;
 
