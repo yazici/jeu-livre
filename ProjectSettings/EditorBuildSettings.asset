@@ -8,25 +8,25 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Baptiste.unity
     guid: a5a6da63bad379243b69e63cda6cddee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartingConsole.unity
     guid: bb040130f911de744bc299c8618605c1
   - enabled: 0
-    path: Assets/_TEMP/Scenes/Mise en route.unity
-    guid: 032782792940fef4da4ac44aab4caf95
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/_TEMP/Scenes/Camille.unity
-    guid: 4e5c5f4cd65ce9141960d34416fe7cac
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/VerticalSlice.unity
     guid: 80cb35703c989df4b94bc3860e721f38
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Playtests/MiseEnRoute.unity
     guid: f3f4323420a6ee147b5a7861cdbc9776
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Playtests/Molecules.unity
     guid: 277054434ca5ead4b9e2bcd0f7b4de8c
   m_configObjects: {}

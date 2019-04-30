@@ -23,7 +23,9 @@ public class UIManager : MonoBehaviour
     private static readonly int Active = Animator.StringToHash("active");
 
     public GameObject m_Reticule;
-    private LoadInterface m_LoadInterface;
+    public GameObject m_PauseCanvas;
+
+    private bool m_IsPaused;
 
     // Singleton initialization
     private void Awake()
@@ -38,23 +40,35 @@ public class UIManager : MonoBehaviour
     {
         SetReticule(false);
         m_LabelText.text = "";
-        m_LoadInterface = GameObject.FindWithTag("UIManager").GetComponent<LoadInterface>();
+        m_PauseCanvas.SetActive(false);
     }
 
-    // Set the reticule black or white
+    private void Update()
+    {
+        // Pause management
+        // TODO: fade in/out
+        if (Input.GetButtonDown("Cancel") && m_IsPaused)
+        {
+            m_IsPaused = false;
+            GameManager.HideCursor();
+            m_PauseCanvas.SetActive(false);
+        }
+        else if (Input.GetButtonDown("Pause"))
+        {
+            m_IsPaused = true;
+            GameManager.ShowCursor();
+            m_PauseCanvas.SetActive(true);
+        }
+    }
+
+    /// <summary>
+    /// Set the reticule state
+    /// </summary>
+    /// <param name="active">Is the reticule active (player can interact with the item)</param>
     public void SetReticule(bool active = true)
     {
-        //m_ReticuleOn.enabled = active;
-        //m_ReticuleOff.enabled = !active;
         m_ReticuleAnimator.SetBool(Active, active);
     }
-
-    // // Hide the reticule when holding an object
-    // public void HideReticule()
-    // {
-    //     m_ReticuleOn.enabled = false;
-    //     m_ReticuleOff.enabled = false;
-    // }
 
     public string GetCurrentLabelText()
     {
@@ -77,7 +91,6 @@ public class UIManager : MonoBehaviour
         m_IsLabelTyping = false;
         m_LabelText.text = "";
     }
-
 
     private IEnumerator TypeLabelText(string message)
     {

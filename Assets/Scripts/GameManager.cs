@@ -1,4 +1,5 @@
-﻿using ScriptableObjects;
+﻿using JetBrains.Annotations;
+using ScriptableObjects;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -39,5 +40,12 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         UIManager.m_Instance.m_Reticule.SetActive(true);
+    }
+
+    [UsedImplicitly]
+    public void Quit()
+    {
+        print("should quit");
+        Application.Quit();
     }
 }
