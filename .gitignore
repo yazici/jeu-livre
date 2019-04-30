@@ -60,3 +60,4 @@ crashlytics-build.properties
 Assets/Wwise/Editor/ProjectData/AkWwiseProjectData\.asset
 jeu-livre_WwiseProject/Originals/SFX/*.akd
 jeu-livre_WwiseProject/.cache/
+jeu-livre_WwiseProject/*.prof
