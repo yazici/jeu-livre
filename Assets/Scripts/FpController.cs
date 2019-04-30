@@ -117,7 +117,7 @@ public class FpController : MonoBehaviour
             if (!m_IsMoving)
             {
                 m_IsMoving = true;
-                AudioManager.m_Instance.PlaySFX("Drone_Motor");
+                AudioManager.m_Instance.PlaySFX("DroneMotor");
             }
 
             // Running
@@ -132,7 +132,7 @@ public class FpController : MonoBehaviour
             if (!m_IsMoving) return;
 
             m_IsMoving = false;
-            AudioManager.m_Instance.StopSFX("Drone_Motor");
+            AudioManager.m_Instance.StopSFX("DroneMotor");
         }
     }
 

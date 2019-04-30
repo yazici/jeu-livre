@@ -15,6 +15,7 @@ MonoBehaviour:
   m_MainScene: Scenes/ProtoTests/MiseEnRoute
   m_WalkSpeed: 6
   m_RunSpeed: 11
+  m_FrameCounterCameraLag: 30
   m_MarginObjectLabel: 10
   m_LetterDelay: 0.015
   m_RangeArm: 3

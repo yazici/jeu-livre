@@ -1,17 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
 	136370607	Play_ValidationBeep			\Default Work Unit\Play_ValidationBeep	
-	585720868	Stop_Drone_Motor			\Default Work Unit\Stop_Drone_Motor	
-	923015438	Play_Drone_Motor			\Default Work Unit\Play_Drone_Motor	
 	1164784286	Play_Temple_Drone			\Default Work Unit\Play_Temple_Drone	
 	1304387364	Play_ErrorBeep			\Default Work Unit\Play_ErrorBeep	
 	1371242783	Play_Temple_Chimes			\Default Work Unit\Play_Temple_Chimes	
+	1463233682	Play_DroneRotation			\Default Work Unit\Play_DroneRotation	
 	1529120824	Stop_ServerMotor			\Default Work Unit\Stop_ServerMotor	
 	1659138091	Play_Typing			\Default Work Unit\Play_Typing	
 	2296544690	Play_ServerMotor			\Default Work Unit\Play_ServerMotor	
+	2341913985	Stop_DroneMotor			\Default Work Unit\Stop_DroneMotor	
 	2519717329	Play_Electric_Motor			\Default Work Unit\Play_Electric_Motor	
 	2983988087	Play_Labo_Room_Tone			\Default Work Unit\Play_Labo_Room_Tone	
 	3196500978	Play_Lever			\Default Work Unit\Play_Lever	
+	3536391747	Play_DroneMotor			\Default Work Unit\Play_DroneMotor	
 	3653257362	Play_InitDrone			\Default Work Unit\Play_InitDrone	
+	3803467864	Stop_DroneRotation			\Default Work Unit\Stop_DroneRotation	
 	3849115581	Play_Synth_Bips_Sequence			\Default Work Unit\Play_Synth_Bips_Sequence	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -31,25 +33,26 @@ Effect plug-ins	ID	Name	Type				Notes
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	32040915	Chimes6	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes6_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes6		1234864
-	49991180	InitDrone	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\InitDrone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\InitDrone		696776
-	60223780	Digital Typing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\digital_label_D3CE5047.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		161004
-	101773938	Beep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\beep-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Beep		9722
-	126686386	Electric Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Electric Motor		1027720
-	152619115	Temple Drone Tonal Rumble	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Tonal Rumble		7686024
-	365799027	Earthquake	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Earthquake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Earthquake\Earthquake		1949876
-	367767701	Chimes5	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes5_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes5		1234864
-	384809016	Temple Drone Choirs	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\TempleDroneChoirs_BDB0F7CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Choirs		7862528
-	468596089	ValidationBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ValidationBeep_B250FB99.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ValidationBeep		81788
-	566412347	Chimes1	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes1_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes1		1234864
-	641032399	Chimes4	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes4_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes4		1234864
-	653038980	Lever	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Lever_FE030C28.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\LeverSwitch\Lever		113616
-	792982152	Chimes7	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes7_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes7		1234864
-	817482986	Ambience Ceiling Fan	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan		17298560
-	826280766	Rolling_Motor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Rolling_Motor_19F31676.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Drone Motor\Rolling_Motor		3344368
-	911937066	Temple Drone Base	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\TempleDrone_69A2AAE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Base		5443328
-	929521614	ErrorBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ErrorBeep_DC765304.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ErrorBeep		33272
-	977182220	Ambience Air Conditioner	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner		17302376
-	1002218341	Chimes3	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes3_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes3		1234864
-	1024225483	Chimes2	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes2_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes2		1234864
+	32040915	Chimes6	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes6_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes6		1234864
+	49991180	InitDrone	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\InitDrone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\InitDrone		696776
+	60223780	Digital Typing	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\digital_label_D3CE5047.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Digital Typing		161004
+	101773938	Beep	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\beep-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Synth Bips Sequence\Beep		9722
+	126686386	Electric Motor	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Electric Motor 2-SoundBible.com-352105994_337F506A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Synth\Electric Motor		1027720
+	152619115	Temple Drone Tonal Rumble	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Tonal Rumble		7686024
+	279537869	DroneRotation	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\DroneRotation		217932
+	365799027	Earthquake	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Earthquake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Earthquake\Earthquake		1949876
+	367767701	Chimes5	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes5_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes5		1234864
+	384809016	Temple Drone Choirs	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\TempleDroneChoirs_BDB0F7CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Choirs		7862528
+	468596089	ValidationBeep	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ValidationBeep_B250FB99.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ValidationBeep		81788
+	566412347	Chimes1	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes1_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes1		1234864
+	641032399	Chimes4	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes4_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes4		1234864
+	653038980	Lever	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Lever_FE030C28.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\LeverSwitch\Lever		113616
+	792982152	Chimes7	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes7_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes7		1234864
+	817482986	Ambience Ceiling Fan	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Ceiling Fan 01_90DCB559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Ceiling Fan		17298560
+	826280766	Rolling_Motor	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Rolling_Motor_19F31676.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\DroneMotor\Rolling_Motor		3344368
+	911937066	Temple Drone Base	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\TempleDrone_69A2AAE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Base		5443328
+	929521614	ErrorBeep	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ErrorBeep_DC765304.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ErrorBeep		33272
+	977182220	Ambience Air Conditioner	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Tones\Labo Room Tone\Ambience Air Conditioner		17302376
+	1002218341	Chimes3	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes3_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes3		1234864
+	1024225483	Chimes2	C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes2_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes2		1234864
 

@@ -31,7 +31,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Drone_Motor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}">
+				<Event Name="Play_DroneMotor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}">
 					<ChildrenList>
 						<Action Name="" ID="{7FC91C86-7006-4587-822A-32448DC059D6}" ShortID="122973122">
 							<PropertyList>
@@ -39,13 +39,13 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Drone Motor" ID="{F343243F-8146-4F98-A43D-02F6781CC4E7}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+									<ObjectRef Name="DroneMotor" ID="{F343243F-8146-4F98-A43D-02F6781CC4E7}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}">
+				<Event Name="Stop_DroneMotor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}">
 					<ChildrenList>
 						<Action Name="" ID="{99BEDBC4-7C73-4FD8-B795-88213B02CECE}" ShortID="379565434">
 							<PropertyList>
@@ -68,7 +68,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Drone Motor" ID="{F343243F-8146-4F98-A43D-02F6781CC4E7}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+									<ObjectRef Name="DroneMotor" ID="{F343243F-8146-4F98-A43D-02F6781CC4E7}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -214,6 +214,36 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="ErrorBeep" ID="{523DD48C-0359-432B-91A4-2FBD2C80DECA}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DroneRotation" ID="{57580C0B-317D-47A4-9B22-8C0DDF84F9B9}">
+					<ChildrenList>
+						<Action Name="" ID="{0D5428CB-BE07-4C29-AF83-ED53BE7880DF}" ShortID="728004734">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DroneRotation" ID="{C429F854-CC61-420B-826C-8DDC27536D04}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_DroneRotation" ID="{F768DC98-F635-4D4A-8CD2-8BA20B445539}">
+					<ChildrenList>
+						<Action Name="" ID="{1C09B4B6-C57F-4E75-A512-6141A6FEE310}" ShortID="840350337">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DroneRotation" ID="{C429F854-CC61-420B-826C-8DDC27536D04}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

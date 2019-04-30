@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,8 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="923015438" Name="Play_Drone_Motor" ObjectPath="\Events\Default Work Unit\Play_Drone_Motor"/>
+				<Event Id="3536391747" Name="Play_DroneMotor" ObjectPath="\Events\Default Work Unit\Play_DroneMotor"/>
+				<Event Id="1463233682" Name="Play_DroneRotation" ObjectPath="\Events\Default Work Unit\Play_DroneRotation"/>
 				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Play_Electric_Motor" MaxAttenuation="20.000000"/>
 				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\Play_ErrorBeep"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Play_InitDrone"/>
@@ -33,7 +34,8 @@
 				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Play_Temple_Drone" MaxAttenuation="20.000000"/>
 				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
 				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\Play_ValidationBeep"/>
-				<Event Id="585720868" Name="Stop_Drone_Motor" ObjectPath="\Events\Default Work Unit\Stop_Drone_Motor" MaxAttenuation="0.000000"/>
+				<Event Id="2341913985" Name="Stop_DroneMotor" ObjectPath="\Events\Default Work Unit\Stop_DroneMotor" MaxAttenuation="0.000000"/>
+				<Event Id="3803467864" Name="Stop_DroneRotation" ObjectPath="\Events\Default Work Unit\Stop_DroneRotation" MaxAttenuation="0.000000"/>
 				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\Stop_ServerMotor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -60,6 +62,10 @@
 				<File Id="152619115" Language="SFX">
 					<ShortName>Drone_SciFi_TonalRumble_01_01.wav</ShortName>
 					<Path>SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem</Path>
+				</File>
+				<File Id="279537869" Language="SFX">
+					<ShortName>123253__skullsmasha__mechanicalclamp.wav</ShortName>
+					<Path>SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem</Path>
 				</File>
 				<File Id="365799027" Language="SFX">
 					<ShortName>Earthquake.wav</ShortName>

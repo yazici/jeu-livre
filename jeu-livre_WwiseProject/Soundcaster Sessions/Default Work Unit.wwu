@@ -18,6 +18,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_DroneRotation" ID="{57580C0B-317D-47A4-9B22-8C0DDF84F9B9}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Typing" ID="{C9B99EAA-E834-4270-BC05-B1EBD897617D}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -30,7 +34,11 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Drone_Motor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<ObjectRef Name="Stop_DroneRotation" ID="{F768DC98-F635-4D4A-8CD2-8BA20B445539}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_DroneMotor" ID="{C51B32DB-01EF-4A0D-8575-7FFAC33B9A4B}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
@@ -42,7 +50,7 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Drone_Motor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<ObjectRef Name="Stop_DroneMotor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>

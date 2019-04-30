@@ -9,7 +9,7 @@ namespace ScriptableObjects
         /// The name of the scene to load after the starting console
         /// </summary>
         public string m_MainScene = "VerticalSlice";
-        
+
         /// <summary>
         /// How fast the player moves when walking (default move speed).
         /// </summary>
@@ -19,6 +19,11 @@ namespace ScriptableObjects
         /// How fast the player moves when running.
         /// </summary>
         public float m_RunSpeed = 11.0f;
+
+        /// <summary>
+        /// Number of frames to be averaged, used for smoothing mouse look
+        /// </summary>
+        public int m_FrameCounterCameraLag = 25;
 
         /// <summary>
         /// Margin in percentage between top 3D object pos and its label in canvas
@@ -44,7 +49,7 @@ namespace ScriptableObjects
         /// Id name for the starting console log-in step
         /// </summary>
         public string m_IdName = "aurorechamrouge";
-        
+
         /// <summary>
         /// Password for the starting console log-in step
         /// </summary>

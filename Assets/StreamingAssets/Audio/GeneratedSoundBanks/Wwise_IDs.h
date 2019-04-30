@@ -13,7 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_DRONE_MOTOR = 923015438U;
+        static const AkUniqueID PLAY_DRONEMOTOR = 3536391747U;
+        static const AkUniqueID PLAY_DRONEROTATION = 1463233682U;
         static const AkUniqueID PLAY_ELECTRIC_MOTOR = 2519717329U;
         static const AkUniqueID PLAY_ERRORBEEP = 1304387364U;
         static const AkUniqueID PLAY_INITDRONE = 3653257362U;
@@ -25,7 +26,8 @@ namespace AK
         static const AkUniqueID PLAY_TEMPLE_DRONE = 1164784286U;
         static const AkUniqueID PLAY_TYPING = 1659138091U;
         static const AkUniqueID PLAY_VALIDATIONBEEP = 136370607U;
-        static const AkUniqueID STOP_DRONE_MOTOR = 585720868U;
+        static const AkUniqueID STOP_DRONEMOTOR = 2341913985U;
+        static const AkUniqueID STOP_DRONEROTATION = 3803467864U;
         static const AkUniqueID STOP_SERVERMOTOR = 1529120824U;
     } // namespace EVENTS
 
