@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Default
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: 4800000, guid: a604132cad1c89d42add9a8305fb5324, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA MODES_NORMAL _ENABLE_ON _TRANSPARENCY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Background:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseTexture:
+        m_Texture: {fileID: 2800000, guid: 1e35f4d429c358d4d8484e415029d60f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,6 +51,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,23 +71,148 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _displacement:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _opacity_map:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _textureA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _textureB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _textureC:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - pattern:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - volume:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - A: 1.09
+    - B: 1.07
+    - C: 1.29
+    - D: 0
+    - E: 0.28
+    - F: 1.04
+    - G: 1.5
+    - I: 2
+    - N: 0.1
+    - R: 10
+    - T: 3
+    - U: 0
+    - V: 0
+    - W: 5
+    - X: 5
+    - Y: 5
+    - Z: 5
+    - _Ax: -0.6
+    - _Ay: 0
     - _BumpScale: 1
+    - _Bx: 0
+    - _By: 0.5
     - _Cutoff: 0.5
+    - _Cx: 0.6
+    - _Cy: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Exposure: 60
+    - _FogDensity: 0.005
+    - _Gloss: 0.8
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _Height: 0.15
+    - _Intensity: 20
     - _Metallic: 0
+    - _Mie: 1200
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ParallaxSamples: 40
+    - _Rayleigh: 8000
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - _a: 2.2
+    - _amount: 0.005
+    - _b: -2.6
+    - _c: -4.3
+    - _d: -3.9
+    - _density: 0.1
+    - _depth: 0.2
+    - _displacement_scale: 1
+    - _e: 1.2
+    - _edges: 3
+    - _enable: 1
+    - _f: -1.8
+    - _flip: 0
+    - _g: 0.1
+    - _h: 3.2
+    - _intensity: -0.21
+    - _lineWidth: 0.1
+    - _octaves: 4
+    - _offsetX: 0
+    - _offsetY: 0
+    - _offsetZ: 0
+    - _outline_thickness: 0.05
+    - _radius: 0.5
+    - _range: 10
+    - _rangeX: 1
+    - _sample_base: 0.601
+    - _sample_detail: 0.131
+    - _scale: 1
+    - _size: 0.5
+    - _smoothness: 0.03
+    - _speed: 14.8
+    - _terrain_length: 500
+    - _terrain_width: 500
+    - _tessellation_scale: 10
+    - _thickness: 1.44
+    - _transparency: 1
+    - amount: 0
+    - brightness: 0
+    - contrast: 1
+    - draw: 300
+    - field: 0.2
+    - modes: 0
+    - saturation: 1
+    - size: 100
+    - ssaa: 4
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Offset: {r: 2, g: 0, b: 0, a: 0}
+    - _center: {r: 0, g: 0, b: 0, a: 0}
+    - _color: {r: 0.8867924, g: 0.21333212, b: 0.21333212, a: 1}
+    - _color1: {r: 0, g: 0, b: 0, a: 1}
+    - _color2: {r: 1, g: 0, b: 0, a: 1}
+    - _color3: {r: 0, g: 0, b: 0, a: 1}
+    - _color4: {r: 1, g: 0, b: 1, a: 1}
+    - _lineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _outline_color: {r: 0, g: 0, b: 0, a: 1}
+    - _scale: {r: 1, g: 1, b: 1, a: 1}
+    - _vector: {r: -10, g: -10, b: 0, a: 0}

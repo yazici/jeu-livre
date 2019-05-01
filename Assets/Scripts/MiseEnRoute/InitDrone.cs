@@ -8,9 +8,9 @@ namespace MiseEnRoute
     {
         private ColorGrading m_ColorGradingLayer;
         private Animation m_Animation;
-        
-        [SerializeField]
-        private PixelBoy m_PixelBoy;
+
+        [SerializeField] private PixelBoy m_PixelBoy;
+        [SerializeField] private GlitchEffect m_GlitchEffect;
 
         [SerializeField] private float m_AnimSpeed = 1;
 
@@ -27,6 +27,7 @@ namespace MiseEnRoute
         {
             if (m_SkipAnim) return;
             m_PixelBoy.enabled = true;
+            m_GlitchEffect.enabled = true;
             GameManager.m_Instance.m_CinematicMode = true;
             AudioManager.m_Instance.PlaySFX("InitDrone");
             m_Animation.Play();
@@ -46,10 +47,11 @@ namespace MiseEnRoute
                 t += 0.5f * Time.deltaTime * m_AnimSpeed;
                 yield return null;
             }
-            
+
             m_ColorGradingLayer.saturation.value = 0;
             m_ColorGradingLayer.contrast.value = 0;
             m_PixelBoy.enabled = false;
+            m_GlitchEffect.enabled = false;
             GameManager.m_Instance.m_CinematicMode = false;
         }
     }

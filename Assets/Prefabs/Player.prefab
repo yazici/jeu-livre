@@ -115,8 +115,6 @@ MonoBehaviour:
   m_SensitivityY: 2
   m_MinimumY: -60
   m_MaximumY: 60
-  m_FrameCounterX: 25
-  m_FrameCounterY: 25
 --- !u!114 &881380384390337009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,10 +142,11 @@ GameObject:
   - component: {fileID: 3592545196155746550}
   - component: {fileID: 7745278373110440245}
   - component: {fileID: 2067182804}
-  - component: {fileID: 3592545196681220798}
-  - component: {fileID: 3592545196681220799}
   - component: {fileID: 3592545196681220800}
+  - component: {fileID: 3592545196681220799}
+  - component: {fileID: 506260251232301493}
   - component: {fileID: 3592545196681220801}
+  - component: {fileID: 3592545196681220798}
   - component: {fileID: 870466218}
   m_Layer: 8
   m_Name: Main Camera
@@ -229,8 +228,6 @@ MonoBehaviour:
   m_SensitivityY: 2
   m_MinimumY: -30
   m_MaximumY: 30
-  m_FrameCounterX: 25
-  m_FrameCounterY: 25
 --- !u!114 &3592545196155746549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,35 +342,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!111 &3592545196681220798
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3592545196681220797}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!114 &3592545196681220799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3592545196681220797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69506d0121dabe2479ed3687fdcb33d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  h: 4
 --- !u!114 &3592545196681220800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +359,36 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &3592545196681220799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545196681220797}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69506d0121dabe2479ed3687fdcb33d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  h: 4
+--- !u!114 &506260251232301493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545196681220797}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb41c02975784a542ae9e167a9b39c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displacementMap: {fileID: 2800000, guid: 50d69b48153b6e54eb0cdae49ac5b35b, type: 3}
+  Shader: {fileID: 4800000, guid: 329f04d6d1fce8a43a9ed95e45ab0cff, type: 3}
+  intensity: 1
+  flipIntensity: 1
+  colorIntensity: 1
 --- !u!114 &3592545196681220801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,8 +402,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelBoy: {fileID: 3592545196681220799}
+  m_GlitchEffect: {fileID: 0}
   m_AnimSpeed: 0.65
-  m_SkipAnim: 0
+  m_SkipAnim: 1
+--- !u!111 &3592545196681220798
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545196681220797}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!108 &870466218
 Light:
   m_ObjectHideFlags: 0
