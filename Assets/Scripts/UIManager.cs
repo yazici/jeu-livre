@@ -25,6 +25,8 @@ public class UIManager : MonoBehaviour
     public GameObject m_Reticule;
     public GameObject m_PauseCanvas;
 
+    [SerializeField] private Light m_TorchLight;
+
     private bool m_IsPaused;
 
     // Singleton initialization
@@ -58,6 +60,11 @@ public class UIManager : MonoBehaviour
             m_IsPaused = true;
             GameManager.ShowCursor();
             m_PauseCanvas.SetActive(true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.T))
+        {
+            m_TorchLight.enabled = !m_TorchLight.enabled;
         }
     }
 
