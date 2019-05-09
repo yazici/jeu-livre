@@ -62,9 +62,13 @@ public class UIManager : MonoBehaviour
             m_PauseCanvas.SetActive(true);
         }
 
-        if (Input.GetKeyUp(KeyCode.T))
+        if (!m_TorchLight) return;
+        if (Input.GetKeyUp(KeyCode.T) && !GameManager.m_Instance.m_CinematicMode)
         {
-            m_TorchLight.enabled = !m_TorchLight.enabled;
+            bool isEnabled = m_TorchLight.enabled;
+            isEnabled = !isEnabled;
+            m_TorchLight.enabled = isEnabled;
+            AudioManager.m_Instance.PlaySFX(isEnabled ? "TorchlightOn" : "TorchlightOff");
         }
     }
 

@@ -18,7 +18,7 @@ namespace MiseEnRoute
             {
                 MiseEnRouteManager.m_Instance.m_PuzzleStep = 3;
                 AudioManager.m_Instance.PlaySFX("ValidationBeep");
-                SceneManager.LoadScene("Scenes/ProtoTests/Molecules");
+                SceneManager.LoadScene("Scenes/PlaytestsV2/Molecules2");
             }
             else
             {

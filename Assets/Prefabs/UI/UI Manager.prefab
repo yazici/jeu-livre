@@ -976,9 +976,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ce925ea65844bfab4069eb3f768d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotUI: {fileID: 1784503083}
-  robotUICanvasGroup: {fileID: 1085113347}
-  fadeTime: 1.5
+  m_RobotUI: {fileID: 1784503083}
+  m_RobotUICanvasGroup: {fileID: 1085113347}
+  m_FadeTime: 0.5
 --- !u!114 &9127577790634260403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +997,7 @@ MonoBehaviour:
   m_ReticuleAnimator: {fileID: 4956901239867245285}
   m_Reticule: {fileID: 4072217480636617910}
   m_PauseCanvas: {fileID: 236786764}
+  m_TorchLight: {fileID: 0}
 --- !u!114 &5436352974754773619
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,166 +1,129 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Moleculator
+namespace Molecules
 {
     public class Moleculator : MonoBehaviour
     {
+        public RectTransform m_DropZone0;
+        public RectTransform m_DropZone1;
+        public RectTransform m_DropZone2;
 
-        public RectTransform dropZone0;
-        public RectTransform dropZone1;
-        public RectTransform dropZone2;
+        public Text m_ConsoleText;
+        public Button m_ValidateButton;
+        public ScrollRect m_ScrollView;
 
-        public Text consoleText;
-        public Button validateButton;
-        public ScrollRect scrollView;
+        private static GameObject[] _droppedItems;
 
-        private int score = 0;
-        private static GameObject[] droppedItems;
-
-
-        // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
-            droppedItems = new GameObject[3];
-            validateButton.interactable = false;
+            _droppedItems = new GameObject[3] { null, null, null };
+            m_ValidateButton.interactable = false;
         }
 
-        // Update is called once per frame
-        void Update()
+        public void DoDrag(GameObject gameObj)
         {
-
+            gameObj.transform.position = Input.mousePosition;
         }
 
-        public void doDrag(GameObject gameObject)
+        public void DoEndDrag(GameObject gameObj)
         {
-            gameObject.transform.position = Input.mousePosition;
-
-        }
-
-        public void doEndDrag(GameObject gameObject)
-        {
-            if (RectTransformUtility.RectangleContainsScreenPoint(dropZone0, Input.mousePosition))
+            if (RectTransformUtility.RectangleContainsScreenPoint(m_DropZone0, Input.mousePosition))
             {
-                if (droppedItems[0] != null)
+                if (_droppedItems[0] != null)
                 {
-                    droppedItems[0].transform.localPosition = Vector3.zero;
+                    _droppedItems[0].transform.localPosition = Vector3.zero;
                 }
-                droppedItems[0] = gameObject;
-                gameObject.transform.position = dropZone0.position;
 
+                _droppedItems[0] = gameObj;
+                gameObj.transform.position = m_DropZone0.position;
             }
-            else if(RectTransformUtility.RectangleContainsScreenPoint(dropZone1, Input.mousePosition))
+            else if (RectTransformUtility.RectangleContainsScreenPoint(m_DropZone1, Input.mousePosition))
             {
-                if (droppedItems[1] != null)
+                if (_droppedItems[1] != null)
                 {
-                    droppedItems[1].transform.localPosition = Vector3.zero;
+                    _droppedItems[1].transform.localPosition = Vector3.zero;
                 }
-                gameObject.transform.position = dropZone1.position;
-                droppedItems[1] = gameObject;
+
+                gameObj.transform.position = m_DropZone1.position;
+                _droppedItems[1] = gameObj;
             }
-            else if (RectTransformUtility.RectangleContainsScreenPoint(dropZone2, Input.mousePosition))
+            else if (RectTransformUtility.RectangleContainsScreenPoint(m_DropZone2, Input.mousePosition))
             {
-                if (droppedItems[2] != null)
+                if (_droppedItems[2] != null)
                 {
-                    droppedItems[2].transform.localPosition = Vector3.zero;
+                    _droppedItems[2].transform.localPosition = Vector3.zero;
                 }
-                gameObject.transform.position = dropZone2.position;
-                droppedItems[2] = gameObject;
+
+                gameObj.transform.position = m_DropZone2.position;
+                _droppedItems[2] = gameObj;
             }
             else
             {
-                gameObject.transform.localPosition = Vector3.zero;
+                gameObj.transform.localPosition = Vector3.zero;
+                int foundIndex = Array.FindIndex(_droppedItems, droppedItem => droppedItem == gameObj);
+                if (foundIndex != -1)
+                {
+                    _droppedItems[foundIndex] = null;
+                    m_ValidateButton.interactable = false;
+                }
             }
 
-            if(droppedItems[0] != null && droppedItems[1] != null && droppedItems[2] != null)
+            if (_droppedItems[0] != null && _droppedItems[1] != null && _droppedItems[2] != null)
             {
-                validateButton.interactable = true;
+                m_ValidateButton.interactable = true;
             }
             else
             {
-                validateButton.interactable = false;
+                m_ValidateButton.interactable = false;
             }
-
-        }
-   
-
-        public void cancelButton()
-        {
-       
-            if (RectTransformUtility.RectangleContainsScreenPoint(dropZone0, Input.mousePosition))
-            {
-                if(droppedItems[0] != null)
-                {
-                    droppedItems[0].transform.localPosition = Vector3.zero;
-                    droppedItems[0] = null;
-                }
-
-            }
-            if (RectTransformUtility.RectangleContainsScreenPoint(dropZone1, Input.mousePosition))
-            {
-                if (droppedItems[1] != null)
-                {
-                    droppedItems[1].transform.localPosition = Vector3.zero;
-                    droppedItems[1] = null;
-                }
-
-            }
-            if (RectTransformUtility.RectangleContainsScreenPoint(dropZone2, Input.mousePosition))
-            {
-                if (droppedItems[2] != null)
-                {
-                    droppedItems[2].transform.localPosition = Vector3.zero;
-                    droppedItems[2] = null;
-                }
-
-            }
-
-            validateButton.interactable = false;
         }
 
-        public void doReset()
+        public void DoReset()
         {
-            if (droppedItems[0] != null)
+            if (_droppedItems[0] != null)
             {
-                droppedItems[0].transform.localPosition = Vector3.zero;
-                droppedItems[0] = null;
-            }
-            if (droppedItems[1] != null)
-            {
-                droppedItems[1].transform.localPosition = Vector3.zero;
-                droppedItems[1] = null;
-            }
-            if (droppedItems[2] != null)
-            {
-                droppedItems[2].transform.localPosition = Vector3.zero;
-                droppedItems[2] = null;
+                _droppedItems[0].transform.localPosition = Vector3.zero;
+                _droppedItems[0] = null;
             }
 
-            validateButton.interactable = false;
+            if (_droppedItems[1] != null)
+            {
+                _droppedItems[1].transform.localPosition = Vector3.zero;
+                _droppedItems[1] = null;
+            }
 
+            if (_droppedItems[2] != null)
+            {
+                _droppedItems[2].transform.localPosition = Vector3.zero;
+                _droppedItems[2] = null;
+            }
+
+            m_ValidateButton.interactable = false;
         }
 
         public void Validate()
         {
-            
-            if(droppedItems[0].GetComponentInChildren<Text>().text == "Fucosyllactose" 
-                && droppedItems[1].GetComponentInChildren<Text>().text == "Adrénaline"
-                && droppedItems[2].GetComponentInChildren<Text>().text == "Vitamine B2")
+            if (_droppedItems[0].GetComponentInChildren<Text>().text == "Fucosyllactose"
+                && _droppedItems[1].GetComponentInChildren<Text>().text == "Adrénaline"
+                && _droppedItems[2].GetComponentInChildren<Text>().text == "Vitamine B2")
             {
-                consoleText.text += "\n\nAnalyse de la solution...\n\nRésultat : solution valide, la synthèse peut commencer";
+                m_ConsoleText.text +=
+                    "\n\nAnalyse de la solution...\n\nRésultat : solution valide, la synthèse peut commencer";
                 AudioManager.m_Instance.PlaySFX("ValidationBeep");
-            }else
+            }
+            else
             {
-                consoleText.text += "\n\nAnalyse de la solution...\n\nERREUR - Synthétisation impossible";
+                m_ConsoleText.text += "\n\nAnalyse de la solution...\n\nERREUR - Synthétisation impossible";
                 AudioManager.m_Instance.PlaySFX("ErrorBeep");
             }
-            
-            Canvas.ForceUpdateCanvases();
-            scrollView.verticalNormalizedPosition = 0f;
 
+            Canvas.ForceUpdateCanvases();
+            m_ScrollView.verticalNormalizedPosition = 0f;
         }
 
-        public void setFocus(Transform window)
+        public void SetFocus(Transform window)
         {
             window.SetSiblingIndex(1);
         }

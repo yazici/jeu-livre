@@ -189,8 +189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.96000004}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.037719727, y: -0.038002014}
-  m_SizeDelta: {x: 0.1, y: 0.037002563}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2656856943262288669
 CanvasRenderer:
@@ -621,7 +621,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612455191965}
@@ -638,7 +638,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612455191965}
@@ -1013,7 +1013,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612577675957}
@@ -1030,7 +1030,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612577675957}
@@ -1368,7 +1368,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612665585358}
@@ -1385,7 +1385,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612665585358}
@@ -1910,7 +1910,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612730904570}
@@ -1927,7 +1927,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612730904570}
@@ -2130,7 +2130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3886858612771639135}
   - component: {fileID: 3886858612771639134}
-  - component: {fileID: 3886858612771639105}
   - component: {fileID: 3886858612771639104}
   - component: {fileID: 421450971618566303}
   m_Layer: 5
@@ -2172,35 +2171,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886858612771639107}
   m_CullTransparentMesh: 0
---- !u!114 &3886858612771639105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886858612771639107}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 935962ddb1e44499dad00e5ca6b38823, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3886858612771639104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2219,7 +2189,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: setFocus
+          m_MethodName: SetFocus
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612771639135}
@@ -2621,7 +2591,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612936249501}
@@ -2638,7 +2608,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858612936249501}
@@ -2724,8 +2694,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.148}
   m_AnchorMax: {x: 1, y: 0.90000004}
-  m_AnchoredPosition: {x: 0.072021484, y: 0}
-  m_SizeDelta: {x: 0.14399719, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3886858612970209321
 CanvasRenderer:
@@ -2747,12 +2717,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc8f2a0bf3170b4798b06a5eb2a4a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropZone0: {fileID: 3886858613924840830}
-  dropZone1: {fileID: 3886858612697684035}
-  dropZone2: {fileID: 3886858613735391629}
-  consoleText: {fileID: 3886858613058919148}
-  validateButton: {fileID: 3886858613281869690}
-  scrollView: {fileID: 3886858613567137192}
+  m_DropZone0: {fileID: 3886858613924840830}
+  m_DropZone1: {fileID: 3886858612697684035}
+  m_DropZone2: {fileID: 3886858613735391629}
+  m_ConsoleText: {fileID: 3886858613058919148}
+  m_ValidateButton: {fileID: 3886858613281869690}
+  m_ScrollView: {fileID: 3886858613567137192}
 --- !u!1 &3886858613001125458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,7 +3001,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886858613128803274}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3184,8 +3154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.043701172, y: -40}
-  m_SizeDelta: {x: 0.1, y: -40}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 0, y: -40}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3886858613167865450
 CanvasRenderer:
@@ -3323,7 +3293,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613177168994}
@@ -3340,7 +3310,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613177168994}
@@ -3516,7 +3486,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3886858613262759108}
   - component: {fileID: 3886858613262759107}
-  - component: {fileID: 3886858613262759106}
   - component: {fileID: 3886858613262759109}
   - component: {fileID: 6329988561790188936}
   m_Layer: 5
@@ -3559,35 +3528,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886858613262759111}
   m_CullTransparentMesh: 0
---- !u!114 &3886858613262759106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886858613262759111}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 935962ddb1e44499dad00e5ca6b38823, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3886858613262759109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3606,7 +3546,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: setFocus
+          m_MethodName: SetFocus
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613262759108}
@@ -3933,7 +3873,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613282627675}
@@ -3950,7 +3890,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613282627675}
@@ -4057,7 +3997,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613291006865}
@@ -4074,7 +4014,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613291006865}
@@ -4181,7 +4121,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613296670806}
@@ -4198,7 +4138,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613296670806}
@@ -4305,7 +4245,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613308021979}
@@ -4322,7 +4262,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613308021979}
@@ -5572,7 +5512,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613684622329}
@@ -5589,7 +5529,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858613684622329}
@@ -6395,7 +6335,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614057758106}
@@ -6412,7 +6352,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614057758106}
@@ -6614,7 +6554,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614082527502}
@@ -6631,7 +6571,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614082527502}
@@ -6817,7 +6757,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doDrag
+          m_MethodName: DoDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614169944847}
@@ -6834,7 +6774,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 3886858612970209320}
-          m_MethodName: doEndDrag
+          m_MethodName: DoEndDrag
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3886858614169944847}
@@ -7306,7 +7246,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3886858612970209320}
-        m_MethodName: doReset
+        m_MethodName: DoReset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

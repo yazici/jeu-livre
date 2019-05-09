@@ -249,6 +249,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TorchlightOff" ID="{0DB4F7CE-7BBE-4D50-913B-39812C3EEC9D}">
+					<ChildrenList>
+						<Action Name="" ID="{7D4DC8A9-8D19-4DF2-A137-D0E4E2A95302}" ShortID="693473826">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TorchlightOff" ID="{234A9812-6E7E-40F1-9EFB-95166653EC7C}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TorchlightOn" ID="{885E6F9E-82C6-4693-808B-87974933A94E}">
+					<ChildrenList>
+						<Action Name="" ID="{36FA52D9-9882-4C49-986A-0AF10357DDBD}" ShortID="236499388">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TorchlightOn" ID="{30F0469C-F52F-42C1-B639-11F3CA9275F6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -21,6 +21,6 @@ public class ScannerTrigger : Trigger
         // Don't open interface if it's already opened
         if (Cursor.lockState == CursorLockMode.None) return;
         scanImage = image;
-        StartCoroutine(m_LoadInterface.OpenInterface("ScannerUI", false));
+        StartCoroutine(m_LoadInterface.OpenInterface("ScannerUI", true));
     }
 }

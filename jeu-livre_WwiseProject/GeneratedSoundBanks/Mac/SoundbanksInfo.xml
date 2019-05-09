@@ -32,6 +32,8 @@
 				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
 				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
 				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Play_Temple_Drone" MaxAttenuation="20.000000"/>
+				<Event Id="1462694307" Name="Play_TorchlightOff" ObjectPath="\Events\Default Work Unit\Play_TorchlightOff"/>
+				<Event Id="1588639311" Name="Play_TorchlightOn" ObjectPath="\Events\Default Work Unit\Play_TorchlightOn"/>
 				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
 				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\Play_ValidationBeep"/>
 				<Event Id="2341913985" Name="Stop_DroneMotor" ObjectPath="\Events\Default Work Unit\Stop_DroneMotor" MaxAttenuation="0.000000"/>
@@ -95,6 +97,10 @@
 					<ShortName>Lever.wav</ShortName>
 					<Path>SFX\Lever_FE030C28.wem</Path>
 				</File>
+				<File Id="791372555" Language="SFX">
+					<ShortName>torchlight_on.wav</ShortName>
+					<Path>SFX\torchlight_on_10C4C929.wem</Path>
+				</File>
 				<File Id="792982152" Language="SFX">
 					<ShortName>Chimes7.wav</ShortName>
 					<Path>SFX\Chimes7_21C98E47.wem</Path>
@@ -106,6 +112,10 @@
 				<File Id="826280766" Language="SFX">
 					<ShortName>Rolling_Motor.wav</ShortName>
 					<Path>SFX\Rolling_Motor_19F31676.wem</Path>
+				</File>
+				<File Id="897686578" Language="SFX">
+					<ShortName>torchlight_off.wav</ShortName>
+					<Path>SFX\torchlight_off_10C4C929.wem</Path>
 				</File>
 				<File Id="911937066" Language="SFX">
 					<ShortName>TempleDrone.wav</ShortName>

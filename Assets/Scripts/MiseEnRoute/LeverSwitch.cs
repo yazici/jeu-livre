@@ -33,8 +33,10 @@ namespace MiseEnRoute
 
         public void ResetSwitch()
         {
+            if (!m_State) return;
             m_State = false;
             m_Animator.SetBool(Pulled, false);
+            AudioManager.m_Instance.PlaySFX("Lever", gameObject);
             m_CanInteractWith = true;
         }
     }

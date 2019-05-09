@@ -1,94 +1,75 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
 
 public class LoadInterface : MonoBehaviour
 {
-    public Canvas robotUI;
-    public CanvasGroup robotUICanvasGroup;
+    public Canvas m_RobotUI;
+    public CanvasGroup m_RobotUICanvasGroup;
 
-    private GameObject loadingBar;
-    private Animation loadingBarAnim;
+    private GameObject m_LoadingBar;
+    private Animation m_LoadingBarAnim;
 
-    private GameObject objectInterface;
+    private GameObject m_ObjectInterface;
 
-    private CanvasGroup canvasGroup;
+    private CanvasGroup m_CanvasGroup;
 
-    [SerializeField] private float fadeTime = 1.5f;
+    [SerializeField] private float m_FadeTime = 1f;
 
-    private bool visibleInterface;
-    private bool activeInterface;
+    private bool m_IsVisibleInterface;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && !m_IsVisibleInterface)
         {
-           StartCoroutine(OpenInterface("ScannerUI",false));
+            StartCoroutine(OpenInterface("ScannerUI", true));
         }
-        if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape) && m_IsVisibleInterface)
         {
-            if (activeInterface)
-                StartCoroutine(CloseInterface());
+            StartCoroutine(CloseInterface());
         }
     }
 
-    public IEnumerator OpenInterface(string objectToLoad)
+    public IEnumerator OpenInterface(string objectToLoad, bool playerCanMove = false)
     {
-        GameManager.ShowCursor();
-
-        StartCoroutine(PlayLoadingAnimation());
-        StartCoroutine(AlphaFadeOut(robotUICanvasGroup, 0.2f, fadeTime));
-
-        yield return WaitForAnimation();
-
-        Destroy(loadingBar);
-
-        yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
-        yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, fadeTime));
-
-        visibleInterface = true;
-        activeInterface = true;
-    }
-
-    public IEnumerator OpenInterface(string objectToLoad, bool isFixed)
-    {
-        if (!isFixed)
+        if (m_IsVisibleInterface)
         {
-        StartCoroutine(PlayLoadingAnimation());
-        StartCoroutine(AlphaFadeOut(robotUICanvasGroup, 0.2f, fadeTime));
-
-        yield return WaitForAnimation();
-
-        Destroy(loadingBar);
-
-        yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
-        yield return StartCoroutine(AlphaFadeIn(canvasGroup, 1f, fadeTime));
-
-        visibleInterface = false;
-        activeInterface = true;
-        }else
-        {
-            OpenInterface(objectToLoad);
+            yield return StartCoroutine(CloseInterface());
         }
+        
+        if (!playerCanMove)
+        {
+            GameManager.ShowCursor();
+        }
+
+        StartCoroutine(PlayLoadingAnimation());
+        StartCoroutine(AlphaFadeOut(m_RobotUICanvasGroup, 0.2f, m_FadeTime));
+
+        yield return WaitForAnimation();
+
+        Destroy(m_LoadingBar);
+
+        yield return StartCoroutine(InstantiateGameObject(objectToLoad, gameObject));
+        yield return StartCoroutine(AlphaFadeIn(m_CanvasGroup, 1f, m_FadeTime));
+
+        m_IsVisibleInterface = true;
     }
 
     public IEnumerator CloseInterface()
     {
-        visibleInterface = false;
-        activeInterface = false;
+        m_IsVisibleInterface = false;
         GameManager.HideCursor();
-        yield return StartCoroutine(AlphaFadeOut(canvasGroup, 0f, fadeTime));
-        StartCoroutine(AlphaFadeIn(robotUICanvasGroup, 1f, fadeTime));
+        yield return StartCoroutine(AlphaFadeOut(m_CanvasGroup, 0f, m_FadeTime));
+        StartCoroutine(AlphaFadeIn(m_RobotUICanvasGroup, 1f, m_FadeTime));
     }
 
     IEnumerator PlayLoadingAnimation()
     {
         Instantiate(Resources.Load("LoadingBar"));
-        loadingBar = GameObject.Find("LoadingBar(Clone)");
-        loadingBar.transform.SetParent(robotUI.transform);
-        loadingBarAnim = loadingBar.GetComponentInChildren<Animation>();
-        loadingBarAnim.Play();
+        m_LoadingBar = GameObject.Find("LoadingBar(Clone)");
+        m_LoadingBar.transform.SetParent(m_RobotUI.transform);
+        m_LoadingBarAnim = m_LoadingBar.GetComponentInChildren<Animation>();
+        m_LoadingBarAnim.Play();
 
         yield return null;
     }
@@ -99,17 +80,17 @@ public class LoadInterface : MonoBehaviour
         do
         {
             yield return null;
-        } while (loadingBarAnim.isPlaying);
+        } while (m_LoadingBarAnim.isPlaying);
     }
 
     IEnumerator InstantiateGameObject(string objectToLoad, GameObject gameObjectToLoad)
     {
         Instantiate(Resources.Load(objectToLoad));
         gameObjectToLoad = GameObject.Find(objectToLoad + "(Clone)");
-        gameObjectToLoad.transform.SetParent(robotUI.transform);
-        canvasGroup = gameObjectToLoad.GetComponentInChildren<CanvasGroup>();
+        gameObjectToLoad.transform.SetParent(m_RobotUI.transform);
+        m_CanvasGroup = gameObjectToLoad.GetComponentInChildren<CanvasGroup>();
 
-        objectInterface = gameObjectToLoad;
+        m_ObjectInterface = gameObjectToLoad;
 
         yield return null;
     }
@@ -129,11 +110,11 @@ public class LoadInterface : MonoBehaviour
         {
             canvasGroupToFade.alpha -= 1 * Time.deltaTime / fadeTime;
 
-            if (canvasGroupToFade != robotUICanvasGroup)
+            if (canvasGroupToFade != m_RobotUICanvasGroup)
             {
                 if (canvasGroupToFade.alpha <= 0)
                 {
-                    Destroy(objectInterface);
+                    Destroy(m_ObjectInterface);
                     yield break;
                 }
             }
@@ -141,8 +122,4 @@ public class LoadInterface : MonoBehaviour
             yield return null;
         }
     }
-
-
-
-
 }

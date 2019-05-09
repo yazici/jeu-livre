@@ -24,6 +24,8 @@ namespace AK
         static const AkUniqueID PLAY_SYNTH_BIPS_SEQUENCE = 3849115581U;
         static const AkUniqueID PLAY_TEMPLE_CHIMES = 1371242783U;
         static const AkUniqueID PLAY_TEMPLE_DRONE = 1164784286U;
+        static const AkUniqueID PLAY_TORCHLIGHTOFF = 1462694307U;
+        static const AkUniqueID PLAY_TORCHLIGHTON = 1588639311U;
         static const AkUniqueID PLAY_TYPING = 1659138091U;
         static const AkUniqueID PLAY_VALIDATIONBEEP = 136370607U;
         static const AkUniqueID STOP_DRONEMOTOR = 2341913985U;

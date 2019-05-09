@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Baptiste.unity
     guid: a5a6da63bad379243b69e63cda6cddee
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StartingConsole.unity
     guid: bb040130f911de744bc299c8618605c1
   - enabled: 0
@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Playtests/Molecules.unity
     guid: 277054434ca5ead4b9e2bcd0f7b4de8c
+  - enabled: 1
+    path: Assets/Scenes/PlaytestsV2/MiseEnRoute2.unity
+    guid: d3c50552d5fe1034597c646a55f407a2
+  - enabled: 1
+    path: Assets/Scenes/PlaytestsV2/Molecules2.unity
+    guid: f86e1db6d781cc641b606c7c4d60d358
   m_configObjects: {}
