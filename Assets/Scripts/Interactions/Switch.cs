@@ -35,5 +35,10 @@ namespace Interactions
         {
             return m_State;
         }
+
+        public bool GetState()
+        {
+            return m_State;
+        }
     }
 }
