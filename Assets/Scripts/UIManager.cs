@@ -2,7 +2,7 @@
 using ScriptableObjects;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
             GameManager.HideCursor();
             m_PauseCanvas.SetActive(false);
         }
-        else if (Input.GetButtonDown("Pause"))
+        else if (Input.GetButtonDown("Pause") && SceneManager.GetActiveScene().name != "StartingConsole")
         {
             m_IsPaused = true;
             GameManager.ShowCursor();
