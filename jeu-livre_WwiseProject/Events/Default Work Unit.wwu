@@ -277,6 +277,128 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Elevator" ID="{18468694-689C-491A-889C-53842E8A0ACB}" ShortID="30728759">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_ElevatorExternalCallButton" ID="{4CC81BE7-8A17-48E1-8D8F-096FC13B5631}">
+							<ChildrenList>
+								<Action Name="" ID="{00E49496-4BE9-4C70-8EC5-44E66BE03C1F}" ShortID="1029617907">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorExternalCallButton" ID="{3CCB0D18-04DD-4197-AB0E-015D1BA975EA}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorDoorsOpening" ID="{B0741C1E-7D77-4B37-8EAC-61E0531F88D7}">
+							<ChildrenList>
+								<Action Name="" ID="{4C47FC33-1C4F-46D3-828B-B65785952E35}" ShortID="772740274">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorDoorsOpening" ID="{2DD4A007-6BDB-42C1-9435-09E0C6BC6D96}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorDoorsClosing" ID="{9CA06695-F003-453E-B7A7-8CD15F833CBE}">
+							<ChildrenList>
+								<Action Name="" ID="{9F6C7C8B-8AFB-43A5-A0A9-8CBB0BAC7354}" ShortID="165042903">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorDoorsClosing" ID="{B152C158-E437-420D-82BA-95FB08ED6137}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorDoorsClosingTap" ID="{A794B774-1493-41C0-ACF6-BEF3FE314F78}">
+							<ChildrenList>
+								<Action Name="" ID="{2806DB95-D131-4AD0-A847-13E4CD596C05}" ShortID="813680698">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorDoorsClosingTap" ID="{964360D0-9D1F-4B58-9C1B-7A1A430E139B}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorInternalButton" ID="{B2F80AAF-B0FC-4384-A7EA-060F466ADF90}">
+							<ChildrenList>
+								<Action Name="" ID="{719F6318-EF6A-4D5F-8769-1DBBC3BB5524}" ShortID="333249215">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorInternalButton" ID="{939E1A9B-BB39-4923-A91A-68B4A12FBCAB}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorBell" ID="{D8505769-9F6A-4F23-88DD-F874DD3527AA}">
+							<ChildrenList>
+								<Action Name="" ID="{9DED7F2B-D83B-4F06-A69E-6F74FF2A4B88}" ShortID="620177172">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorBell" ID="{1841F4B6-9FB9-40EA-ACA9-669DDAD7F4C1}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ElevatorDrive" ID="{C1B35B1D-771F-4935-974E-6F6434D67D98}">
+							<ChildrenList>
+								<Action Name="" ID="{8059FC85-D74B-45A4-951C-5B11B421E5D3}" ShortID="509568021">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorDrive" ID="{E80673C8-FA1F-4275-8DC5-05FD1CF1B0F6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_ElevatorDrive" ID="{08A873D0-20B3-4E2C-8D79-33E0C12B47F4}">
+							<ChildrenList>
+								<Action Name="" ID="{666CC1E1-0976-4972-B310-904AD90A1D8C}" ShortID="1034624484">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ElevatorDrive" ID="{E80673C8-FA1F-4275-8DC5-05FD1CF1B0F6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

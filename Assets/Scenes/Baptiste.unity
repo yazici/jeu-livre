@@ -2567,6 +2567,7 @@ GameObject:
   - component: {fileID: 402386174}
   - component: {fileID: 402386173}
   - component: {fileID: 402386172}
+  - component: {fileID: 402386176}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2646,6 +2647,25 @@ Transform:
   m_Father: {fileID: 1467474837}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &402386176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402386171}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &412220384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4160519767647610, guid: c73151b2c863d094393f47d50c325553,
@@ -2742,6 +2762,8 @@ GameObject:
   - component: {fileID: 424251268}
   - component: {fileID: 424251267}
   - component: {fileID: 424251266}
+  - component: {fileID: 424251269}
+  - component: {fileID: 424251270}
   m_Layer: 0
   m_Name: Porte
   m_TagString: Untagged
@@ -2821,6 +2843,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424251264}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &424251269
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424251264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afcb678741a26f3459dc03928d534671, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &424251270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424251264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a69c647b014d9eb56955c96965ce9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_State: 0
 --- !u!4 &432725128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4823070102659982, guid: 7314c015f88e565459fd79bfb3d7cb82,
@@ -3741,7 +3795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 819177853}
   m_Layer: 0
-  m_Name: Ground (1)
+  m_Name: 2nd floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3755,7 +3809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819177852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.0197, z: -8.9224}
+  m_LocalPosition: {x: 0, y: 9.0197, z: 32.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 505244405}
@@ -5794,7 +5848,7 @@ GameObject:
   - component: {fileID: 1180775854}
   - component: {fileID: 1180775853}
   m_Layer: 10
-  m_Name: ElevatorDoorSwitch
+  m_Name: ElevatorDoorTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5829,8 +5883,10 @@ MonoBehaviour:
   m_Label: 
   m_IsLabelCentered: 0
   m_CanInteractWith: 1
-  m_State: 0
-  m_Animator: {fileID: 1467474836}
+  m_IsInfiniteTrigger: 1
+  m_NbLimit: 0
+  m_Animator: {fileID: 424251269}
+  m_ElevatorDoor: {fileID: 424251270}
   m_IsAnimating: 0
 --- !u!65 &1180775854
 BoxCollider:
@@ -6570,6 +6626,7 @@ MonoBehaviour:
   m_State: 0
   m_Player: {fileID: 52125043}
   m_Elevator: {fileID: 1467474835}
+  m_ElevatorDoor: {fileID: 424251270}
   m_AnimationCurve:
     serializedVersion: 2
     m_Curve:
@@ -6594,11 +6651,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ElevatorDoorSwitch: {fileID: 1180775853}
+  m_ElevatorDoorTrigger: {fileID: 1180775853}
   m_Speed: 0.25
-  m_Heights:
-  - 0
-  - 8.7
+  m_PosTargets:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 8.91, z: 16.94}
 --- !u!65 &1379507486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7027,7 +7084,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1467474837}
   - component: {fileID: 1467474836}
-  - component: {fileID: 1467474838}
   m_Layer: 0
   m_Name: Elevator
   m_TagString: Untagged
@@ -7045,7 +7101,7 @@ Animator:
   m_GameObject: {fileID: 1467474835}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: afcb678741a26f3459dc03928d534671, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1d5d690e072875d4397899aca0070fcd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7075,18 +7131,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1467474838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467474835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d92b87bc91da654fba27bd976df16ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1488390426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8262,7 +8306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1785303271
 Transform:
   m_ObjectHideFlags: 0
@@ -8690,8 +8734,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918600962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.266, y: 5.1188, z: 3.8917}
-  m_LocalScale: {x: 2.849702, y: 0.31937116, z: 3.6872222}
+  m_LocalPosition: {x: 1.2809, y: 5.1188, z: 3.9099}
+  m_LocalScale: {x: 2.8807638, y: 0.31937116, z: 3.6953342}
   m_Children: []
   m_Father: {fileID: 1467474837}
   m_RootOrder: 3
@@ -9206,7 +9250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2026144650
 Transform:
   m_ObjectHideFlags: 0

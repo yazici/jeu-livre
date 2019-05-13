@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -24,6 +24,13 @@
 				<Event Id="3536391747" Name="Play_DroneMotor" ObjectPath="\Events\Default Work Unit\Play_DroneMotor"/>
 				<Event Id="1463233682" Name="Play_DroneRotation" ObjectPath="\Events\Default Work Unit\Play_DroneRotation"/>
 				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Play_Electric_Motor" MaxAttenuation="20.000000"/>
+				<Event Id="3683180351" Name="Play_ElevatorBell" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorBell"/>
+				<Event Id="1211901148" Name="Play_ElevatorDoorsClosing" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDoorsClosing"/>
+				<Event Id="2240490979" Name="Play_ElevatorDoorsClosingTap" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDoorsClosingTap"/>
+				<Event Id="3818758685" Name="Play_ElevatorDoorsOpening" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDoorsOpening"/>
+				<Event Id="2907191916" Name="Play_ElevatorDrive" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDrive"/>
+				<Event Id="1835743889" Name="Play_ElevatorExternalCallButton" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorExternalCallButton"/>
+				<Event Id="3197920139" Name="Play_ElevatorInternalButton" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorInternalButton"/>
 				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\Play_ErrorBeep"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
@@ -38,6 +45,7 @@
 				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\Play_ValidationBeep"/>
 				<Event Id="2341913985" Name="Stop_DroneMotor" ObjectPath="\Events\Default Work Unit\Stop_DroneMotor" MaxAttenuation="0.000000"/>
 				<Event Id="3803467864" Name="Stop_DroneRotation" ObjectPath="\Events\Default Work Unit\Stop_DroneRotation" MaxAttenuation="0.000000"/>
+				<Event Id="1571487338" Name="Stop_ElevatorDrive" ObjectPath="\Events\Default Work Unit\Elevator\Stop_ElevatorDrive" MaxAttenuation="0.000000"/>
 				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\Stop_ServerMotor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -53,9 +61,21 @@
 					<ShortName>digital_label.wav</ShortName>
 					<Path>SFX\digital_label_D3CE5047.wem</Path>
 				</File>
+				<File Id="71009520" Language="SFX">
+					<ShortName>bell.wav</ShortName>
+					<Path>SFX\bell_3448330C.wem</Path>
+				</File>
 				<File Id="101773938" Language="SFX">
 					<ShortName>beep-07.wav</ShortName>
 					<Path>SFX\beep-07_10C4C929.wem</Path>
+				</File>
+				<File Id="108405263" Language="SFX">
+					<ShortName>drone4.wav</ShortName>
+					<Path>SFX\drone4_EF0EAE22.wem</Path>
+				</File>
+				<File Id="118325953" Language="SFX">
+					<ShortName>arriving.wav</ShortName>
+					<Path>SFX\arriving_10C4C929.wem</Path>
 				</File>
 				<File Id="126686386" Language="SFX">
 					<ShortName>Electric Motor 2-SoundBible.com-352105994.wav</ShortName>
@@ -64,6 +84,14 @@
 				<File Id="152619115" Language="SFX">
 					<ShortName>Drone_SciFi_TonalRumble_01_01.wav</ShortName>
 					<Path>SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem</Path>
+				</File>
+				<File Id="157755773" Language="SFX">
+					<ShortName>beep.wav</ShortName>
+					<Path>SFX\beep_8D0860C7.wem</Path>
+				</File>
+				<File Id="182272450" Language="SFX">
+					<ShortName>drone2.wav</ShortName>
+					<Path>SFX\drone2_E8D06825.wem</Path>
 				</File>
 				<File Id="279537869" Language="SFX">
 					<ShortName>123253__skullsmasha__mechanicalclamp.wav</ShortName>
@@ -81,9 +109,21 @@
 					<ShortName>TempleDroneChoirs.wav</ShortName>
 					<Path>SFX\TempleDroneChoirs_BDB0F7CA.wem</Path>
 				</File>
+				<File Id="403925957" Language="SFX">
+					<ShortName>drone.wav</ShortName>
+					<Path>SFX\drone_DDE8BCB7.wem</Path>
+				</File>
+				<File Id="413603073" Language="SFX">
+					<ShortName>beep_calling.wav</ShortName>
+					<Path>SFX\beep_calling_B5068808.wem</Path>
+				</File>
 				<File Id="468596089" Language="SFX">
 					<ShortName>ValidationBeep.wav</ShortName>
 					<Path>SFX\ValidationBeep_B250FB99.wem</Path>
+				</File>
+				<File Id="550709399" Language="SFX">
+					<ShortName>sliding doors_closing_tap.wav</ShortName>
+					<Path>SFX\sliding doors_closing_tap_116F8A0B.wem</Path>
 				</File>
 				<File Id="566412347" Language="SFX">
 					<ShortName>Chimes1.wav</ShortName>
@@ -105,6 +145,10 @@
 					<ShortName>Chimes7.wav</ShortName>
 					<Path>SFX\Chimes7_21C98E47.wem</Path>
 				</File>
+				<File Id="807504757" Language="SFX">
+					<ShortName>sliding doors_closing.wav</ShortName>
+					<Path>SFX\sliding doors_closing_E56D1C8C.wem</Path>
+				</File>
 				<File Id="817482986" Language="SFX">
 					<ShortName>Ambience Ceiling Fan 01.wav</ShortName>
 					<Path>SFX\Ambience Ceiling Fan 01_90DCB559.wem</Path>
@@ -112,6 +156,10 @@
 				<File Id="826280766" Language="SFX">
 					<ShortName>Rolling_Motor.wav</ShortName>
 					<Path>SFX\Rolling_Motor_19F31676.wem</Path>
+				</File>
+				<File Id="851127969" Language="SFX">
+					<ShortName>drone3.wav</ShortName>
+					<Path>SFX\drone3_22476FD0.wem</Path>
 				</File>
 				<File Id="897686578" Language="SFX">
 					<ShortName>torchlight_off.wav</ShortName>
@@ -128,6 +176,10 @@
 				<File Id="977182220" Language="SFX">
 					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>
 					<Path>SFX\Ambience Air Conditioner 180 01_F0678BD7.wem</Path>
+				</File>
+				<File Id="994861247" Language="SFX">
+					<ShortName>sliding doors_opening.wav</ShortName>
+					<Path>SFX\sliding doors_opening_5D53E937.wem</Path>
 				</File>
 				<File Id="1002218341" Language="SFX">
 					<ShortName>Chimes3.wav</ShortName>

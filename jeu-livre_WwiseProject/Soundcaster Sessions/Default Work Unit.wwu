@@ -3,7 +3,7 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{2C77C427-0CDC-4EEB-BA04-3AF527C0A846}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundcasterSession Name="New Soundcaster Session" ID="{D7880912-BD90-4193-A573-73F6598B2BB1}">
+				<SoundcasterSession Name="Main" ID="{D7880912-BD90-4193-A573-73F6598B2BB1}">
 					<ModuleList>
 						<Module>
 							<ObjectRef Name="Play_Labo_Room_Tone" ID="{10F38309-6271-49AB-A2C3-EBD21C0C50F2}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
@@ -60,6 +60,50 @@
 						<Module>
 							<ObjectRef Name="Play_ValidationBeep" ID="{CD084AE0-0C1A-404C-88FC-4AB9D4722D9C}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Drone_Speed" ID="{2B5A5736-C920-4732-AA27-09251EAD9E5A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Elevator" ID="{8BF850B4-E12A-4019-843B-21053F4A5B7C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="ElevatorExternalCallButton" ID="{3CCB0D18-04DD-4197-AB0E-015D1BA975EA}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ElevatorInternalButton" ID="{B2F80AAF-B0FC-4384-A7EA-060F466ADF90}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ElevatorDoorsOpening" ID="{2DD4A007-6BDB-42C1-9435-09E0C6BC6D96}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ElevatorDrive" ID="{C1B35B1D-771F-4935-974E-6F6434D67D98}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ElevatorInternalButton" ID="{939E1A9B-BB39-4923-A91A-68B4A12FBCAB}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_ElevatorDrive" ID="{08A873D0-20B3-4E2C-8D79-33E0C12B47F4}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ElevatorDoorsClosing" ID="{B152C158-E437-420D-82BA-95FB08ED6137}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ElevatorDoorsClosingTap" ID="{964360D0-9D1F-4B58-9C1B-7A1A430E139B}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
