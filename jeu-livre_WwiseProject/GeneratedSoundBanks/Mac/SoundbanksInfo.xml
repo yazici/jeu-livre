@@ -21,9 +21,9 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3536391747" Name="Play_DroneMotor" ObjectPath="\Events\Default Work Unit\Play_DroneMotor"/>
-				<Event Id="1463233682" Name="Play_DroneRotation" ObjectPath="\Events\Default Work Unit\Play_DroneRotation"/>
-				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Play_Electric_Motor" MaxAttenuation="20.000000"/>
+				<Event Id="3536391747" Name="Play_DroneMotor" ObjectPath="\Events\Default Work Unit\Drone\Play_DroneMotor"/>
+				<Event Id="1463233682" Name="Play_DroneRotation" ObjectPath="\Events\Default Work Unit\Drone\Play_DroneRotation"/>
+				<Event Id="2519717329" Name="Play_Electric_Motor" ObjectPath="\Events\Default Work Unit\Moleculator\Play_Electric_Motor" MaxAttenuation="20.000000"/>
 				<Event Id="3683180351" Name="Play_ElevatorBell" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorBell"/>
 				<Event Id="1211901148" Name="Play_ElevatorDoorsClosing" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDoorsClosing"/>
 				<Event Id="2240490979" Name="Play_ElevatorDoorsClosingTap" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDoorsClosingTap"/>
@@ -31,22 +31,22 @@
 				<Event Id="2907191916" Name="Play_ElevatorDrive" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorDrive"/>
 				<Event Id="1835743889" Name="Play_ElevatorExternalCallButton" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorExternalCallButton"/>
 				<Event Id="3197920139" Name="Play_ElevatorInternalButton" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorInternalButton"/>
-				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\Play_ErrorBeep"/>
-				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Play_InitDrone"/>
-				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
-				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\Play_Lever"/>
-				<Event Id="2296544690" Name="Play_ServerMotor" ObjectPath="\Events\Default Work Unit\Play_ServerMotor" MaxAttenuation="20.000000"/>
-				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
-				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
-				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Play_Temple_Drone" MaxAttenuation="20.000000"/>
-				<Event Id="1462694307" Name="Play_TorchlightOff" ObjectPath="\Events\Default Work Unit\Play_TorchlightOff"/>
-				<Event Id="1588639311" Name="Play_TorchlightOn" ObjectPath="\Events\Default Work Unit\Play_TorchlightOn"/>
-				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Play_Typing"/>
-				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\Play_ValidationBeep"/>
-				<Event Id="2341913985" Name="Stop_DroneMotor" ObjectPath="\Events\Default Work Unit\Stop_DroneMotor" MaxAttenuation="0.000000"/>
-				<Event Id="3803467864" Name="Stop_DroneRotation" ObjectPath="\Events\Default Work Unit\Stop_DroneRotation" MaxAttenuation="0.000000"/>
+				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ErrorBeep"/>
+				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Drone\Play_InitDrone"/>
+				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\RoomTones\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
+				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>
+				<Event Id="2296544690" Name="Play_ServerMotor" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ServerMotor" MaxAttenuation="20.000000"/>
+				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Moleculator\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
+				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
+				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Drone" MaxAttenuation="20.000000"/>
+				<Event Id="1462694307" Name="Play_TorchlightOff" ObjectPath="\Events\Default Work Unit\Drone\Play_TorchlightOff"/>
+				<Event Id="1588639311" Name="Play_TorchlightOn" ObjectPath="\Events\Default Work Unit\Drone\Play_TorchlightOn"/>
+				<Event Id="1659138091" Name="Play_Typing" ObjectPath="\Events\Default Work Unit\Drone\Play_Typing"/>
+				<Event Id="136370607" Name="Play_ValidationBeep" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ValidationBeep"/>
+				<Event Id="2341913985" Name="Stop_DroneMotor" ObjectPath="\Events\Default Work Unit\Drone\Stop_DroneMotor" MaxAttenuation="0.000000"/>
+				<Event Id="3803467864" Name="Stop_DroneRotation" ObjectPath="\Events\Default Work Unit\Drone\Stop_DroneRotation" MaxAttenuation="0.000000"/>
 				<Event Id="1571487338" Name="Stop_ElevatorDrive" ObjectPath="\Events\Default Work Unit\Elevator\Stop_ElevatorDrive" MaxAttenuation="0.000000"/>
-				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\Stop_ServerMotor" MaxAttenuation="0.000000"/>
+				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Stop_ServerMotor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="32040915" Language="SFX">

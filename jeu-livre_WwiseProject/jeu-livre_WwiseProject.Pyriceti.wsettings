@@ -4,9 +4,11 @@
 		<UserProjectSettings Name="" ID="{23AD5D65-33B2-451B-9BA3-BA9CD6219076}">
 			<PropertyList>
 				<Property Name="Event Action List\{08A873D0-20B3-4E2C-8D79-33E0C12B47F4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0DB4F7CE-7BBE-4D50-913B-39812C3EEC9D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{10F38309-6271-49AB-A2C3-EBD21C0C50F2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{30769F38-9664-4CD1-AAF1-0B6B36D712DC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{366DEF7C-7CC8-4D32-AD51-7A9912576C23}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{419CE858-A715-45AF-8D1C-B454C17AB303}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4A53CF1E-543D-44A9-80F4-ECF7277DF3B2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4CC81BE7-8A17-48E1-8D8F-096FC13B5631}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{538E842B-85E1-4454-883B-181E17DB3AA2}\x64_Expand States" Type="string" Value=""/>
@@ -14,6 +16,7 @@
 				<Property Name="Event Action List\{57580C0B-317D-47A4-9B22-8C0DDF84F9B9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8279F23C-8C8A-46C2-A2F8-49EC5A953999}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{84B08C1F-6C31-4F86-974B-63FC6A346035}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{885E6F9E-82C6-4693-808B-87974933A94E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{997B6253-6445-4751-8CD3-A4B36377A03F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9CA06695-F003-453E-B7A7-8CD15F833CBE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A794B774-1493-41C0-ACF6-BEF3FE314F78}\x64_Expand States" Type="string" Value=""/>
@@ -82,7 +85,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="ZdIoD6Y4AkCS3+XKXHhAV9ikFBWmHSpBoX51ygwhSfMOmnsTZo16Tru02bSW8oKU"/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="UOM9IhR+OEeVQ4KfAHIaS1p3woEXZFZHnrqWgAgCIcsp6TNDQuThSLS09DNv40xRPAJ/FbdkXUqakkx/XBBGPm/owIANujVMsU8K5KGAH3i8Ws5T4gG7TLbnFVSBFlZq/9v+b8DfyE63Dkwfl/tYrUyNmGNM1ZZPpYl050Iharg/JEPzRoGYT6Q9AvZ4HMTn"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="WnfCgRdkVkeeupaACAIhy//b/m/A38hOtw5MH5f7WK0="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="prf4dZCfp0qe8BP215fiVQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>

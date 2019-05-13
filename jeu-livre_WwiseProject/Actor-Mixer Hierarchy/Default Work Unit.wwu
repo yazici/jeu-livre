@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{81C2775A-6417-4756-9EBA-9680080221CB}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Room Tones" ID="{223DE350-7E14-4738-9543-829F00721A4B}" ShortID="774301578">
+				<Folder Name="RoomTones" ID="{223DE350-7E14-4738-9543-829F00721A4B}" ShortID="774301578">
 					<ChildrenList>
 						<BlendContainer Name="Labo Room Tone" ID="{53CE5ABC-01E2-4CBB-B6E7-15548116566A}" ShortID="183717795">
 							<PropertyList>
@@ -121,7 +121,11 @@
 				</Folder>
 				<Folder Name="SFX" ID="{6FFEDBFF-DFC0-4EC8-B70E-4C1F97FB58AD}" ShortID="613533723">
 					<ChildrenList>
-						<ActorMixer Name="Synth" ID="{63988D4C-D54C-4F96-A589-74E742216AB8}" ShortID="7870266">
+						<ActorMixer Name="Moleculator" ID="{63988D4C-D54C-4F96-A589-74E742216AB8}" ShortID="7870266">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
@@ -131,7 +135,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Synth Bips Sequence" ID="{4333E929-E442-48E1-B4B4-F4336FE34C51}" ShortID="251105936">
+								<RandomSequenceContainer Name="MoleculatorBipsSequence" ID="{4333E929-E442-48E1-B4B4-F4336FE34C51}" ShortID="251105936">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="InitialDelay" Type="Real64">
@@ -175,105 +179,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Synth Bips Random" ID="{0BB0128E-B390-440D-89FF-6A076791DF55}" ShortID="399099042">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>46</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Bip1" ID="{C70F9979-10C9-4023-BECA-983E20B3A27B}" ShortID="848918386">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Bip1" ID="{11F01DA3-4C2B-4619-A527-6C59189C195A}" ShortID="407648760">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Bip1.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Bip1" ID="{11F01DA3-4C2B-4619-A527-6C59189C195A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Bip2" ID="{A1E59FDE-E739-4D15-8C7E-FD9F8790D690}" ShortID="359947724">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Bip2" ID="{FF8A77A3-240A-4D77-9C49-20C1137AB852}" ShortID="615951393">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Bip2.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Bip2" ID="{FF8A77A3-240A-4D77-9C49-20C1137AB852}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Bip3" ID="{5B0AB01A-07AE-4D04-9AFC-617EB99622BF}" ShortID="716264309">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Bip3" ID="{3C5D290C-A4E5-40A9-ADFB-7D132FDD7430}" ShortID="1000259395">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Bip3.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Bip3" ID="{3C5D290C-A4E5-40A9-ADFB-7D132FDD7430}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
 										<Sound Name="Beep" ID="{318BB68E-B16C-44A7-8D03-270F3C49F916}" ShortID="591690719">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
@@ -357,51 +262,11 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
-						<Sound Name="Digital Typing" ID="{331213E5-37E6-4158-8F8A-C5845C8906E1}" ShortID="391015236">
-							<PropertyList>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="digital_label" ID="{CC8759AF-B2CD-4B14-AC86-2524FC41B3BC}" ShortID="60223780">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0.295080533314163"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.295080533314163"/>
-										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>digital_label.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="digital_label" ID="{CC8759AF-B2CD-4B14-AC86-2524FC41B3BC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Folder Name="Temple" ID="{37A049B7-A1F4-404A-91FB-1574E4A7CEB9}" ShortID="497380079">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<ActorMixer Name="Temple" ID="{B17406A1-AB6E-427A-B6D2-366DE1F1831C}" ShortID="653619329">
 									<PropertyList>
@@ -1148,6 +1013,10 @@
 							</ChildrenList>
 						</BlendContainer>
 						<Folder Name="Drone" ID="{157F023C-64B7-4A5D-9A92-4C7F5C10463E}" ShortID="349970745">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<BlendContainer Name="DroneMotor" ID="{F343243F-8146-4F98-A43D-02F6781CC4E7}" ShortID="971257146">
 									<PropertyList>
@@ -1682,9 +1551,57 @@
 										<ActiveSource Name="torchlight_on" ID="{9BFE7896-336F-496B-8D65-3AD544952A31}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Digital Typing" ID="{331213E5-37E6-4158-8F8A-C5845C8906E1}" ShortID="391015236">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="digital_label" ID="{CC8759AF-B2CD-4B14-AC86-2524FC41B3BC}" ShortID="60223780">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.295080533314163"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.295080533314163"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>digital_label.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="digital_label" ID="{CC8759AF-B2CD-4B14-AC86-2524FC41B3BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="MiseEnRoute" ID="{8675FB0F-BE2B-401A-9E1B-B13F874020A2}" ShortID="1064805333">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="16"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Folder Name="Server" ID="{890CCBFE-AE30-47AF-8FF0-1A27EC98FBCB}" ShortID="564700780">
 									<ChildrenList>
