@@ -43,6 +43,7 @@ public class PlayerRaycast : MonoBehaviour
         else if (m_LastLookable)
         {
             m_LastLookable.StopLooking();
+            m_LastLookable = null;
         }
     }
 }

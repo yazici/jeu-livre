@@ -1,4 +1,6 @@
-﻿using Interactions;
+﻿using System.Collections;
+using Interactions;
+using UnityEngine;
 
 namespace MiseEnRoute
 {
@@ -20,19 +22,27 @@ namespace MiseEnRoute
             {
                 MiseEnRouteManager.m_Instance.Plug(m_ServerName);
                 AudioManager.m_Instance.PlaySFX("ServerMotor", gameObject);
-                SetLabel("Débrancher le serveur");
             }
             else
             {
                 MiseEnRouteManager.m_Instance.Unplug(m_ServerName);
                 AudioManager.m_Instance.StopSFX("ServerMotor", gameObject);
-                SetLabel("Rebrancher le serveur");
             }
         }
 
         protected override void AfterSwitch()
         {
+            m_CanInteractWith = false;
+            StopLooking();
+            StartCoroutine(ResetAfterSeconds());
             m_LeverSwitch.ResetSwitch();
+        }
+
+        private IEnumerator ResetAfterSeconds()
+        {
+            yield return new WaitForSeconds(2f);
+            m_CanInteractWith = true;
+            SetLabel(IsActivated() ? "Débrancher le serveur" : "Rebrancher le serveur");
         }
     }
 }
