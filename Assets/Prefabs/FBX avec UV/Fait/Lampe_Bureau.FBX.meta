@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 6c376467c8c3b8949af3c19c97204901
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Abat_jour
+    100002: Ampoule
+    100004: articulation_haute
+    100006: articulation_milieu
+    100008: cable
+    100010: //RootNode
+    100012: pied_bas
+    100014: pied_haut
+    100016: prise
+    400000: Abat_jour
+    400002: Ampoule
+    400004: articulation_haute
+    400006: articulation_milieu
+    400008: cable
+    400010: //RootNode
+    400012: pied_bas
+    400014: pied_haut
+    400016: prise
+    2100000: Base
+    2100002: pied_bas
+    2100004: articulation_milieu
+    2100006: pied_Haut
+    2100008: articulation_haute
+    2100010: abat-jour
+    2100012: ampoule
+    2100014: prise
+    2100016: cable
+    2300000: Abat_jour
+    2300002: Ampoule
+    2300004: articulation_haute
+    2300006: articulation_milieu
+    2300008: cable
+    2300010: //RootNode
+    2300012: pied_bas
+    2300014: pied_haut
+    2300016: prise
+    3300000: Abat_jour
+    3300002: Ampoule
+    3300004: articulation_haute
+    3300006: articulation_milieu
+    3300008: cable
+    3300010: //RootNode
+    3300012: pied_bas
+    3300014: pied_haut
+    3300016: prise
+    4300000: Base
+    4300002: pied_bas
+    4300004: articulation_milieu
+    4300006: pied_haut
+    4300008: articulation_haute
+    4300010: Abat_jour
+    4300012: Ampoule
+    4300014: prise
+    4300016: cable
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
