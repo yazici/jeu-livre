@@ -309,13 +309,11 @@
 								<Action Name="" ID="{866D2188-BB66-468A-89AB-B22F8FB7F419}" ShortID="841324">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
 										<Property Name="FadeInCurve" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="ServerMotor" ID="{DB6EAD57-4717-4BB2-B4A2-2AA5E274AC9A}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+											<ObjectRef Name="ServerMotor" ID="{B1F2F0F9-9D8F-41AE-AF3A-7FEB5D955D2E}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -173,6 +173,10 @@
 					<ShortName>ErrorBeep.wav</ShortName>
 					<Path>SFX\ErrorBeep_DC765304.wem</Path>
 				</File>
+				<File Id="961243170" Language="SFX">
+					<ShortName>Beeps_server.wav</ShortName>
+					<Path>SFX\Beeps_server_0149DACE.wem</Path>
+				</File>
 				<File Id="977182220" Language="SFX">
 					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>
 					<Path>SFX\Ambience Air Conditioner 180 01_F0678BD7.wem</Path>

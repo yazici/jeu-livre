@@ -1605,35 +1605,8 @@
 							<ChildrenList>
 								<Folder Name="Server" ID="{890CCBFE-AE30-47AF-8FF0-1A27EC98FBCB}" ShortID="564700780">
 									<ChildrenList>
-										<Sound Name="ServerMotor" ID="{DB6EAD57-4717-4BB2-B4A2-2AA5E274AC9A}" ShortID="750711611">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>35</Value>
-													</ValueList>
-												</Property>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<BlendContainer Name="ServerMotor" ID="{B1F2F0F9-9D8F-41AE-AF3A-7FEB5D955D2E}" ShortID="65059067">
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Electric Motor Attenuation" ID="{863305EE-946C-44B4-9E74-372AA47C85D9}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
 												</Reference>
@@ -1642,26 +1615,96 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Electric Motor 2-SoundBible_com-352105994" ID="{7A3ECC50-2246-45AA-8C97-3BAF75EC06E0}" ShortID="648685531">
+												<Sound Name="ServerMotor" ID="{DB6EAD57-4717-4BB2-B4A2-2AA5E274AC9A}" ShortID="750711611">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1486.998"/>
-														<Property Name="LoopBegin" Type="Real64" Value="1.54611212064735"/>
-														<Property Name="LoopEnd" Type="Real64" Value="3.77051859099804"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>35</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Electric Motor 2-SoundBible.com-352105994.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="126686386"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Electric Motor Attenuation" ID="{863305EE-946C-44B4-9E74-372AA47C85D9}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Electric Motor 2-SoundBible_com-352105994" ID="{7A3ECC50-2246-45AA-8C97-3BAF75EC06E0}" ShortID="648685531">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="1486.998"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.54611212064735"/>
+																<Property Name="LoopEnd" Type="Real64" Value="3.77051859099804"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Electric Motor 2-SoundBible.com-352105994.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="126686386"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Electric Motor 2-SoundBible_com-352105994" ID="{7A3ECC50-2246-45AA-8C97-3BAF75EC06E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ServerBeep" ID="{5B7ABD2E-6145-4B24-B043-1AD10395BF8C}" ShortID="86728343">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Beeps_server" ID="{4C2424E6-1213-4149-80FB-5D9E45B807E9}" ShortID="961243170">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.414134742404227"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Beeps_server.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Beeps_server" ID="{4C2424E6-1213-4149-80FB-5D9E45B807E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Electric Motor 2-SoundBible_com-352105994" ID="{7A3ECC50-2246-45AA-8C97-3BAF75EC06E0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</BlendContainer>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="LeverSwitch" ID="{4DBBFA25-2584-4D8F-850C-1857EFC3969D}" ShortID="858812301">
