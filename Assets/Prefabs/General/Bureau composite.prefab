@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2293948941939370647}
-  - component: {fileID: 7609679550038891886}
-  - component: {fileID: 1192206691441354879}
   - component: {fileID: 7424178873621528314}
   m_Layer: 0
   m_Name: Bureau composite
@@ -39,54 +37,10 @@ Transform:
   - {fileID: 7824074890080793683}
   - {fileID: 5175087339236774010}
   - {fileID: 2106991514922598117}
+  - {fileID: 1913734324885974786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &7609679550038891886
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423580696935156986}
-  m_Mesh: {fileID: 4300000, guid: 1063160442d8dd54797ed8b11b60b072, type: 3}
---- !u!23 &1192206691441354879
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423580696935156986}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1063160442d8dd54797ed8b11b60b072, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!65 &7424178873621528314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107,16 +61,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_Name
-      value: Ecran Pc (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1197932689624174097, guid: 917d9a81b93cec141ab7dbcb91382d80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,6 +131,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_Name
+      value: Ecran Pc (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917d9a81b93cec141ab7dbcb91382d80, type: 3}
 --- !u!4 &598842983763359624 stripped
@@ -202,16 +156,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_Name
-      value: Ecran Pc
-      objectReference: {fileID: 0}
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1197932689624174097, guid: 917d9a81b93cec141ab7dbcb91382d80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -282,6 +226,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_Name
+      value: Ecran Pc
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917d9a81b93cec141ab7dbcb91382d80, type: 3}
 --- !u!4 &4417010919863771981 stripped
@@ -297,11 +251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
-        type: 3}
-      propertyPath: m_Name
-      value: Souris PC (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3085882463838002004, guid: c8ffdd2801076c945844834edfabaee6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -372,6 +321,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
+        type: 3}
+      propertyPath: m_Name
+      value: Souris PC (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ffdd2801076c945844834edfabaee6, type: 3}
 --- !u!4 &2106991514922598117 stripped
@@ -387,11 +341,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
-        type: 3}
-      propertyPath: m_Name
-      value: Souris PC
-      objectReference: {fileID: 0}
     - target: {fileID: 3085882463838002004, guid: c8ffdd2801076c945844834edfabaee6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -462,6 +411,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
+        type: 3}
+      propertyPath: m_Name
+      value: Souris PC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ffdd2801076c945844834edfabaee6, type: 3}
 --- !u!4 &7824074890080793683 stripped
@@ -477,16 +431,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_Name
-      value: Ecran Pc (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1197932689624174097, guid: 917d9a81b93cec141ab7dbcb91382d80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -557,6 +501,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_Name
+      value: Ecran Pc (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779766293623934822, guid: 917d9a81b93cec141ab7dbcb91382d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917d9a81b93cec141ab7dbcb91382d80, type: 3}
 --- !u!4 &5392288188866499043 stripped
@@ -572,11 +526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
-        type: 3}
-      propertyPath: m_Name
-      value: Souris PC (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3085882463838002004, guid: c8ffdd2801076c945844834edfabaee6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -647,6 +596,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 8664502223158045751, guid: c8ffdd2801076c945844834edfabaee6,
+        type: 3}
+      propertyPath: m_Name
+      value: Souris PC (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ffdd2801076c945844834edfabaee6, type: 3}
 --- !u!4 &5175087339236774010 stripped
@@ -662,11 +616,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
-        type: 3}
-      propertyPath: m_Name
-      value: clavier PC (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5931426753995929546, guid: b50c4ce9231cb0345b7b3f3bce022edb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -732,6 +681,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
+        type: 3}
+      propertyPath: m_Name
+      value: clavier PC (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b50c4ce9231cb0345b7b3f3bce022edb, type: 3}
 --- !u!4 &4548367489983418782 stripped
@@ -740,6 +694,91 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7876695790142973524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8103095715870028979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2293948941939370647}
+    m_Modifications:
+    - target: {fileID: 6690935599752359683, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_Name
+      value: Bureau (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6b005fc9844c0944b697f1d5a058219, type: 3}
+--- !u!4 &1913734324885974786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7709328744491572145, guid: d6b005fc9844c0944b697f1d5a058219,
+    type: 3}
+  m_PrefabInstance: {fileID: 8103095715870028979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8323603209230765744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,11 +786,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
-        type: 3}
-      propertyPath: m_Name
-      value: clavier PC (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5931426753995929546, guid: b50c4ce9231cb0345b7b3f3bce022edb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -817,6 +851,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
+        type: 3}
+      propertyPath: m_Name
+      value: clavier PC (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b50c4ce9231cb0345b7b3f3bce022edb, type: 3}
 --- !u!4 &2437511933208607098 stripped
@@ -832,11 +871,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2293948941939370647}
     m_Modifications:
-    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
-        type: 3}
-      propertyPath: m_Name
-      value: clavier PC
-      objectReference: {fileID: 0}
     - target: {fileID: 5931426753995929546, guid: b50c4ce9231cb0345b7b3f3bce022edb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -901,6 +935,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 90307971931580570, guid: b50c4ce9231cb0345b7b3f3bce022edb,
+        type: 3}
+      propertyPath: m_Name
+      value: clavier PC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b50c4ce9231cb0345b7b3f3bce022edb, type: 3}
