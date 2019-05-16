@@ -50,26 +50,15 @@ namespace Interactions
             float maxDistance = camTransform.localRotation.x > 0.38f ? m_RangeToFoot : m_RangeArm;
             Vector3 distanceFromCamera = transform.position - camTransform.position;
 
-            if (m_IsLooking)
+            // If too far or in interface
+            if (distanceFromCamera.magnitude > maxDistance || Cursor.lockState == CursorLockMode.None)
             {
-                // If too far
-                if (distanceFromCamera.magnitude > maxDistance)
-                {
-                    StopLooking();
-                    return;
-                }
-            
-                // If in interface
-                if (Cursor.lockState == CursorLockMode.None)
-                {
-                    StopLooking();
-                    return;
-                }
+                if (m_IsLooking) StopLooking();
+                return;
             }
 
-
             // Otherwise try to raycast
-            m_PlayerRaycast.AttemptRaycast(this, maxDistance);
+            m_PlayerRaycast.AttemptRaycast(this, maxDistance); 
         }
 
 
