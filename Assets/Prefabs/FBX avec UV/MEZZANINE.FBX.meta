@@ -1,0 +1,868 @@
+fileFormatVersion: 2
+guid: 59d721497dabf0540ba28359d28ecf75
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: angle_90_ext
+    100002: angle_90_ext001
+    100004: angle_90_ext002
+    100006: angle_90_ext003
+    100008: anneau
+    100010: Barre_Cross
+    100012: Barre_Cross001
+    100014: Barre_Cross004
+    100016: Barre_Cross005
+    100018: Barre_Cross006
+    100020: Barre_Cross007
+    100022: Barre_Cross008
+    100024: Barre_Cross009
+    100026: Barre_Cross010
+    100028: Barre_Cross011
+    100030: Barre_Cross012
+    100032: Barre_Cross013
+    100034: Barre_Cross014
+    100036: Barre_Cross015
+    100038: Barre_Cross016
+    100040: Barre_Cross017
+    100042: Barre_Cross018
+    100044: Barre_Cross019
+    100046: Barre_Cross020
+    100048: Barre_Cross021
+    100050: Barre_Cross022
+    100052: Barre_Cross023
+    100054: Barre_Cross024
+    100056: Barre_Cross027
+    100058: Barre_Cross028
+    100060: Barre_Cross029
+    100062: Barre_Cross030
+    100064: Barre_Cross031
+    100066: bas_Escalier
+    100068: bas_Escalier001
+    100070: Escalier
+    100072: Escalier001
+    100074: Group003
+    100076: Group005
+    100078: Group006
+    100080: Group009
+    100082: Group011
+    100084: Group012
+    100086: Haut_Escalier
+    100088: Haut_Escalier001
+    100090: Messanine_support_id
+    100092: Messanine_support_id001
+    100094: Messanine_support_id002
+    100096: Messanine_support_id004
+    100098: Messanine_support_id005
+    100100: Messanine_support_id006
+    100102: //RootNode
+    100104: MEZZANINE
+    100106: mezzanine
+    100108: mezzanine001
+    100110: mezzanine002
+    100112: mezzanine004
+    100114: mezzanine005
+    100116: mezzanine006
+    100118: Mezzanine1
+    100120: Mezzanine_id
+    100122: Mezzanine_id001
+    100124: Mezzanine_id002
+    100126: Mezzanine_id004
+    100128: Mezzanine_id005
+    100130: Mezzanine_id006
+    100132: mezzanineGauche
+    100134: Object004
+    100136: Object005
+    100138: Object006
+    100140: Object007
+    100142: Object008
+    100144: Object009
+    100146: Object010
+    100148: Object011
+    100150: Object012
+    100152: Object013
+    100154: Object014
+    100156: Object015
+    100158: Object016
+    100160: Object017
+    100162: Object018
+    100164: Object020
+    100166: Object021
+    100168: Object022
+    100170: passerelle
+    100172: passerelle001
+    100174: passerelle_angle
+    100176: passerelle_angle001
+    100178: passerelle_angle002
+    100180: passerelle_angle003
+    100182: passerelle_cross
+    100184: passerelle_cross001
+    100186: passerelle_droit
+    100188: passerelle_droit001
+    100190: passerelle_droit002
+    100192: passerelle_droit003
+    100194: passerelle_droit004
+    100196: passerelle_droit005
+    100198: passerelle_droit006
+    100200: passerelle_droit007
+    100202: passerelle_droit008
+    100204: passerelle_droit009
+    100206: passerelle_droit010
+    100208: passerelle_droit011
+    100210: pied _milieu
+    100212: pied _milieu001
+    100214: pied _milieu004
+    100216: pied _milieu005
+    100218: pied _milieu006
+    100220: pied _milieu007
+    100222: pied _milieu008
+    100224: pied _milieu009
+    100226: pied _milieu010
+    100228: pied _milieu011
+    100230: pied _milieu012
+    100232: pied _milieu013
+    100234: pied _milieu014
+    100236: pied _milieu015
+    100238: pied _milieu016
+    100240: pied _milieu017
+    100242: pied _milieu020
+    100244: pied _milieu021
+    100246: pied _milieu022
+    100248: pied _milieu023
+    100250: pied_droit
+    100252: pied_droit001
+    100254: pied_droit0011
+    100256: pied_droit0031
+    100258: pied_droit004
+    100260: pied_droit005
+    100262: pied_droit007
+    100264: pied_droit008
+    100266: pied_droit012
+    100268: pied_droit032
+    100270: pied_droit033
+    100272: pied_droit034
+    100274: pied_droit035
+    100276: pied_droit036
+    100278: pied_droit037
+    100280: pied_droit038
+    100282: pied_droit039
+    100284: pied_droit040
+    100286: pied_droit041
+    100288: pied_droit042
+    100290: pied_droit043
+    100292: pied_droit044
+    100294: pied_droit045
+    100296: pied_droit046
+    100298: pied_droit049
+    100300: pied_droit050
+    100302: pied_droit051
+    100304: pied_droit052
+    100306: "Tron\xE7on_Escalier"
+    100308: "Tron\xE7on_Escalier001"
+    100310: "Tron\xE7on_Escalier002"
+    100312: "Tron\xE7on_Escalier003"
+    100314: "Tron\xE7on_Escalier004"
+    100316: "Tron\xE7on_Escalier005"
+    100318: "Tron\xE7on_Escalier006"
+    100320: "Tron\xE7on_Escalier007"
+    100322: "Tron\xE7on_Escalier008"
+    100324: "Tron\xE7on_Escalier009"
+    100326: "Tron\xE7on_Escalier010"
+    100328: "Tron\xE7on_Escalier011"
+    100330: "Tron\xE7on_Escalier012"
+    100332: "Tron\xE7on_Escalier013"
+    400000: angle_90_ext
+    400002: angle_90_ext001
+    400004: angle_90_ext002
+    400006: angle_90_ext003
+    400008: anneau
+    400010: Barre_Cross
+    400012: Barre_Cross001
+    400014: Barre_Cross004
+    400016: Barre_Cross005
+    400018: Barre_Cross006
+    400020: Barre_Cross007
+    400022: Barre_Cross008
+    400024: Barre_Cross009
+    400026: Barre_Cross010
+    400028: Barre_Cross011
+    400030: Barre_Cross012
+    400032: Barre_Cross013
+    400034: Barre_Cross014
+    400036: Barre_Cross015
+    400038: Barre_Cross016
+    400040: Barre_Cross017
+    400042: Barre_Cross018
+    400044: Barre_Cross019
+    400046: Barre_Cross020
+    400048: Barre_Cross021
+    400050: Barre_Cross022
+    400052: Barre_Cross023
+    400054: Barre_Cross024
+    400056: Barre_Cross027
+    400058: Barre_Cross028
+    400060: Barre_Cross029
+    400062: Barre_Cross030
+    400064: Barre_Cross031
+    400066: bas_Escalier
+    400068: bas_Escalier001
+    400070: Escalier
+    400072: Escalier001
+    400074: Group003
+    400076: Group005
+    400078: Group006
+    400080: Group009
+    400082: Group011
+    400084: Group012
+    400086: Haut_Escalier
+    400088: Haut_Escalier001
+    400090: Messanine_support_id
+    400092: Messanine_support_id001
+    400094: Messanine_support_id002
+    400096: Messanine_support_id004
+    400098: Messanine_support_id005
+    400100: Messanine_support_id006
+    400102: MEZZANINE
+    400104: //RootNode
+    400106: mezzanine
+    400108: mezzanine001
+    400110: mezzanine002
+    400112: mezzanine004
+    400114: mezzanine005
+    400116: mezzanine006
+    400118: Mezzanine1
+    400120: Mezzanine_id
+    400122: Mezzanine_id001
+    400124: Mezzanine_id002
+    400126: Mezzanine_id004
+    400128: Mezzanine_id005
+    400130: Mezzanine_id006
+    400132: mezzanineGauche
+    400134: Object004
+    400136: Object005
+    400138: Object006
+    400140: Object007
+    400142: Object008
+    400144: Object009
+    400146: Object010
+    400148: Object011
+    400150: Object012
+    400152: Object013
+    400154: Object014
+    400156: Object015
+    400158: Object016
+    400160: Object017
+    400162: Object018
+    400164: Object020
+    400166: Object021
+    400168: Object022
+    400170: passerelle
+    400172: passerelle001
+    400174: passerelle_angle
+    400176: passerelle_angle001
+    400178: passerelle_angle002
+    400180: passerelle_angle003
+    400182: passerelle_cross
+    400184: passerelle_cross001
+    400186: passerelle_droit
+    400188: passerelle_droit001
+    400190: passerelle_droit002
+    400192: passerelle_droit003
+    400194: passerelle_droit004
+    400196: passerelle_droit005
+    400198: passerelle_droit006
+    400200: passerelle_droit007
+    400202: passerelle_droit008
+    400204: passerelle_droit009
+    400206: passerelle_droit010
+    400208: passerelle_droit011
+    400210: pied _milieu
+    400212: pied _milieu001
+    400214: pied _milieu004
+    400216: pied _milieu005
+    400218: pied _milieu006
+    400220: pied _milieu007
+    400222: pied _milieu008
+    400224: pied _milieu009
+    400226: pied _milieu010
+    400228: pied _milieu011
+    400230: pied _milieu012
+    400232: pied _milieu013
+    400234: pied _milieu014
+    400236: pied _milieu015
+    400238: pied _milieu016
+    400240: pied _milieu017
+    400242: pied _milieu020
+    400244: pied _milieu021
+    400246: pied _milieu022
+    400248: pied _milieu023
+    400250: pied_droit
+    400252: pied_droit001
+    400254: pied_droit0011
+    400256: pied_droit0031
+    400258: pied_droit004
+    400260: pied_droit005
+    400262: pied_droit007
+    400264: pied_droit008
+    400266: pied_droit012
+    400268: pied_droit032
+    400270: pied_droit033
+    400272: pied_droit034
+    400274: pied_droit035
+    400276: pied_droit036
+    400278: pied_droit037
+    400280: pied_droit038
+    400282: pied_droit039
+    400284: pied_droit040
+    400286: pied_droit041
+    400288: pied_droit042
+    400290: pied_droit043
+    400292: pied_droit044
+    400294: pied_droit045
+    400296: pied_droit046
+    400298: pied_droit049
+    400300: pied_droit050
+    400302: pied_droit051
+    400304: pied_droit052
+    400306: "Tron\xE7on_Escalier"
+    400308: "Tron\xE7on_Escalier001"
+    400310: "Tron\xE7on_Escalier002"
+    400312: "Tron\xE7on_Escalier003"
+    400314: "Tron\xE7on_Escalier004"
+    400316: "Tron\xE7on_Escalier005"
+    400318: "Tron\xE7on_Escalier006"
+    400320: "Tron\xE7on_Escalier007"
+    400322: "Tron\xE7on_Escalier008"
+    400324: "Tron\xE7on_Escalier009"
+    400326: "Tron\xE7on_Escalier010"
+    400328: "Tron\xE7on_Escalier011"
+    400330: "Tron\xE7on_Escalier012"
+    400332: "Tron\xE7on_Escalier013"
+    2100000: No Name
+    2100002: Mezzanine_support
+    2100004: mezzanine
+    2300000: angle_90_ext
+    2300002: angle_90_ext001
+    2300004: angle_90_ext002
+    2300006: angle_90_ext003
+    2300008: Barre_Cross
+    2300010: Barre_Cross001
+    2300012: Barre_Cross004
+    2300014: Barre_Cross005
+    2300016: Barre_Cross006
+    2300018: Barre_Cross007
+    2300020: Barre_Cross008
+    2300022: Barre_Cross009
+    2300024: Barre_Cross010
+    2300026: Barre_Cross011
+    2300028: Barre_Cross012
+    2300030: Barre_Cross013
+    2300032: Barre_Cross014
+    2300034: Barre_Cross015
+    2300036: Barre_Cross016
+    2300038: Barre_Cross017
+    2300040: Barre_Cross018
+    2300042: Barre_Cross019
+    2300044: Barre_Cross020
+    2300046: Barre_Cross021
+    2300048: Barre_Cross022
+    2300050: Barre_Cross023
+    2300052: Barre_Cross024
+    2300054: Barre_Cross027
+    2300056: Barre_Cross028
+    2300058: Barre_Cross029
+    2300060: Barre_Cross030
+    2300062: Barre_Cross031
+    2300064: bas_Escalier
+    2300066: bas_Escalier001
+    2300068: Haut_Escalier
+    2300070: Haut_Escalier001
+    2300072: Messanine_support_id
+    2300074: Messanine_support_id001
+    2300076: Messanine_support_id002
+    2300078: Messanine_support_id004
+    2300080: Messanine_support_id005
+    2300082: Messanine_support_id006
+    2300084: Mezzanine_id
+    2300086: Mezzanine_id001
+    2300088: Mezzanine_id002
+    2300090: Mezzanine_id004
+    2300092: Mezzanine_id005
+    2300094: Mezzanine_id006
+    2300096: Object004
+    2300098: Object005
+    2300100: Object006
+    2300102: Object007
+    2300104: Object008
+    2300106: Object009
+    2300108: Object010
+    2300110: Object011
+    2300112: Object012
+    2300114: Object013
+    2300116: Object014
+    2300118: Object015
+    2300120: Object016
+    2300122: Object017
+    2300124: Object018
+    2300126: Object020
+    2300128: Object021
+    2300130: Object022
+    2300132: passerelle_angle
+    2300134: passerelle_angle001
+    2300136: passerelle_angle002
+    2300138: passerelle_angle003
+    2300140: passerelle_cross
+    2300142: passerelle_cross001
+    2300144: passerelle_droit
+    2300146: passerelle_droit001
+    2300148: passerelle_droit002
+    2300150: passerelle_droit003
+    2300152: passerelle_droit004
+    2300154: passerelle_droit005
+    2300156: passerelle_droit006
+    2300158: passerelle_droit007
+    2300160: passerelle_droit008
+    2300162: passerelle_droit009
+    2300164: passerelle_droit010
+    2300166: passerelle_droit011
+    2300168: pied _milieu
+    2300170: pied _milieu001
+    2300172: pied _milieu004
+    2300174: pied _milieu005
+    2300176: pied _milieu006
+    2300178: pied _milieu007
+    2300180: pied _milieu008
+    2300182: pied _milieu009
+    2300184: pied _milieu010
+    2300186: pied _milieu011
+    2300188: pied _milieu012
+    2300190: pied _milieu013
+    2300192: pied _milieu014
+    2300194: pied _milieu015
+    2300196: pied _milieu016
+    2300198: pied _milieu017
+    2300200: pied _milieu020
+    2300202: pied _milieu021
+    2300204: pied _milieu022
+    2300206: pied _milieu023
+    2300208: pied_droit
+    2300210: pied_droit001
+    2300212: pied_droit0011
+    2300214: pied_droit0031
+    2300216: pied_droit004
+    2300218: pied_droit005
+    2300220: pied_droit007
+    2300222: pied_droit008
+    2300224: pied_droit012
+    2300226: pied_droit032
+    2300228: pied_droit033
+    2300230: pied_droit034
+    2300232: pied_droit035
+    2300234: pied_droit036
+    2300236: pied_droit037
+    2300238: pied_droit038
+    2300240: pied_droit039
+    2300242: pied_droit040
+    2300244: pied_droit041
+    2300246: pied_droit042
+    2300248: pied_droit043
+    2300250: pied_droit044
+    2300252: pied_droit045
+    2300254: pied_droit046
+    2300256: pied_droit049
+    2300258: pied_droit050
+    2300260: pied_droit051
+    2300262: pied_droit052
+    2300264: "Tron\xE7on_Escalier"
+    2300266: "Tron\xE7on_Escalier001"
+    2300268: "Tron\xE7on_Escalier002"
+    2300270: "Tron\xE7on_Escalier003"
+    2300272: "Tron\xE7on_Escalier004"
+    2300274: "Tron\xE7on_Escalier005"
+    2300276: "Tron\xE7on_Escalier006"
+    2300278: "Tron\xE7on_Escalier007"
+    2300280: "Tron\xE7on_Escalier008"
+    2300282: "Tron\xE7on_Escalier009"
+    2300284: "Tron\xE7on_Escalier010"
+    2300286: "Tron\xE7on_Escalier011"
+    2300288: "Tron\xE7on_Escalier012"
+    2300290: "Tron\xE7on_Escalier013"
+    3300000: angle_90_ext
+    3300002: angle_90_ext001
+    3300004: angle_90_ext002
+    3300006: angle_90_ext003
+    3300008: Barre_Cross
+    3300010: Barre_Cross001
+    3300012: Barre_Cross004
+    3300014: Barre_Cross005
+    3300016: Barre_Cross006
+    3300018: Barre_Cross007
+    3300020: Barre_Cross008
+    3300022: Barre_Cross009
+    3300024: Barre_Cross010
+    3300026: Barre_Cross011
+    3300028: Barre_Cross012
+    3300030: Barre_Cross013
+    3300032: Barre_Cross014
+    3300034: Barre_Cross015
+    3300036: Barre_Cross016
+    3300038: Barre_Cross017
+    3300040: Barre_Cross018
+    3300042: Barre_Cross019
+    3300044: Barre_Cross020
+    3300046: Barre_Cross021
+    3300048: Barre_Cross022
+    3300050: Barre_Cross023
+    3300052: Barre_Cross024
+    3300054: Barre_Cross027
+    3300056: Barre_Cross028
+    3300058: Barre_Cross029
+    3300060: Barre_Cross030
+    3300062: Barre_Cross031
+    3300064: bas_Escalier
+    3300066: bas_Escalier001
+    3300068: Haut_Escalier
+    3300070: Haut_Escalier001
+    3300072: Messanine_support_id
+    3300074: Messanine_support_id001
+    3300076: Messanine_support_id002
+    3300078: Messanine_support_id004
+    3300080: Messanine_support_id005
+    3300082: Messanine_support_id006
+    3300084: Mezzanine_id
+    3300086: Mezzanine_id001
+    3300088: Mezzanine_id002
+    3300090: Mezzanine_id004
+    3300092: Mezzanine_id005
+    3300094: Mezzanine_id006
+    3300096: Object004
+    3300098: Object005
+    3300100: Object006
+    3300102: Object007
+    3300104: Object008
+    3300106: Object009
+    3300108: Object010
+    3300110: Object011
+    3300112: Object012
+    3300114: Object013
+    3300116: Object014
+    3300118: Object015
+    3300120: Object016
+    3300122: Object017
+    3300124: Object018
+    3300126: Object020
+    3300128: Object021
+    3300130: Object022
+    3300132: passerelle_angle
+    3300134: passerelle_angle001
+    3300136: passerelle_angle002
+    3300138: passerelle_angle003
+    3300140: passerelle_cross
+    3300142: passerelle_cross001
+    3300144: passerelle_droit
+    3300146: passerelle_droit001
+    3300148: passerelle_droit002
+    3300150: passerelle_droit003
+    3300152: passerelle_droit004
+    3300154: passerelle_droit005
+    3300156: passerelle_droit006
+    3300158: passerelle_droit007
+    3300160: passerelle_droit008
+    3300162: passerelle_droit009
+    3300164: passerelle_droit010
+    3300166: passerelle_droit011
+    3300168: pied _milieu
+    3300170: pied _milieu001
+    3300172: pied _milieu004
+    3300174: pied _milieu005
+    3300176: pied _milieu006
+    3300178: pied _milieu007
+    3300180: pied _milieu008
+    3300182: pied _milieu009
+    3300184: pied _milieu010
+    3300186: pied _milieu011
+    3300188: pied _milieu012
+    3300190: pied _milieu013
+    3300192: pied _milieu014
+    3300194: pied _milieu015
+    3300196: pied _milieu016
+    3300198: pied _milieu017
+    3300200: pied _milieu020
+    3300202: pied _milieu021
+    3300204: pied _milieu022
+    3300206: pied _milieu023
+    3300208: pied_droit
+    3300210: pied_droit001
+    3300212: pied_droit0011
+    3300214: pied_droit0031
+    3300216: pied_droit004
+    3300218: pied_droit005
+    3300220: pied_droit007
+    3300222: pied_droit008
+    3300224: pied_droit012
+    3300226: pied_droit032
+    3300228: pied_droit033
+    3300230: pied_droit034
+    3300232: pied_droit035
+    3300234: pied_droit036
+    3300236: pied_droit037
+    3300238: pied_droit038
+    3300240: pied_droit039
+    3300242: pied_droit040
+    3300244: pied_droit041
+    3300246: pied_droit042
+    3300248: pied_droit043
+    3300250: pied_droit044
+    3300252: pied_droit045
+    3300254: pied_droit046
+    3300256: pied_droit049
+    3300258: pied_droit050
+    3300260: pied_droit051
+    3300262: pied_droit052
+    3300264: "Tron\xE7on_Escalier"
+    3300266: "Tron\xE7on_Escalier001"
+    3300268: "Tron\xE7on_Escalier002"
+    3300270: "Tron\xE7on_Escalier003"
+    3300272: "Tron\xE7on_Escalier004"
+    3300274: "Tron\xE7on_Escalier005"
+    3300276: "Tron\xE7on_Escalier006"
+    3300278: "Tron\xE7on_Escalier007"
+    3300280: "Tron\xE7on_Escalier008"
+    3300282: "Tron\xE7on_Escalier009"
+    3300284: "Tron\xE7on_Escalier010"
+    3300286: "Tron\xE7on_Escalier011"
+    3300288: "Tron\xE7on_Escalier012"
+    3300290: "Tron\xE7on_Escalier013"
+    4300000: Barre_Cross009
+    4300002: Barre_Cross011
+    4300004: pied_droit012
+    4300006: Object007
+    4300008: pied_droit0011
+    4300010: Barre_Cross010
+    4300012: Object006
+    4300014: pied _milieu009
+    4300016: pied _milieu008
+    4300018: Object008
+    4300020: Barre_Cross012
+    4300022: Object009
+    4300024: pied_droit033
+    4300026: pied_droit034
+    4300028: Barre_Cross015
+    4300030: Barre_Cross013
+    4300032: Barre_Cross014
+    4300034: Object010
+    4300036: Object011
+    4300038: pied _milieu010
+    4300040: pied _milieu011
+    4300042: pied_droit035
+    4300044: pied_droit036
+    4300046: pied_droit032
+    4300048: pied_droit0031
+    4300050: Barre_Cross016
+    4300052: Barre_Cross017
+    4300054: Barre_Cross018
+    4300056: Barre_Cross019
+    4300058: Barre_Cross020
+    4300060: Barre_Cross021
+    4300062: Barre_Cross022
+    4300064: Object012
+    4300066: Object013
+    4300068: Object014
+    4300070: Object015
+    4300072: Object016
+    4300074: Object017
+    4300076: pied _milieu012
+    4300078: pied _milieu013
+    4300080: pied _milieu014
+    4300082: pied _milieu015
+    4300084: pied_droit037
+    4300086: pied_droit038
+    4300088: pied_droit039
+    4300090: pied_droit040
+    4300092: pied_droit041
+    4300094: pied_droit042
+    4300096: pied_droit043
+    4300098: pied_droit044
+    4300100: Messanine_support_id002
+    4300102: Mezzanine_id002
+    4300104: Messanine_support_id001
+    4300106: Mezzanine_id001
+    4300108: Mezzanine_id
+    4300110: Messanine_support_id
+    4300112: passerelle_droit007
+    4300114: passerelle_droit008
+    4300116: passerelle_droit006
+    4300118: passerelle_droit001
+    4300120: passerelle_angle001
+    4300122: passerelle_angle
+    4300124: passerelle_angle002
+    4300126: passerelle_angle003
+    4300128: passerelle_droit003
+    4300130: passerelle_cross001
+    4300132: passerelle_droit004
+    4300134: passerelle_droit005
+    4300136: passerelle_droit
+    4300138: passerelle_droit002
+    4300140: passerelle_cross
+    4300142: passerelle_droit009
+    4300144: passerelle_droit010
+    4300146: passerelle_droit011
+    4300148: Messanine_support_id004
+    4300150: Mezzanine_id004
+    4300152: Messanine_support_id005
+    4300154: Mezzanine_id005
+    4300156: Messanine_support_id006
+    4300158: Mezzanine_id006
+    4300160: "Tron\xE7on_Escalier"
+    4300162: "Tron\xE7on_Escalier001"
+    4300164: "Tron\xE7on_Escalier002"
+    4300166: "Tron\xE7on_Escalier003"
+    4300168: "Tron\xE7on_Escalier004"
+    4300170: "Tron\xE7on_Escalier005"
+    4300172: "Tron\xE7on_Escalier006"
+    4300174: bas_Escalier
+    4300176: Haut_Escalier
+    4300178: Haut_Escalier001
+    4300180: "Tron\xE7on_Escalier007"
+    4300182: "Tron\xE7on_Escalier008"
+    4300184: "Tron\xE7on_Escalier009"
+    4300186: "Tron\xE7on_Escalier010"
+    4300188: "Tron\xE7on_Escalier011"
+    4300190: "Tron\xE7on_Escalier012"
+    4300192: "Tron\xE7on_Escalier013"
+    4300194: bas_Escalier001
+    4300196: Barre_Cross027
+    4300198: Barre_Cross029
+    4300200: Barre_Cross030
+    4300202: Barre_Cross031
+    4300204: Barre_Cross028
+    4300206: pied _milieu021
+    4300208: pied_droit050
+    4300210: Object020
+    4300212: Object021
+    4300214: angle_90_ext002
+    4300216: angle_90_ext003
+    4300218: pied _milieu020
+    4300220: pied _milieu022
+    4300222: pied _milieu023
+    4300224: pied_droit049
+    4300226: pied_droit051
+    4300228: pied_droit052
+    4300230: Barre_Cross024
+    4300232: pied_droit046
+    4300234: Object022
+    4300236: pied _milieu017
+    4300238: pied _milieu016
+    4300240: Barre_Cross023
+    4300242: pied_droit045
+    4300244: pied_droit007
+    4300246: Barre_Cross007
+    4300248: pied _milieu007
+    4300250: Object005
+    4300252: pied _milieu006
+    4300254: Barre_Cross006
+    4300256: angle_90_ext001
+    4300258: angle_90_ext
+    4300260: Barre_Cross008
+    4300262: pied_droit008
+    4300264: pied_droit004
+    4300266: pied _milieu004
+    4300268: Object004
+    4300270: Barre_Cross005
+    4300272: pied _milieu005
+    4300274: pied_droit005
+    4300276: Barre_Cross004
+    4300278: Object018
+    4300280: Barre_Cross001
+    4300282: pied _milieu001
+    4300284: pied_droit001
+    4300286: pied _milieu
+    4300288: Barre_Cross
+    4300290: pied_droit
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
