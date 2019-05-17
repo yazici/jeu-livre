@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class PrintPosition : MonoBehaviour
 {
-    public Text y;
-    public Text x;
+    public Text position; 
 
     private float yRotation; 
     private float xRotation;
@@ -25,7 +24,6 @@ public class PrintPosition : MonoBehaviour
         yRotation = Mathf.Round(player.transform.rotation.y * 180);
         xRotation = Mathf.Round(cam.transform.rotation.x * 180);
 
-        y.text = "y = " + yRotation;
-        x.text = "x = " + xRotation;
+        position.text = "y = " + yRotation + "\nx = " + xRotation; 
     }
 }

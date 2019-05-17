@@ -11,7 +11,10 @@ public class RandomBinaryText : MonoBehaviour
     private string binaryText;
     private string[] binaryString = { "1", "0" };
 
-    private bool isWriting = true; 
+    private bool isWriting = true;
+
+    public int maxChar;
+    public int newCharNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +35,9 @@ public class RandomBinaryText : MonoBehaviour
             binaryText += binaryString[Random.Range(0, binaryString.Length)];
             text.text = binaryText;
             //float waitTime = Random.Range(2f, 10f);
-            if (binaryText.Length == 104)
+            if (binaryText.Length == maxChar)
             {
-                binaryText = binaryText.Substring(52);
+                binaryText = binaryText.Substring(newCharNumber);
             }
 
             yield return new WaitForSeconds(.02f);
