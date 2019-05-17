@@ -907,8 +907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 84084527}
-  maxChar: 153
-  newCharNumber: 102
+  maxChar: 162
+  newCharNumber: 108
 --- !u!114 &2211329950142924501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,7 +2471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8576252, y: 0.027780224}
   m_AnchorMax: {x: 0.9127917, y: 0.063}
-  m_AnchoredPosition: {x: -0.13503, y: -0.60009766}
+  m_AnchoredPosition: {x: -0.13500977, y: -0.60009766}
   m_SizeDelta: {x: -0.2701, y: 0.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6995694661548094959
