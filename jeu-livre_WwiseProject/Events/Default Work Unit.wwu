@@ -260,6 +260,78 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Shutdown" ID="{04FED9D5-4B89-4890-A2AD-7EB4006688B9}" ShortID="120851911">
+							<ChildrenList>
+								<Event Name="Play_ErrorTyping" ID="{97D20DE9-69F2-4D10-8589-BE1BEACFC357}">
+									<ChildrenList>
+										<Action Name="" ID="{3B7F98BB-550A-49BD-BAD7-328FC793C30F}" ShortID="256105723">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ErrorTyping" ID="{0D63BEF0-8103-433C-8C94-49C357647500}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_ErrorTyping" ID="{38E72476-7814-433F-ADAE-B6FBEA1A7AE5}">
+									<ChildrenList>
+										<Action Name="" ID="{DCE5A1E5-9BF4-447D-8C65-D5CE453C519C}" ShortID="969564912">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ErrorTyping" ID="{0D63BEF0-8103-433C-8C94-49C357647500}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_CommunicationNoise" ID="{D4447B1B-F542-4D4C-ADE7-CCCA323E1FBB}">
+									<ChildrenList>
+										<Action Name="" ID="{E1F6EE65-F04A-4727-9BC6-973024363B80}" ShortID="1031566330">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CommunicationNoise" ID="{DBB1A8DA-5B13-4B79-BD4C-EA31612D63C6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A5FB032F-4364-4533-B373-AD01788CB45E}" ShortID="835132535">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="26"/>
+												<Property Name="FadeInCurve" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="7.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CommunicationNoise" ID="{DBB1A8DA-5B13-4B79-BD4C-EA31612D63C6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9F795BD9-8C65-40F6-B7D7-4569C32E84E0}" ShortID="626737110">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="FadeInCurve" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="10"/>
+												<Property Name="Volume" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CommunicationNoise" ID="{DBB1A8DA-5B13-4B79-BD4C-EA31612D63C6}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Temple" ID="{807A0D3E-4307-42F5-8811-6E9B68CB266E}" ShortID="12031888">
@@ -372,6 +444,48 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="ValidationBeep" ID="{4E613E0C-9143-4527-9E3D-73466BBFE102}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Fan" ID="{EC12D576-1F85-4C8B-999B-00F6708E42AF}">
+							<ChildrenList>
+								<Action Name="" ID="{55F27A68-73B4-4C8D-A409-3A55324E74C5}" ShortID="131992598">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fan" ID="{7D414CF3-9180-420E-94FC-B7A241418E9C}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_GarageDoors" ID="{CFA21480-5CF4-425F-B55B-62F5118178CE}">
+							<ChildrenList>
+								<Action Name="" ID="{442EBC9E-8397-4BA1-8B24-EC169D059897}" ShortID="879617733">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GarageDoors" ID="{F3042904-7175-4355-B150-65F68A5020B5}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_GarageDoors" ID="{ED9A39AD-E905-4F9E-B3FF-9CFBDF18A429}">
+							<ChildrenList>
+								<Action Name="" ID="{96352CA1-4325-4934-9EC3-A1CDE135E8EC}" ShortID="243856721">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GarageDoors" ID="{F3042904-7175-4355-B150-65F68A5020B5}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

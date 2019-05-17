@@ -30,7 +30,7 @@ namespace MiseEnRoute
             m_GlitchEffect.enabled = true;
             GameManager.m_Instance.m_CinematicMode = true;
             AudioManager.m_Instance.PlaySFX("InitDrone");
-            m_Animation.Play();
+            m_Animation.Play("DroneWakesUp");
             m_ColorGradingLayer.saturation.value = -100f;
             m_ColorGradingLayer.contrast.value = -100f;
             StartCoroutine(PlayColorAnim());
