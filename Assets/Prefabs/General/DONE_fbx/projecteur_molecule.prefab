@@ -773,6 +773,11 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 4294958319
       objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213217, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
       propertyPath: areaMaterial
@@ -791,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
       propertyPath: slices
-      value: 192
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
@@ -806,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
       propertyPath: constantAttenuation
-      value: 43.68
+      value: 46.97
       objectReference: {fileID: 0}
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
@@ -816,7 +821,7 @@ PrefabInstance:
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
       propertyPath: lightMultiplier
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
         type: 3}
@@ -828,6 +833,31 @@ PrefabInstance:
       propertyPath: shadowMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: colorTint.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: colorTint.g
+      value: 0.9717627
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: colorTint.b
+      value: 0.9103774
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: ditherAmount
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: spotShadow
+      value: 
+      objectReference: {fileID: 2800000, guid: f5af84cca4948354f8dbb697f6d05f47, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04946235b9925b74ab1609c889ca3527, type: 3}
 --- !u!4 &1866732424320133751 stripped
@@ -836,3 +866,152 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 211709795275073197}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2290499634858840803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1866732424320133751}
+    m_Modifications:
+    - target: {fileID: 1952261853872213205, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_Name
+      value: V-Light 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213205, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213210, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213236, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213228, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213217, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: far clip plane
+      value: 2.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213217, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213217, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: areaMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: orthoMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: meshContainer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: spotRange
+      value: 2.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: lightMultiplier
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: spotExponent
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: slices
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: lightType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: linearAttenuation
+      value: 8.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952261853872213125, guid: 04946235b9925b74ab1609c889ca3527,
+        type: 3}
+      propertyPath: pointLightRadius
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04946235b9925b74ab1609c889ca3527, type: 3}
