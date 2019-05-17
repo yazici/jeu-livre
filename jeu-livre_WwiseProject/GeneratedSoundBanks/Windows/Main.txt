@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	136370607	Play_ValidationBeep			\Default Work Unit\MiseEnRoute\Play_ValidationBeep	
 	1164784286	Play_Temple_Drone			\Default Work Unit\Temple\Play_Temple_Drone	
+	1200783523	Stop_ErrorTyping			\Default Work Unit\Drone\Shutdown\Stop_ErrorTyping	
 	1211901148	Play_ElevatorDoorsClosing			\Default Work Unit\Elevator\Play_ElevatorDoorsClosing	
 	1304387364	Play_ErrorBeep			\Default Work Unit\MiseEnRoute\Play_ErrorBeep	
 	1371242783	Play_Temple_Chimes			\Default Work Unit\Temple\Play_Temple_Chimes	
@@ -15,10 +16,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	2296544690	Play_ServerMotor			\Default Work Unit\MiseEnRoute\Play_ServerMotor	
 	2341913985	Stop_DroneMotor			\Default Work Unit\Drone\Stop_DroneMotor	
 	2519717329	Play_Electric_Motor			\Default Work Unit\Moleculator\Play_Electric_Motor	
+	2798153457	Play_ErrorTyping			\Default Work Unit\Drone\Shutdown\Play_ErrorTyping	
 	2907191916	Play_ElevatorDrive			\Default Work Unit\Elevator\Play_ElevatorDrive	
 	2983988087	Play_Labo_Room_Tone			\Default Work Unit\RoomTones\Play_Labo_Room_Tone	
 	3196500978	Play_Lever			\Default Work Unit\MiseEnRoute\Play_Lever	
 	3197920139	Play_ElevatorInternalButton			\Default Work Unit\Elevator\Play_ElevatorInternalButton	
+	3300250992	Play_CommunicationNoise			\Default Work Unit\Drone\Shutdown\Play_CommunicationNoise	
 	3536391747	Play_DroneMotor			\Default Work Unit\Drone\Play_DroneMotor	
 	3653257362	Play_InitDrone			\Default Work Unit\Drone\Play_InitDrone	
 	3683180351	Play_ElevatorBell			\Default Work Unit\Elevator\Play_ElevatorBell	
@@ -55,17 +58,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	152619115	Temple Drone Tonal Rumble	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Tonal Rumble		7686024
 	157755773	ElevatorExternalCallButton	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\beep_8D0860C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorExternalCallButton		32360
 	182272450	ElevatorDrive2	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\drone2_E8D06825.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDrive\ElevatorDrive2		2155144
+	249683708	RadioNoise	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\RadioNoise_96CB5AA4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\RadioNoise		1122884
 	279537869	DroneRotation	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\DroneRotation		217932
+	360628886	ErrorTyping	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ErrorTyping_2B651D39.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\ErrorTyping		97148
 	365799027	Earthquake	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Earthquake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Earthquake\Earthquake		1949876
 	367767701	Chimes5	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes5_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes5		1234864
 	384809016	Temple Drone Choirs	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\TempleDroneChoirs_BDB0F7CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Choirs		7862528
 	403925957	ElevatorDrive1	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\drone_DDE8BCB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDrive\ElevatorDrive1		2272112
 	413603073	ElevatorInternalButton	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\beep_calling_B5068808.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorInternalButton		51256
 	468596089	ValidationBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\ValidationBeep_B250FB99.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ValidationBeep		81788
+	490014691	crackle-44100sr	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\crackle-44100sr_5AC7F160.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\crackle-44100sr		882176
 	550709399	ElevatorDoorsClosingTap	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\sliding doors_closing_tap_116F8A0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDoor\ElevatorDoorsClosingTap		26704
 	566412347	Chimes1	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes1_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes1		1234864
 	641032399	Chimes4	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes4_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes4		1234864
 	653038980	Lever	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Lever_FE030C28.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\LeverSwitch\Lever		113616
+	744299106	pink-noise-44100sr	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\pink-noise-44100sr_6D7EB0CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\pink-noise-44100sr		882176
 	791372555	TorchlightOn	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\torchlight_on_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\TorchlightOn		18264
 	792982152	Chimes7	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\Chimes7_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes7		1234864
 	807504757	ElevatorDoorsClosing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\SFX\sliding doors_closing_E56D1C8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDoor\ElevatorDoorsClosing		465200

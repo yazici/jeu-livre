@@ -1595,6 +1595,183 @@
 										<ActiveSource Name="digital_label" ID="{CC8759AF-B2CD-4B14-AC86-2524FC41B3BC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Folder Name="Shutdown" ID="{6A00EC05-0F51-4F69-93EE-A8301545F686}" ShortID="482922910">
+									<ChildrenList>
+										<Sound Name="ErrorTyping" ID="{0D63BEF0-8103-433C-8C94-49C357647500}" ShortID="286164617">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8B6B76CF-74B2-4ACE-B43D-8B3998CAAA9E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="30"/>
+																	<Property Name="Min" Type="Real64" Value="-30"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ErrorTyping" ID="{4E5B2050-EE16-4F96-B98B-6537CDF65D97}" ShortID="360628886">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="14.474"/>
+														<Property Name="LoopBegin" Type="Real64" Value="5.08586525759577E-02"/>
+														<Property Name="LoopEnd" Type="Real64" Value="0.470805812417437"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ErrorTyping.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ErrorTyping" ID="{4E5B2050-EE16-4F96-B98B-6537CDF65D97}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<BlendContainer Name="CommunicationNoise" ID="{DBB1A8DA-5B13-4B79-BD4C-EA31612D63C6}" ShortID="1024079511">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>50</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="pink-noise-44100sr" ID="{F90DE1A5-BD54-40DA-BA79-A81C58624951}" ShortID="1059869156">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="pink-noise-44100sr" ID="{424DAEB7-31E1-4850-90A5-BF48F0238260}" ShortID="744299106">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="473.71"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.20217902748946"/>
+																<Property Name="LoopEnd" Type="Real64" Value="8.81157594874145"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>pink-noise-44100sr.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="pink-noise-44100sr" ID="{424DAEB7-31E1-4850-90A5-BF48F0238260}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crackle-44100sr" ID="{CBA1F194-EE3C-4EA9-9D32-8236EC017A30}" ShortID="668645864">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crackle-44100sr" ID="{68E4D1E9-20FF-4E32-975A-B6DC2D241E64}" ShortID="490014691">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="631.613"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.07007144205106"/>
+																<Property Name="LoopEnd" Type="Real64" Value="8.83799746582913"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>crackle-44100sr.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="crackle-44100sr" ID="{68E4D1E9-20FF-4E32-975A-B6DC2D241E64}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RadioNoise" ID="{3325BCAF-E858-4778-BA61-68B6FA369893}" ShortID="223058627">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioNoise" ID="{7988CDF2-EB1A-4050-B018-1D8F249A99D5}" ShortID="249683708">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="150.746"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.277462863613081"/>
+																<Property Name="LoopEnd" Type="Real64" Value="5.86035199813082"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RadioNoise.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioNoise" ID="{7988CDF2-EB1A-4050-B018-1D8F249A99D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="MiseEnRoute" ID="{8675FB0F-BE2B-401A-9E1B-B13F874020A2}" ShortID="1064805333">
