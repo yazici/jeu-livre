@@ -1152,46 +1152,6 @@
 												<ActiveSource Name="Transportation Car Drive Interior 01" ID="{7CB027BB-6CF5-4FB4-A9C8-F7734ADC5F38}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Motor Geladeira" ID="{F6844E9B-B9A5-4F6D-A0B0-5CF89BC6AA47}" ShortID="288625728">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="182742__thaismontanaricabral__motor-geladeira" ID="{E6024356-8125-4044-B17F-6B4D38377DFC}" ShortID="383724321">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1921.856"/>
-														<Property Name="LoopBegin" Type="Real64" Value="2.63999254496319"/>
-														<Property Name="LoopEnd" Type="Real64" Value="10.4904966918274"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.347367440126736"/>
-														<Property Name="TrimEnd" Type="Real64" Value="15.3536408536017"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>182742__thaismontanaricabral__motor-geladeira.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="182742__thaismontanaricabral__motor-geladeira" ID="{E6024356-8125-4044-B17F-6B4D38377DFC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="197874__millavsb__refrigerator-motor" ID="{F5C84AC7-4F56-4A31-9103-31C5ABC3D0F0}" ShortID="515190972">
 											<PropertyList>
 												<Property Name="Inclusion" Type="bool">
@@ -1990,6 +1950,99 @@
 										<ActiveSource Name="ErrorBeep" ID="{C85A93B2-6DC8-4FF6-A2F1-0B12E3FBD7CD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<BlendContainer Name="Fan" ID="{7D414CF3-9180-420E-94FC-B7A241418E9C}" ShortID="448421719">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="FanAttenuation" ID="{CEB1A57E-B9B2-4386-B00F-1FA8C478CEA1}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Motor Geladeira" ID="{F6844E9B-B9A5-4F6D-A0B0-5CF89BC6AA47}" ShortID="288625728">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{0F28D265-38A6-4002-92DF-E5CA5C784057}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="182742__thaismontanaricabral__motor-geladeira" ID="{E6024356-8125-4044-B17F-6B4D38377DFC}" ShortID="383724321">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1921.856"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.63999254496319"/>
+														<Property Name="LoopEnd" Type="Real64" Value="10.4904966918274"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.508156807392797"/>
+														<Property Name="TrimEnd" Type="Real64" Value="15.3536408536017"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>182742__thaismontanaricabral__motor-geladeira.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="182742__thaismontanaricabral__motor-geladeira" ID="{E6024356-8125-4044-B17F-6B4D38377DFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FanNoise" ID="{DD698374-9111-4C8E-BFCD-990F56E618A4}" ShortID="937314024">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{137B9A0E-8D66-4E7A-BBB4-D9B496F28294}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FanNoise" ID="{6D0E9D79-D01A-406A-BA44-441C5ADD969F}" ShortID="1073350829">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="473.684"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.07661822985469"/>
+														<Property Name="LoopEnd" Type="Real64" Value="9.98678996036988"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FanNoise.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FanNoise" ID="{6D0E9D79-D01A-406A-BA44-441C5ADD969F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Elevator" ID="{CDF786ED-6476-435A-BE6C-5D25F7007C0D}" ShortID="1038438374">

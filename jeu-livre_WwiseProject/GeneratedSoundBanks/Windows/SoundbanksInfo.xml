@@ -34,6 +34,7 @@
 				<Event Id="3197920139" Name="Play_ElevatorInternalButton" ObjectPath="\Events\Default Work Unit\Elevator\Play_ElevatorInternalButton"/>
 				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ErrorBeep"/>
 				<Event Id="2798153457" Name="Play_ErrorTyping" ObjectPath="\Events\Default Work Unit\Drone\Shutdown\Play_ErrorTyping"/>
+				<Event Id="2757069037" Name="Play_Fan" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Fan" MaxAttenuation="100.000000"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Drone\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\RoomTones\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
 				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>
@@ -115,6 +116,10 @@
 				<File Id="367767701" Language="SFX">
 					<ShortName>Chimes5.wav</ShortName>
 					<Path>SFX\Chimes5_21C98E47.wem</Path>
+				</File>
+				<File Id="383724321" Language="SFX">
+					<ShortName>182742__thaismontanaricabral__motor-geladeira.wav</ShortName>
+					<Path>SFX\182742__thaismontanaricabral__motor-geladeira_11B3A781.wem</Path>
 				</File>
 				<File Id="384809016" Language="SFX">
 					<ShortName>TempleDroneChoirs.wav</ShortName>
@@ -211,6 +216,10 @@
 				<File Id="1024225483" Language="SFX">
 					<ShortName>Chimes2.wav</ShortName>
 					<Path>SFX\Chimes2_21C98E47.wem</Path>
+				</File>
+				<File Id="1073350829" Language="SFX">
+					<ShortName>FanNoise.wav</ShortName>
+					<Path>SFX\FanNoise_61AB8280.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

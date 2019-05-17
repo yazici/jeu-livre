@@ -449,6 +449,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Fan" ID="{EC12D576-1F85-4C8B-999B-00F6708E42AF}">
+							<ChildrenList>
+								<Action Name="" ID="{55F27A68-73B4-4C8D-A409-3A55324E74C5}" ShortID="131992598">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fan" ID="{7D414CF3-9180-420E-94FC-B7A241418E9C}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Moleculator" ID="{A83847CB-8370-4AAB-B18D-A7ACEAF82309}" ShortID="491476844">
