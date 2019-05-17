@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 114920123901469264}
   - {fileID: 114655262198030416}
   - {fileID: 114599333555901978}
+  - {fileID: 114690073681566884}
 --- !u!114 &114086389486607806
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -43,7 +44,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.025
+    value: 0.063
   fastMode:
     overrideState: 1
     value: 0
@@ -65,7 +66,7 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 1
     value: {fileID: 0}
@@ -100,7 +101,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 0
+    value: 5
   tint:
     overrideState: 1
     value: 0
@@ -1222,7 +1223,25 @@ MonoBehaviour:
     value:
       curve:
         serializedVersion: 2
-        m_Curve: []
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.09467456
+          value: 0.9385246
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.71005917
+          value: 0.09836066
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -1230,134 +1249,134 @@ MonoBehaviour:
       m_ZeroValue: 0.5
       m_Range: 1
       cachedData:
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9385246
+      - 0.9382112
+      - 0.9371092
+      - 0.93523353
+      - 0.9326049
+      - 0.92924386
+      - 0.9251711
+      - 0.9204072
+      - 0.9149727
+      - 0.90888846
+      - 0.9021749
+      - 0.89485276
+      - 0.8869426
+      - 0.8784652
+      - 0.8694409
+      - 0.85989064
+      - 0.84983486
+      - 0.83929425
+      - 0.8282894
+      - 0.816841
+      - 0.80496967
+      - 0.79269594
+      - 0.78004056
+      - 0.7670241
+      - 0.75366724
+      - 0.73999053
+      - 0.7260146
+      - 0.7117602
+      - 0.69724786
+      - 0.6824982
+      - 0.66753197
+      - 0.6523696
+      - 0.63703185
+      - 0.62153935
+      - 0.6059127
+      - 0.5901724
+      - 0.5743394
+      - 0.558434
+      - 0.5424771
+      - 0.52648914
+      - 0.5104908
+      - 0.49450263
+      - 0.47854537
+      - 0.46263966
+      - 0.44680604
+      - 0.43106526
+      - 0.41543788
+      - 0.39994448
+      - 0.38460582
+      - 0.36944234
+      - 0.35447484
+      - 0.33972389
+      - 0.32521003
+      - 0.31095403
+      - 0.29697645
+      - 0.2832979
+      - 0.26993906
+      - 0.25692058
+      - 0.244263
+      - 0.23198694
+      - 0.22011322
+      - 0.20866221
+      - 0.19765466
+      - 0.18711126
+      - 0.17705256
+      - 0.16749924
+      - 0.15847188
+      - 0.14999104
+      - 0.1420775
+      - 0.1347518
+      - 0.12803465
+      - 0.12194657
+      - 0.116508305
+      - 0.11174023
+      - 0.107663274
+      - 0.104297996
+      - 0.10166496
+      - 0.09978491
+      - 0.09867817
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
+      - 0.09836066
 --- !u!114 &114599333555901978
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1407,7 +1426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1417,6 +1436,40 @@ MonoBehaviour:
   sampleCount:
     overrideState: 1
     value: 10
+--- !u!114 &114690073681566884
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 100
+  intensityX:
+    overrideState: 1
+    value: 1
+  intensityY:
+    overrideState: 1
+    value: 1
+  centerX:
+    overrideState: 1
+    value: 0.059
+  centerY:
+    overrideState: 1
+    value: 0
+  scale:
+    overrideState: 1
+    value: 2.09
 --- !u!114 &114809345548722538
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1435,22 +1488,22 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 7.9
+    value: 37.4
   threshold:
     overrideState: 1
-    value: 1.67
+    value: 1.7
   softKnee:
     overrideState: 1
-    value: 0.813
+    value: 0.493
   clamp:
     overrideState: 1
     value: 64000
   diffusion:
     overrideState: 1
-    value: 8.3
+    value: 10
   anamorphicRatio:
     overrideState: 1
-    value: 0
+    value: 0.118
   color:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -1463,7 +1516,7 @@ MonoBehaviour:
     defaultState: 1
   dirtIntensity:
     overrideState: 1
-    value: 2.5
+    value: 3.92
 --- !u!114 &114844878811237586
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1531,13 +1584,13 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 10
+    value: 0.88
   aperture:
     overrideState: 1
-    value: 10
+    value: 5.8
   focalLength:
     overrideState: 1
-    value: 25
+    value: 20
   kernelSize:
     overrideState: 1
     value: 2
@@ -1553,7 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
   m_Name: Grain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1

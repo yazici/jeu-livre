@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	136370607	Play_ValidationBeep			\Default Work Unit\MiseEnRoute\Play_ValidationBeep	
 	1164784286	Play_Temple_Drone			\Default Work Unit\Temple\Play_Temple_Drone	
+	1200783523	Stop_ErrorTyping			\Default Work Unit\Drone\Shutdown\Stop_ErrorTyping	
 	1211901148	Play_ElevatorDoorsClosing			\Default Work Unit\Elevator\Play_ElevatorDoorsClosing	
 	1304387364	Play_ErrorBeep			\Default Work Unit\MiseEnRoute\Play_ErrorBeep	
 	1371242783	Play_Temple_Chimes			\Default Work Unit\Temple\Play_Temple_Chimes	
@@ -15,10 +16,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	2296544690	Play_ServerMotor			\Default Work Unit\MiseEnRoute\Play_ServerMotor	
 	2341913985	Stop_DroneMotor			\Default Work Unit\Drone\Stop_DroneMotor	
 	2519717329	Play_Electric_Motor			\Default Work Unit\Moleculator\Play_Electric_Motor	
+	2757069037	Play_Fan			\Default Work Unit\MiseEnRoute\Play_Fan	
+	2798153457	Play_ErrorTyping			\Default Work Unit\Drone\Shutdown\Play_ErrorTyping	
 	2907191916	Play_ElevatorDrive			\Default Work Unit\Elevator\Play_ElevatorDrive	
 	2983988087	Play_Labo_Room_Tone			\Default Work Unit\RoomTones\Play_Labo_Room_Tone	
 	3196500978	Play_Lever			\Default Work Unit\MiseEnRoute\Play_Lever	
 	3197920139	Play_ElevatorInternalButton			\Default Work Unit\Elevator\Play_ElevatorInternalButton	
+	3270412370	Stop_GarageDoors			\Default Work Unit\MiseEnRoute\Stop_GarageDoors	
+	3300250992	Play_CommunicationNoise			\Default Work Unit\Drone\Shutdown\Play_CommunicationNoise	
+	3432241028	Play_GarageDoors			\Default Work Unit\MiseEnRoute\Play_GarageDoors	
 	3536391747	Play_DroneMotor			\Default Work Unit\Drone\Play_DroneMotor	
 	3653257362	Play_InitDrone			\Default Work Unit\Drone\Play_InitDrone	
 	3683180351	Play_ElevatorBell			\Default Work Unit\Elevator\Play_ElevatorBell	
@@ -41,7 +47,9 @@ Effect plug-ins	ID	Name	Type				Notes
 	856197407	Wwise_Matrix_Reverb_(Custom)	Wwise Matrix Reverb			
 	1904434771	Medium_Room1	Wwise Matrix Reverb			
 	1990128658	Room_Medium	Wwise RoomVerb			
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32040915	Chimes6	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes6_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes6		1234864
@@ -55,17 +63,24 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	152619115	Temple Drone Tonal Rumble	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Drone_SciFi_TonalRumble_01_01_7A38C11E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Tonal Rumble		7686024
 	157755773	ElevatorExternalCallButton	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\beep_8D0860C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorExternalCallButton		32360
 	182272450	ElevatorDrive2	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\drone2_E8D06825.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDrive\ElevatorDrive2		2155144
+	182856547	GarageDoor4	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\GarageDoor4_47802C78.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\GarageDoors\GarageDoor4		1278568
+	249683708	RadioNoise	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\RadioNoise_96CB5AA4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\RadioNoise		1122884
 	279537869	DroneRotation	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\123253__skullsmasha__mechanicalclamp_2D49331F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\DroneRotation		217932
+	360628886	ErrorTyping	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\ErrorTyping_2B651D39.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\ErrorTyping		97148
 	365799027	Earthquake	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Earthquake_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Earthquake\Earthquake		1949876
 	367767701	Chimes5	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes5_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes5		1234864
+	383724321	Motor Geladeira	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\182742__thaismontanaricabral__motor-geladeira_11B3A781.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\Fan\Motor Geladeira		2618872
 	384809016	Temple Drone Choirs	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\TempleDroneChoirs_BDB0F7CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Choirs		7862528
 	403925957	ElevatorDrive1	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\drone_DDE8BCB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDrive\ElevatorDrive1		2272112
 	413603073	ElevatorInternalButton	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\beep_calling_B5068808.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorInternalButton		51256
 	468596089	ValidationBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\ValidationBeep_B250FB99.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ValidationBeep		81788
+	490014691	crackle-44100sr	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\crackle-44100sr_5AC7F160.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\crackle-44100sr		882176
 	550709399	ElevatorDoorsClosingTap	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\sliding doors_closing_tap_116F8A0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDoor\ElevatorDoorsClosingTap		26704
 	566412347	Chimes1	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes1_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes1		1234864
+	601827343	GarageDoor	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\GarageDoor_9C6CC3CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\GarageDoors\GarageDoor		1153984
 	641032399	Chimes4	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes4_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes4		1234864
 	653038980	Lever	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Lever_FE030C28.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\LeverSwitch\Lever		113616
+	744299106	pink-noise-44100sr	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\pink-noise-44100sr_6D7EB0CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\Shutdown\CommunicationNoise\pink-noise-44100sr		882176
 	791372555	TorchlightOn	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\torchlight_on_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Drone\TorchlightOn		18264
 	792982152	Chimes7	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes7_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes7		1234864
 	807504757	ElevatorDoorsClosing	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\sliding doors_closing_E56D1C8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDoor\ElevatorDoorsClosing		465200
@@ -76,8 +91,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	911937066	Temple Drone Base	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\TempleDrone_69A2AAE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Drone\Temple Drone Base		5443328
 	929521614	ErrorBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\ErrorBeep_DC765304.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\ErrorBeep		33272
 	961243170	ServerBeep	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Beeps_server_0149DACE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\Server\ServerMotor\ServerBeep		73116
+	975833444	GarageDoor2	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\GarageDoor2_5323FE7C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\GarageDoors\GarageDoor2		1940528
 	977182220	Ambience Air Conditioner	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Ambience Air Conditioner 180 01_F0678BD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoomTones\Labo Room Tone\Ambience Air Conditioner		17302376
 	994861247	ElevatorDoorsOpening	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\sliding doors_opening_5D53E937.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Elevator\ElevatorDoor\ElevatorDoorsOpening		363584
 	1002218341	Chimes3	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes3_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes3		1234864
 	1024225483	Chimes2	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\Chimes2_21C98E47.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Temple\Temple\Temple Chimes\Chimes2		1234864
+	1073350829	FanNoise	C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Mac\SFX\FanNoise_61AB8280.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MiseEnRoute\Fan\FanNoise		2116928
 

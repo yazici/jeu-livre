@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 9123660361023190971}
   - component: {fileID: 1808830265261569338}
   - component: {fileID: 8894437003225364269}
+  - component: {fileID: 8773699329066194438}
   m_Layer: 0
   m_Name: Messanine_support_main
   m_TagString: Untagged
@@ -109,6 +110,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8773699329066194438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885063440049322984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7700696, y: 10.939781, z: 2.6248517}
+  m_Center: {x: 1.9838288, y: -0.0000004768373, z: -1.2823548}
 --- !u!1 &3281853627216216338
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +134,7 @@ GameObject:
   - component: {fileID: 7492155125386155945}
   - component: {fileID: 4926204694412929241}
   - component: {fileID: 7590334820379981073}
+  - component: {fileID: 6195144070335289994}
   m_Layer: 0
   m_Name: Mezzanine_main
   m_TagString: Untagged
@@ -186,3 +201,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6195144070335289994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281853627216216338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.907978, y: 10.930093, z: 0.37595865}
+  m_Center: {x: -0.026500463, y: 0, z: 0.21804868}
