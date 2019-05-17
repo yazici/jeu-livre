@@ -463,6 +463,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_GarageDoors" ID="{CFA21480-5CF4-425F-B55B-62F5118178CE}">
+							<ChildrenList>
+								<Action Name="" ID="{442EBC9E-8397-4BA1-8B24-EC169D059897}" ShortID="879617733">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GarageDoors" ID="{F3042904-7175-4355-B150-65F68A5020B5}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_GarageDoors" ID="{ED9A39AD-E905-4F9E-B3FF-9CFBDF18A429}">
+							<ChildrenList>
+								<Action Name="" ID="{96352CA1-4325-4934-9EC3-A1CDE135E8EC}" ShortID="243856721">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GarageDoors" ID="{F3042904-7175-4355-B150-65F68A5020B5}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Moleculator" ID="{A83847CB-8370-4AAB-B18D-A7ACEAF82309}" ShortID="491476844">

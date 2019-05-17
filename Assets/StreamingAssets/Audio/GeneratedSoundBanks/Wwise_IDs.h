@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_ERRORBEEP = 1304387364U;
         static const AkUniqueID PLAY_ERRORTYPING = 2798153457U;
         static const AkUniqueID PLAY_FAN = 2757069037U;
+        static const AkUniqueID PLAY_GARAGEDOORS = 3432241028U;
         static const AkUniqueID PLAY_INITDRONE = 3653257362U;
         static const AkUniqueID PLAY_LABO_ROOM_TONE = 2983988087U;
         static const AkUniqueID PLAY_LEVER = 3196500978U;
@@ -42,6 +43,7 @@ namespace AK
         static const AkUniqueID STOP_DRONEROTATION = 3803467864U;
         static const AkUniqueID STOP_ELEVATORDRIVE = 1571487338U;
         static const AkUniqueID STOP_ERRORTYPING = 1200783523U;
+        static const AkUniqueID STOP_GARAGEDOORS = 3270412370U;
         static const AkUniqueID STOP_SERVERMOTOR = 1529120824U;
     } // namespace EVENTS
 

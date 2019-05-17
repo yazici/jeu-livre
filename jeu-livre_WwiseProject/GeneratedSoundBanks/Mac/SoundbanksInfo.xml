@@ -35,6 +35,7 @@
 				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ErrorBeep"/>
 				<Event Id="2798153457" Name="Play_ErrorTyping" ObjectPath="\Events\Default Work Unit\Drone\Shutdown\Play_ErrorTyping"/>
 				<Event Id="2757069037" Name="Play_Fan" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Fan" MaxAttenuation="100.000000"/>
+				<Event Id="3432241028" Name="Play_GarageDoors" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_GarageDoors"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Drone\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\RoomTones\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
 				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>
@@ -50,6 +51,7 @@
 				<Event Id="3803467864" Name="Stop_DroneRotation" ObjectPath="\Events\Default Work Unit\Drone\Stop_DroneRotation" MaxAttenuation="0.000000"/>
 				<Event Id="1571487338" Name="Stop_ElevatorDrive" ObjectPath="\Events\Default Work Unit\Elevator\Stop_ElevatorDrive" MaxAttenuation="0.000000"/>
 				<Event Id="1200783523" Name="Stop_ErrorTyping" ObjectPath="\Events\Default Work Unit\Drone\Shutdown\Stop_ErrorTyping" MaxAttenuation="0.000000"/>
+				<Event Id="3270412370" Name="Stop_GarageDoors" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Stop_GarageDoors" MaxAttenuation="0.000000"/>
 				<Event Id="1529120824" Name="Stop_ServerMotor" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Stop_ServerMotor" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -96,6 +98,10 @@
 				<File Id="182272450" Language="SFX">
 					<ShortName>drone2.wav</ShortName>
 					<Path>SFX\drone2_E8D06825.wem</Path>
+				</File>
+				<File Id="182856547" Language="SFX">
+					<ShortName>GarageDoor4.wav</ShortName>
+					<Path>SFX\GarageDoor4_47802C78.wem</Path>
 				</File>
 				<File Id="249683708" Language="SFX">
 					<ShortName>RadioNoise.wav</ShortName>
@@ -149,6 +155,10 @@
 					<ShortName>Chimes1.wav</ShortName>
 					<Path>SFX\Chimes1_21C98E47.wem</Path>
 				</File>
+				<File Id="601827343" Language="SFX">
+					<ShortName>GarageDoor.wav</ShortName>
+					<Path>SFX\GarageDoor_9C6CC3CF.wem</Path>
+				</File>
 				<File Id="641032399" Language="SFX">
 					<ShortName>Chimes4.wav</ShortName>
 					<Path>SFX\Chimes4_21C98E47.wem</Path>
@@ -200,6 +210,10 @@
 				<File Id="961243170" Language="SFX">
 					<ShortName>Beeps_server.wav</ShortName>
 					<Path>SFX\Beeps_server_0149DACE.wem</Path>
+				</File>
+				<File Id="975833444" Language="SFX">
+					<ShortName>GarageDoor2.wav</ShortName>
+					<Path>SFX\GarageDoor2_5323FE7C.wem</Path>
 				</File>
 				<File Id="977182220" Language="SFX">
 					<ShortName>Ambience Air Conditioner 180 01.wav</ShortName>
