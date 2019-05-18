@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SystemHour : MonoBehaviour
 {
-    public Text m_Text;
+    public TextMeshProUGUI m_Text;
 
     private void Start()
     {

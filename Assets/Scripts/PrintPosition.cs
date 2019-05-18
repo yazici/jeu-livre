@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using TMPro;
 
 public class PrintPosition : MonoBehaviour
 {
-    public Text position; 
+    public TextMeshProUGUI position; 
 
     private float yRotation; 
     private float xRotation;
