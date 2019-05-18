@@ -43,7 +43,7 @@ public class LoadInterface : MonoBehaviour
         }
 
         StartCoroutine(PlayLoadingAnimation());
-        StartCoroutine(AlphaFadeOut(m_RobotUICanvasGroup, 0.2f, m_FadeTime));
+        StartCoroutine(AlphaFadeOut(m_RobotUICanvasGroup, 0.1f, m_FadeTime));
 
         yield return WaitForAnimation();
 
@@ -60,7 +60,7 @@ public class LoadInterface : MonoBehaviour
         m_IsVisibleInterface = false;
         GameManager.HideCursor();
         yield return StartCoroutine(AlphaFadeOut(m_CanvasGroup, 0f, m_FadeTime));
-        StartCoroutine(AlphaFadeIn(m_RobotUICanvasGroup, 1f, m_FadeTime));
+        StartCoroutine(AlphaFadeIn(m_RobotUICanvasGroup, 0.5f, m_FadeTime));
     }
 
     IEnumerator PlayLoadingAnimation()
