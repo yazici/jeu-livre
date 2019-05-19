@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class HighlightHoverButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [SerializeField] private Color m_HighlightColor;
+    
     private TMP_Text m_Text;
     private Color m_OriginalColor;
 
@@ -15,7 +17,7 @@ public class HighlightHoverButton : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        m_Text.color = Color.green;
+        m_Text.color = m_HighlightColor;
     }
 
     public void OnPointerExit(PointerEventData eventData)
