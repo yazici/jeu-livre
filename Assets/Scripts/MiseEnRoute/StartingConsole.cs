@@ -9,9 +9,10 @@ namespace MiseEnRoute
     public class StartingConsole : MonoBehaviour
     {
         [SerializeField] private TMP_Text m_ConsoleText;
+        [SerializeField] private TMP_Text m_TypedText;
         [SerializeField] private Slider m_LoadingBarSlider;
         [SerializeField] private Animation m_LoadingBarAnimation;
-        [SerializeField] private TMP_InputField m_InputField;
+        //[SerializeField] private TMP_InputField m_InputField;
         [SerializeField] private ScrollRect m_ScrollRect;
 
         private string m_IdName;
@@ -21,54 +22,125 @@ namespace MiseEnRoute
         private AsyncOperation m_AsyncLoad;
         [SerializeField] private bool m_SceneIsReady;
 
+        private bool m_IsBlinking = true;
+        private string typedText;
+
         private void Start()
         {
-            m_InputField.Select();
-            m_InputField.ActivateInputField();
+            //m_InputField.Select();
+            //m_InputField.ActivateInputField();
             m_LoadingBarSlider.gameObject.SetActive(false);
+
+            //m_InputField.text = "Lancement du Système...\nVersion 2145.23.54\n\nProtocole de sécurité actif.\n\nIdentifiant:";
 
             m_IdName = GameManager.m_Instance.m_MainSettings.m_IdName;
             m_Password = GameManager.m_Instance.m_MainSettings.m_Password;
+
+
+            string consoleText = m_ConsoleText.text;
+            m_ConsoleText.text = "";
+            StartCoroutine(TypeLabelText(consoleText));
+
         }
 
-        public void DisplayConsoleText()
+        void Update()
+        {
+            foreach (char c in Input.inputString)
+            {
+                if (c == '\b') // has backspace/delete been pressed?
+                {
+                    if (m_TypedText.text.Length != 0 && !m_TypedText.text.EndsWith("|"))
+                    {
+                        if (m_ConsoleText.text.EndsWith("|"))
+                        {
+                            m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                            m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
+                        }
+                        m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                        m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
+                    }
+                }
+                else if ((c == '\n') || (c == '\r')) // enter/return
+                {
+                    if (m_ConsoleText.text.EndsWith("|"))
+                    {
+                        m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                        m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
+                    }
+
+                    CheckText(m_TypedText.text);
+                    m_TypedText.text = "";
+                    //print(typedText);
+                    //typedText = "";
+                }
+                else
+                {
+                    if (m_ConsoleText.text.EndsWith("|"))
+                    {
+                        m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                        m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
+                    }
+                    m_ConsoleText.text += c;
+                    m_TypedText.text += c;
+                }
+            }
+        }
+
+        private IEnumerator BlinkCaret()
+        {
+            while (m_IsBlinking)
+            {
+                if (!m_ConsoleText.text.EndsWith("|"))
+                {
+                    m_ConsoleText.text += "|";
+                    m_TypedText.text += "|";
+                }
+                else
+                {
+                    m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                    m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
+                }
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
+
+
+        public void CheckText(string typedText)
         {
             // Username Step
             if (!m_IsUserValide)
             {
-                if (m_InputField.text == m_IdName)
+                if (typedText == m_IdName)
                 {
-                    m_ConsoleText.text = string.Format("{0} {1}\nIdentifiant valide\n\nMot de passe :",
-                        m_ConsoleText.text, m_InputField.text);
-                    CleanInputField();
+                    m_ConsoleText.text += "\n\nIdentifiant valide\n\nMot de passe : ";
                     m_IsUserValide = true;
+                    m_ScrollRect.verticalNormalizedPosition = 0f;
                     StartCoroutine(WaitAsyncLoad());
                 }
                 else
                 {
-                    m_ConsoleText.text = string.Format("{0} {1}\n\nUtilisateur non reconnu.\n\nIdentifiant :",
-                        m_ConsoleText.text, m_InputField.text);
-                    CleanInputField();
+                    m_ConsoleText.text += "\n\nUtilisateur non reconnu.\n\nIdentifiant : ";
                 }
             }
             // Password Step
             else
             {
-                if (m_InputField.text == m_Password)
+                if (typedText == m_Password)
                 {
-                    m_ConsoleText.text = string.Format("{0}\n\nUtilisateur connecté.", m_ConsoleText.text);
-                    CleanInputField();
+                    m_ConsoleText.text += "\n\nUtilisateur connecté.";
+                    //CleanInputField();
                     m_LoadingBarSlider.gameObject.SetActive(true);
-                    m_InputField.enabled = false;
+                    //m_InputField.enabled = false;
                     StartCoroutine(PlayLoadBar());
                 }
                 else
                 {
-                    m_ConsoleText.text = string.Format("{0}\n\nERREUR.\nMot de passe :", m_ConsoleText.text);
-                    CleanInputField();
+                    m_ConsoleText.text += "\n\nERREUR.\n\nMot de passe : ";
+                    m_ScrollRect.verticalNormalizedPosition = 0f;
+                    //CleanInputField();
                 }
             }
-            
+
             m_ScrollRect.verticalNormalizedPosition = 0f;
         }
 
@@ -106,13 +178,6 @@ namespace MiseEnRoute
             m_AsyncLoad.allowSceneActivation = true;
         }
 
-        private void CleanInputField()
-        {
-            m_InputField.text = "";
-            m_InputField.Select();
-            m_InputField.ActivateInputField();
-        }
-
         private IEnumerator WaitForAnimation()
         {
             do
@@ -120,5 +185,20 @@ namespace MiseEnRoute
                 yield return null;
             } while (m_LoadingBarAnimation.isPlaying);
         }
+
+        private IEnumerator TypeLabelText(string message)
+        {
+
+            yield return null;
+
+            foreach (char letter in message)
+            {
+                m_ConsoleText.text += letter;
+                yield return new WaitForSeconds(0.015f);
+            }
+            yield return new WaitForSeconds(0.015f);
+            StartCoroutine(BlinkCaret());
+        }
+
     }
 }
