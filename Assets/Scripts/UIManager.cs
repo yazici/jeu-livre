@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour
         }
 
         if (!m_TorchLight) return;
-        if (Input.GetKeyUp(KeyCode.T) && !GameManager.m_Instance.m_CinematicMode)
+        if (Input.GetKeyUp(KeyCode.F) && !GameManager.m_Instance.m_CinematicMode)
         {
             bool isEnabled = m_TorchLight.enabled;
             isEnabled = !isEnabled;
