@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Molecules
 {
@@ -10,7 +11,7 @@ namespace Molecules
         public RectTransform m_DropZone1;
         public RectTransform m_DropZone2;
 
-        public Text m_ConsoleText;
+        public TextMeshProUGUI m_ConsoleText;
         public Button m_ValidateButton;
         public ScrollRect m_ScrollView;
 
