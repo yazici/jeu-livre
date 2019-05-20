@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Axes: 1
-  m_SensitivityX: 2
-  m_SensitivityY: 2
+  m_SensitivityX: 0.5
+  m_SensitivityY: 0.5
   m_MinimumY: -60
   m_MaximumY: 60
 --- !u!114 &881380384390337009
@@ -293,8 +293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Axes: 2
-  m_SensitivityX: 2
-  m_SensitivityY: 2
+  m_SensitivityX: 0.5
+  m_SensitivityY: 0.5
   m_MinimumY: -60
   m_MaximumY: 60
 --- !u!114 &3592545196155746549

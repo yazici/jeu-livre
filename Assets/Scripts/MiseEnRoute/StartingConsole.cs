@@ -11,7 +11,9 @@ namespace MiseEnRoute
         [SerializeField] private TMP_Text m_ConsoleText;
         [SerializeField] private TMP_Text m_TypedText;
         [SerializeField] private Slider m_LoadingBarSlider;
+
         [SerializeField] private Animation m_LoadingBarAnimation;
+
         //[SerializeField] private TMP_InputField m_InputField;
         [SerializeField] private ScrollRect m_ScrollRect;
 
@@ -24,6 +26,8 @@ namespace MiseEnRoute
 
         private bool m_IsBlinking = true;
         private string typedText;
+
+        private int m_ConsoleTextMinLength;
 
         private void Start()
         {
@@ -38,27 +42,30 @@ namespace MiseEnRoute
 
 
             string consoleText = m_ConsoleText.text;
+            m_ConsoleTextMinLength = consoleText.Length;
             m_ConsoleText.text = "";
             StartCoroutine(TypeLabelText(consoleText));
-
         }
 
-        void Update()
+        private void Update()
         {
             foreach (char c in Input.inputString)
             {
                 if (c == '\b') // has backspace/delete been pressed?
                 {
-                    if (m_TypedText.text.Length != 0 && !m_TypedText.text.EndsWith("|"))
+                    if (m_TypedText.text.Length == 0) return;
+                    if (m_ConsoleText.text.Length <= m_ConsoleTextMinLength) return;
+                    if (m_ConsoleText.text.Length == m_ConsoleTextMinLength + 1 &&
+                        m_ConsoleText.text.EndsWith("|")) return;
+
+                    if (m_ConsoleText.text.EndsWith("|"))
                     {
-                        if (m_ConsoleText.text.EndsWith("|"))
-                        {
-                            m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
-                            m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
-                        }
                         m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
                         m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
                     }
+
+                    m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
+                    m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
                 }
                 else if ((c == '\n') || (c == '\r')) // enter/return
                 {
@@ -80,6 +87,7 @@ namespace MiseEnRoute
                         m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
                         m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
                     }
+
                     m_ConsoleText.text += c;
                     m_TypedText.text += c;
                 }
@@ -90,6 +98,7 @@ namespace MiseEnRoute
         {
             while (m_IsBlinking)
             {
+                yield return new WaitForEndOfFrame();
                 if (!m_ConsoleText.text.EndsWith("|"))
                 {
                     m_ConsoleText.text += "|";
@@ -100,6 +109,7 @@ namespace MiseEnRoute
                     m_ConsoleText.text = m_ConsoleText.text.Substring(0, m_ConsoleText.text.Length - 1);
                     m_TypedText.text = m_TypedText.text.Substring(0, m_TypedText.text.Length - 1);
                 }
+
                 yield return new WaitForSeconds(0.5f);
             }
         }
@@ -141,6 +151,8 @@ namespace MiseEnRoute
                 }
             }
 
+            m_ConsoleTextMinLength = m_ConsoleText.text.Length;
+            
             m_ScrollRect.verticalNormalizedPosition = 0f;
         }
 
@@ -188,7 +200,6 @@ namespace MiseEnRoute
 
         private IEnumerator TypeLabelText(string message)
         {
-
             yield return null;
 
             foreach (char letter in message)
@@ -196,9 +207,9 @@ namespace MiseEnRoute
                 m_ConsoleText.text += letter;
                 yield return new WaitForSeconds(0.015f);
             }
+
             yield return new WaitForSeconds(0.015f);
             StartCoroutine(BlinkCaret());
         }
-
     }
 }
