@@ -68,7 +68,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Param\xE8tres"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 86ea4d35b331b2d40b2308633d950cba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 21554806999114406, guid: 86ea4d35b331b2d40b2308633d950cba,
     type: 2}
   m_fontSharedMaterials: []
@@ -144,13 +144,13 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
   m_inputSource: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 1285729419}
@@ -329,7 +329,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Menu principal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 86ea4d35b331b2d40b2308633d950cba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 21554806999114406, guid: 86ea4d35b331b2d40b2308633d950cba,
     type: 2}
   m_fontSharedMaterials: []
@@ -405,13 +405,13 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
   m_inputSource: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 665515936}
@@ -1121,7 +1121,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Quitter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 86ea4d35b331b2d40b2308633d950cba, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 21554806999114406, guid: 86ea4d35b331b2d40b2308633d950cba,
     type: 2}
   m_fontSharedMaterials: []
@@ -1197,13 +1197,13 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
   m_inputSource: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 1588787862}
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725b23102e1854e458fb051871aab86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  m_HighlightColor: {r: 0.08627451, g: 0.72156864, b: 0.30588236, a: 1}
 --- !u!1 &1573655557
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,11 +3229,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
