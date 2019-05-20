@@ -7,6 +7,8 @@ namespace Molecules
     {
         [SerializeField] private InitDrone m_InitDrone;
 
+        [HideInInspector] public bool m_SyntheseValide;
+        
         // Singleton
         public static MoleculesManager m_Instance;
 

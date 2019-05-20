@@ -113,11 +113,13 @@ namespace Molecules
                 m_ConsoleText.text +=
                     "\n\nAnalyse de la solution...\n\nRésultat : solution valide, la synthèse peut commencer";
                 AudioManager.m_Instance.PlaySFX("ValidationBeep");
+                MoleculesManager.m_Instance.m_SyntheseValide = true;
             }
             else
             {
                 m_ConsoleText.text += "\n\nAnalyse de la solution...\n\nERREUR - Synthétisation impossible";
                 AudioManager.m_Instance.PlaySFX("ErrorBeep");
+                MoleculesManager.m_Instance.m_SyntheseValide = false;
             }
 
             Canvas.ForceUpdateCanvases();

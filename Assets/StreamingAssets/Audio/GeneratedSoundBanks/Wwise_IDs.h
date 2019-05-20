@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_COMMUNICATIONNOISE = 3300250992U;
         static const AkUniqueID PLAY_DRONEMOTOR = 3536391747U;
         static const AkUniqueID PLAY_DRONEROTATION = 1463233682U;
+        static const AkUniqueID PLAY_EARTHQUAKE = 3858448649U;
         static const AkUniqueID PLAY_ELECTRIC_MOTOR = 2519717329U;
         static const AkUniqueID PLAY_ELEVATORBELL = 3683180351U;
         static const AkUniqueID PLAY_ELEVATORDOORSCLOSING = 1211901148U;
@@ -35,12 +36,15 @@ namespace AK
         static const AkUniqueID PLAY_SYNTH_BIPS_SEQUENCE = 3849115581U;
         static const AkUniqueID PLAY_TEMPLE_CHIMES = 1371242783U;
         static const AkUniqueID PLAY_TEMPLE_DRONE = 1164784286U;
+        static const AkUniqueID PLAY_TEMPLEINMOLECULATOR_CHIMES = 2321095329U;
+        static const AkUniqueID PLAY_TEMPLEINMOLECULATOR_DRONE = 4155344920U;
         static const AkUniqueID PLAY_TORCHLIGHTOFF = 1462694307U;
         static const AkUniqueID PLAY_TORCHLIGHTON = 1588639311U;
         static const AkUniqueID PLAY_TYPING = 1659138091U;
         static const AkUniqueID PLAY_VALIDATIONBEEP = 136370607U;
         static const AkUniqueID STOP_DRONEMOTOR = 2341913985U;
         static const AkUniqueID STOP_DRONEROTATION = 3803467864U;
+        static const AkUniqueID STOP_EARTHQUAKE = 3470689151U;
         static const AkUniqueID STOP_ELEVATORDRIVE = 1571487338U;
         static const AkUniqueID STOP_ERRORTYPING = 1200783523U;
         static const AkUniqueID STOP_GARAGEDOORS = 3270412370U;

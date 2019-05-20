@@ -89,14 +89,19 @@ public class UIManager : MonoBehaviour
         // ------------------------------ //
         // -------- Delay for UI -------- //
         // ------------------------------ //
+        if (
+            Cursor.lockState == CursorLockMode.Locked &&
+            !GameManager.m_Instance.m_CinematicMode
+        )
+        {
+            float mouseX = Input.GetAxis("Mouse X") * m_SensitivityX;
+            float mouseY = Input.GetAxis("Mouse Y") * m_SensitivityY;
+            m_DeltaMouseX += mouseX;
+            m_DeltaMouseY += mouseY;
 
-        float mouseX = Input.GetAxis("Mouse X") * m_SensitivityX;
-        float mouseY = Input.GetAxis("Mouse Y") * m_SensitivityY;
-        m_DeltaMouseX += mouseX;
-        m_DeltaMouseY += mouseY;
-
-        m_RobotUI.offsetMin = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);
-        m_RobotUI.offsetMax = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);
+            m_RobotUI.offsetMin = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);
+            m_RobotUI.offsetMax = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);   
+        }
     }
 
     private IEnumerator RecenterUI()

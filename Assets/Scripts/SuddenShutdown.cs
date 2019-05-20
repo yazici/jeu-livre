@@ -16,6 +16,11 @@ public class SuddenShutdown : MonoBehaviour
     [SerializeField] private GameObject m_ShutdownCanvas;
     [SerializeField] private TMP_Text m_TMPShutdownText;
 
+    private const string BaseText = "ER%EUR CRITI&UE…\n\n" +
+                                    "Connexio? à l'appareil matriculé XM-12 instable à 85%.\n" +
+                                    "Impo#sible de pours?ivre la comm%nica§ion.\n\n" +
+                                    "Le syst@me va mainte!ant s'ar%êter dans 5";
+
     private void Awake()
     {
         var volume = gameObject.GetComponent<PostProcessVolume>();
@@ -61,10 +66,11 @@ public class SuddenShutdown : MonoBehaviour
     {
         AudioManager.m_Instance.PlaySFX("CommunicationNoise");
         string text = m_TMPShutdownText.text;
+        if (text == "") text = BaseText;
         m_TMPShutdownText.text = "";
         yield return null;
         var lastChar = '\n';
-        
+
         AudioManager.m_Instance.PlaySFX("ErrorTyping");
 
         foreach (char letter in text)
@@ -84,7 +90,7 @@ public class SuddenShutdown : MonoBehaviour
             lastChar = letter;
             yield return new WaitForSeconds(GameManager.m_Instance.m_MainSettings.m_LetterDelay);
         }
-        
+
         AudioManager.m_Instance.StopSFX("ErrorTyping");
         var countdown = 4;
         do
@@ -94,7 +100,7 @@ public class SuddenShutdown : MonoBehaviour
                 m_TMPShutdownText.text.Substring(0, m_TMPShutdownText.text.Length - 1) + countdown;
             countdown--;
         } while (countdown >= 0);
-        
+
         Application.Quit();
         print("should quit");
     }

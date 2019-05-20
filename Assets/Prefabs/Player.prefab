@@ -41,8 +41,8 @@ Light:
   m_Enabled: 0
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 1, g: 0.78683865, b: 0, a: 1}
-  m_Intensity: 3
+  m_Color: {r: 1, g: 0.9755749, b: 0.9009434, a: 1}
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 49.783012
   m_CookieSize: 10
@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 506260251232301493}
   - component: {fileID: 3592545196681220801}
   - component: {fileID: 3592545196681220798}
+  - component: {fileID: 3871617772895757822}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -348,8 +349,8 @@ MonoBehaviour:
   m_Frequency: 15
   m_MaximumTranslationShake: {x: 0.5, y: 0.5, z: 0.5}
   m_MaximumAngularShake: {x: 2, y: 2, z: 0.5}
-  m_RecoverySpeed: 0.35
-  m_TraumaExponent: 2
+  m_RecoverySpeed: 0.12
+  m_TraumaExponent: 1.5
   m_Trauma: 0
 --- !u!114 &2067182804
 MonoBehaviour:
@@ -405,8 +406,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
@@ -453,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb41c02975784a542ae9e167a9b39c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displacementMap: {fileID: 2800000, guid: 50d69b48153b6e54eb0cdae49ac5b35b, type: 3}
+  displacementMap: {fileID: 2800000, guid: 46cd5a67a5080114a93d99e3058544a6, type: 3}
   Shader: {fileID: 4800000, guid: 329f04d6d1fce8a43a9ed95e45ab0cff, type: 3}
   intensity: 1
   flipIntensity: 1
@@ -473,7 +474,7 @@ MonoBehaviour:
   m_PixelBoy: {fileID: 3592545196681220799}
   m_GlitchEffect: {fileID: 506260251232301493}
   m_AnimSpeed: 0.65
-  m_SkipAnim: 1
+  m_SkipAnim: 0
 --- !u!111 &3592545196681220798
 Animation:
   m_ObjectHideFlags: 0
@@ -486,7 +487,25 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 2e42b4ebf02fba54680368e5fdf4f9fc, type: 2}
+  - {fileID: 7400000, guid: f90012cbd57d43048ba79be0b8ad416a, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &3871617772895757822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592545196681220797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39d865191714d57a99d0aa6cb044533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelBoy: {fileID: 3592545196681220799}
+  m_GlitchEffect: {fileID: 506260251232301493}
+  m_AnimSpeed: 1
+  m_ShutdownCanvas: {fileID: 0}
+  m_TMPShutdownText: {fileID: 0}

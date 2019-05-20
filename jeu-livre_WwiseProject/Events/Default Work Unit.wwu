@@ -527,6 +527,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_TempleInMoleculator_Drone" ID="{8EB0D8D3-A537-4B1F-A439-37FFA2F1DB20}">
+							<ChildrenList>
+								<Action Name="" ID="{72F9CA58-327A-466B-A8C5-768D7659C25D}" ShortID="534984404">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Temple Drone" ID="{D9E40635-50C7-4802-9962-CF6636FA3D3F}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TempleInMoleculator_Chimes" ID="{AFA20245-44D3-4F4E-80F8-047C339C1336}">
+							<ChildrenList>
+								<Action Name="" ID="{5DB6AA3F-914D-4D96-A3E7-C7DF7ECD88A1}" ShortID="490577594">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Temple Chimes" ID="{260C6F42-DFBF-4BAB-982A-2A069FFF7EA5}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="RoomTones" ID="{0450ECA7-0ACA-4004-8A64-8E080EDA28A0}" ShortID="13107640">
@@ -547,6 +575,36 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Earthquake" ID="{AC9F17C4-2069-418F-B772-FB5461C939A4}">
+					<ChildrenList>
+						<Action Name="" ID="{9B941D9B-FAC2-4BB9-A865-6E2B1EB8A657}" ShortID="400327168">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earthquake" ID="{80C0E86F-BA0D-4C35-B14F-0AE4A1801F78}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Earthquake" ID="{274B15FD-9E38-4698-B874-F5A3B6F55F2B}">
+					<ChildrenList>
+						<Action Name="" ID="{14312777-7890-49B0-9D9B-075801DD2E36}" ShortID="229654247">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earthquake" ID="{80C0E86F-BA0D-4C35-B14F-0AE4A1801F78}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

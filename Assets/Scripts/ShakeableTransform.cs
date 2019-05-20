@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ShakeableTransform : MonoBehaviour
 {
@@ -12,9 +14,20 @@ public class ShakeableTransform : MonoBehaviour
     private float m_Seed;
     [SerializeField] private float m_Trauma = 0;
 
+    private float m_BaseHeight;
+
+    public delegate void EarthshakeEnded();
+
+    public static event EarthshakeEnded OnEarthshakeEnded;
+
     private void Awake()
     {
         m_Seed = Random.value;
+    }
+
+    private void Start()
+    {
+        m_BaseHeight = transform.localPosition.y;
     }
 
     private void Update()
@@ -22,23 +35,36 @@ public class ShakeableTransform : MonoBehaviour
         float shake = Mathf.Pow(m_Trauma, m_TraumaExponent);
 
         transform.localPosition = new Vector3(
-                                      m_MaximumTranslationShake.x *
-                                      (Mathf.PerlinNoise(m_Seed, Time.time * m_Frequency) * 2 - 1),
-                                      m_MaximumTranslationShake.y *
-                                      (Mathf.PerlinNoise(m_Seed + 1, Time.time * m_Frequency) * 2 - 1),
-                                      m_MaximumTranslationShake.z *
-                                      (Mathf.PerlinNoise(m_Seed + 2, Time.time * m_Frequency) * 2 - 1)
-                                  ) * shake;
+            m_MaximumTranslationShake.x *
+            (Mathf.PerlinNoise(m_Seed, Time.time * m_Frequency) * 2 - 1) * shake,
+            m_MaximumTranslationShake.y *
+            (Mathf.PerlinNoise(m_Seed + 1, Time.time * m_Frequency) * 2 - 1) * shake + m_BaseHeight,
+            m_MaximumTranslationShake.z *
+            (Mathf.PerlinNoise(m_Seed + 2, Time.time * m_Frequency) * 2 - 1) * shake
+        );
 
-        transform.localRotation = Quaternion.Euler(new Vector3(
-                                                       m_MaximumAngularShake.x *
-                                                       (Mathf.PerlinNoise(m_Seed + 3, Time.time * m_Frequency) * 2 - 1),
-                                                       m_MaximumAngularShake.y *
-                                                       (Mathf.PerlinNoise(m_Seed + 4, Time.time * m_Frequency) * 2 - 1),
-                                                       m_MaximumAngularShake.z *
-                                                       (Mathf.PerlinNoise(m_Seed + 5, Time.time * m_Frequency) * 2 - 1)
-                                                   ) * shake);
+        transform.localRotation *= Quaternion.Euler(new Vector3(
+                                                        m_MaximumAngularShake.x *
+                                                        (Mathf.PerlinNoise(m_Seed + 3, Time.time * m_Frequency) * 2 -
+                                                         1),
+                                                        m_MaximumAngularShake.y *
+                                                        (Mathf.PerlinNoise(m_Seed + 4, Time.time * m_Frequency) * 2 -
+                                                         1),
+                                                        m_MaximumAngularShake.z *
+                                                        (Mathf.PerlinNoise(m_Seed + 5, Time.time * m_Frequency) * 2 - 1)
+                                                    ) * shake);
 
         m_Trauma = Mathf.Clamp01(m_Trauma - m_RecoverySpeed * Time.deltaTime);
+
+        if (OnEarthshakeEnded != null && Math.Abs(m_Trauma) < float.Epsilon)
+        {
+            OnEarthshakeEnded();
+            enabled = false;
+        }
+    }
+
+    public void AddTrauma(float trauma)
+    {
+        m_Trauma += trauma;
     }
 }
