@@ -29,6 +29,18 @@ public class UIManager : MonoBehaviour
 
     private bool m_IsPaused;
 
+    // Mouse move input
+    private float m_DeltaMouseX;
+    private float m_DeltaMouseY;
+
+    [SerializeField] private float m_SensitivityX = 1;
+    [SerializeField] private float m_SensitivityY = 1;
+
+    [SerializeField] private float m_SpeedUIRecenterX = 0.1f;
+    [SerializeField] private float m_SpeedUIRecenterY = 0.01f;
+
+    [SerializeField] private RectTransform m_RobotUI;
+
     // Singleton initialization
     private void Awake()
     {
@@ -43,6 +55,7 @@ public class UIManager : MonoBehaviour
         SetReticule(false);
         m_LabelText.text = "";
         m_PauseCanvas.SetActive(false);
+        StartCoroutine(RecenterUI());
     }
 
     private void Update()
@@ -62,13 +75,55 @@ public class UIManager : MonoBehaviour
             m_PauseCanvas.SetActive(true);
         }
 
-        if (!m_TorchLight) return;
-        if (Input.GetKeyUp(KeyCode.F) && !GameManager.m_Instance.m_CinematicMode)
+        if (m_TorchLight)
         {
-            bool isEnabled = m_TorchLight.enabled;
-            isEnabled = !isEnabled;
-            m_TorchLight.enabled = isEnabled;
-            AudioManager.m_Instance.PlaySFX(isEnabled ? "TorchlightOn" : "TorchlightOff");
+            if (Input.GetKeyUp(KeyCode.F) && !GameManager.m_Instance.m_CinematicMode)
+            {
+                bool isEnabled = m_TorchLight.enabled;
+                isEnabled = !isEnabled;
+                m_TorchLight.enabled = isEnabled;
+                AudioManager.m_Instance.PlaySFX(isEnabled ? "TorchlightOn" : "TorchlightOff");
+            }
+        }
+
+        // ------------------------------ //
+        // -------- Delay for UI -------- //
+        // ------------------------------ //
+
+        float mouseX = Input.GetAxis("Mouse X") * m_SensitivityX;
+        float mouseY = Input.GetAxis("Mouse Y") * m_SensitivityY;
+        m_DeltaMouseX += mouseX;
+        m_DeltaMouseY += mouseY;
+
+        m_RobotUI.offsetMin = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);
+        m_RobotUI.offsetMax = new Vector2(-m_DeltaMouseX, -m_DeltaMouseY);
+    }
+
+    private IEnumerator RecenterUI()
+    {
+        float tX = 0;
+        float tY = 0;
+        while (true)
+        {
+            if (
+                Cursor.lockState == CursorLockMode.Locked &&
+                !GameManager.m_Instance.m_CinematicMode &&
+                m_RobotUI.offsetMin != new Vector2(0, 0)
+            )
+            {
+                m_DeltaMouseX = Mathf.Lerp(m_DeltaMouseX, 0, tX);
+                m_DeltaMouseY = Mathf.Lerp(m_DeltaMouseY, 0, tY);
+
+                tX += Time.deltaTime * m_SpeedUIRecenterX;
+                tY += Time.deltaTime * m_SpeedUIRecenterY;
+            }
+            else
+            {
+                tX = 0;
+                tY = 0;
+            }
+
+            yield return null;
         }
     }
 

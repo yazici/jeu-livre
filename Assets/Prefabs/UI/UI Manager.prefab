@@ -815,6 +815,11 @@ MonoBehaviour:
   m_Reticule: {fileID: 4072217480636617910}
   m_PauseCanvas: {fileID: 236786764}
   m_TorchLight: {fileID: 0}
+  m_SensitivityX: 1
+  m_SensitivityY: 1
+  m_SpeedUIRecenterX: 0.1
+  m_SpeedUIRecenterY: 0.01
+  m_RobotUI: {fileID: 1085113346}
 --- !u!114 &5436352974754773619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,6 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725b23102e1854e458fb051871aab86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_HighlightColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1573655557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +3004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3748543729705527822
 RectTransform:
   m_ObjectHideFlags: 0
