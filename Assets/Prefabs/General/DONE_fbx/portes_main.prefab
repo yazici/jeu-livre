@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 5161529837823172670}
   - component: {fileID: 969516252227575885}
   - component: {fileID: 5013386372955340420}
+  - component: {fileID: 3713518363224450171}
   m_Layer: 0
   m_Name: Hangar_Standard_id
   m_TagString: Untagged
@@ -310,6 +311,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3713518363224450171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913697934121682624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.123016, y: 0.13930653, z: 8.000001}
+  m_Center: {x: 2.0610497, y: -0.000000637252, z: -3.9999995}
 --- !u!1 &2716903680848054723
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +335,7 @@ GameObject:
   - component: {fileID: 2931381582779096828}
   - component: {fileID: 3500794208070839880}
   - component: {fileID: 1826918052012008928}
+  - component: {fileID: 6721514803866653293}
   m_Layer: 0
   m_Name: Hangar_Bout_id
   m_TagString: Untagged
@@ -389,6 +404,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6721514803866653293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716903680848054723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1230154, y: 0.13930653, z: 8.000001}
+  m_Center: {x: 2.0610518, y: -0.00000062607626, z: -3.8896773}
 --- !u!1 &3303416138551386735
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +556,7 @@ GameObject:
   - component: {fileID: 116436238757776200}
   - component: {fileID: 6156664926813239741}
   - component: {fileID: 5147449905616420932}
+  - component: {fileID: 3948092060871195432}
   m_Layer: 0
   m_Name: PetitePorte_id
   m_TagString: Untagged
@@ -596,6 +625,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3948092060871195432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372438499505298590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1310008, y: 0.19072019, z: 2.2272053}
+  m_Center: {x: 0.065044194, y: -0.0046408824, z: 1.1136007}
 --- !u!1 &6173139670817314247
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +726,7 @@ GameObject:
   - component: {fileID: 8907522938454885363}
   - component: {fileID: 5257586483825324655}
   - component: {fileID: 919740608665774469}
+  - component: {fileID: 6608129149673957458}
   m_Layer: 0
   m_Name: Hangar_porte_id
   m_TagString: Untagged
@@ -753,6 +796,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6608129149673957458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733248629474265871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.123016, y: 0.13930653, z: 8.000001}
+  m_Center: {x: 1.9881918, y: -0.0000003799356, z: -3.9999995}
 --- !u!1 &6931252993046093493
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1051,7 @@ GameObject:
   - component: {fileID: 157665935357945111}
   - component: {fileID: 7933802961085122012}
   - component: {fileID: 1043245944475311725}
+  - component: {fileID: 4557716157656365277}
   m_Layer: 0
   m_Name: Hangar_Centre_id
   m_TagString: Untagged
@@ -1064,3 +1121,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4557716157656365277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152720465624190224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0012665, y: 0.15432912, z: 8.000001}
+  m_Center: {x: 1.9589475, y: -0.0000004617831, z: -3.9999995}
