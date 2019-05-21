@@ -1,0 +1,54 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 34.7599983215332,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                }
+            },
+            "shader": "pbr-metal-rough-with-alpha-blending",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "DefaultMaterial": {
+            "shader": "Main shader"
+        },
+        "baie vitrée": {
+            "shader": "Main shader"
+        },
+        "fenetre": {
+            "shader": "Main shader"
+        },
+        "gros tuyau": {
+            "shader": "Main shader"
+        },
+        "petit Tuyau mur": {
+            "shader": "Main shader"
+        },
+        "pillier": {
+            "shader": "Main shader"
+        },
+        "structure": {
+            "shader": "Main shader"
+        },
+        "tuyau mur": {
+            "shader": "Main shader"
+        },
+        "tuyaux": {
+            "shader": "Main shader"
+        }
+    }
+}
