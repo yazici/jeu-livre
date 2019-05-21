@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 4ab7bad597c08504bbd311e0801275a9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barre_Cross
+    100002: Barre_Cross001
+    100004: Bureau
+    100006: Bureau001
+    100008: Cockpit
+    100010: //RootNode
+    100012: fenetre
+    100014: fenetre4
+    100016: fenetreTriangle
+    100018: fentre3
+    100020: Group001
+    100022: Hub
+    100024: Object001
+    100026: Object002
+    100028: Object003
+    100030: Object004
+    100032: Object005
+    100034: Object006
+    100036: Object007
+    100038: Object008
+    100040: Object009
+    100042: Object010
+    100044: pied _milieu
+    100046: pied _milieu001
+    100048: pied_droit
+    100050: pied_droit003
+    100052: pied_droit004
+    100054: pied_droit005
+    100056: pied_droit006
+    100058: pied_droit007
+    100060: Pilliers
+    100062: Pilliers001
+    100064: Plafond001
+    100066: Sol
+    100068: Tuyau016
+    100070: Tuyau017
+    100072: Tuyau018
+    100074: Tuyau019
+    100076: Tuyau020
+    100078: Tuyau021
+    100080: Tuyau022
+    100082: Tuyau023
+    100084: Tuyau024
+    100086: Tuyau025
+    100088: Tuyau026
+    100090: Tuyau027
+    100092: Tuyau028
+    100094: Tuyau029
+    100096: Tuyau030
+    400000: Barre_Cross
+    400002: Barre_Cross001
+    400004: Bureau
+    400006: Bureau001
+    400008: Cockpit
+    400010: //RootNode
+    400012: fenetre
+    400014: fenetre4
+    400016: fenetreTriangle
+    400018: fentre3
+    400020: Group001
+    400022: Hub
+    400024: Object001
+    400026: Object002
+    400028: Object003
+    400030: Object004
+    400032: Object005
+    400034: Object006
+    400036: Object007
+    400038: Object008
+    400040: Object009
+    400042: Object010
+    400044: pied _milieu
+    400046: pied _milieu001
+    400048: pied_droit
+    400050: pied_droit003
+    400052: pied_droit004
+    400054: pied_droit005
+    400056: pied_droit006
+    400058: pied_droit007
+    400060: Pilliers
+    400062: Pilliers001
+    400064: Plafond001
+    400066: Sol
+    400068: Tuyau016
+    400070: Tuyau017
+    400072: Tuyau018
+    400074: Tuyau019
+    400076: Tuyau020
+    400078: Tuyau021
+    400080: Tuyau022
+    400082: Tuyau023
+    400084: Tuyau024
+    400086: Tuyau025
+    400088: Tuyau026
+    400090: Tuyau027
+    400092: Tuyau028
+    400094: Tuyau029
+    400096: Tuyau030
+    2100000: cockpit
+    2100002: piliers
+    2100004: plafond
+    2100006: sol
+    2100008: bureau
+    2100010: tuyaux
+    2100012: fenetre
+    2100014: No Name
+    2300000: Barre_Cross
+    2300002: Barre_Cross001
+    2300004: Bureau
+    2300006: Bureau001
+    2300008: Cockpit
+    2300010: fenetre
+    2300012: fenetre4
+    2300014: fenetreTriangle
+    2300016: fentre3
+    2300018: Object001
+    2300020: Object002
+    2300022: Object003
+    2300024: Object004
+    2300026: Object005
+    2300028: Object006
+    2300030: Object007
+    2300032: Object008
+    2300034: Object009
+    2300036: Object010
+    2300038: pied _milieu
+    2300040: pied _milieu001
+    2300042: pied_droit
+    2300044: pied_droit003
+    2300046: pied_droit004
+    2300048: pied_droit005
+    2300050: pied_droit006
+    2300052: pied_droit007
+    2300054: Pilliers
+    2300056: Pilliers001
+    2300058: Plafond001
+    2300060: Sol
+    2300062: Tuyau016
+    2300064: Tuyau017
+    2300066: Tuyau018
+    2300068: Tuyau019
+    2300070: Tuyau020
+    2300072: Tuyau021
+    2300074: Tuyau022
+    2300076: Tuyau023
+    2300078: Tuyau024
+    2300080: Tuyau025
+    2300082: Tuyau026
+    2300084: Tuyau027
+    2300086: Tuyau028
+    2300088: Tuyau029
+    2300090: Tuyau030
+    3300000: Barre_Cross
+    3300002: Barre_Cross001
+    3300004: Bureau
+    3300006: Bureau001
+    3300008: Cockpit
+    3300010: fenetre
+    3300012: fenetre4
+    3300014: fenetreTriangle
+    3300016: fentre3
+    3300018: Object001
+    3300020: Object002
+    3300022: Object003
+    3300024: Object004
+    3300026: Object005
+    3300028: Object006
+    3300030: Object007
+    3300032: Object008
+    3300034: Object009
+    3300036: Object010
+    3300038: pied _milieu
+    3300040: pied _milieu001
+    3300042: pied_droit
+    3300044: pied_droit003
+    3300046: pied_droit004
+    3300048: pied_droit005
+    3300050: pied_droit006
+    3300052: pied_droit007
+    3300054: Pilliers
+    3300056: Pilliers001
+    3300058: Plafond001
+    3300060: Sol
+    3300062: Tuyau016
+    3300064: Tuyau017
+    3300066: Tuyau018
+    3300068: Tuyau019
+    3300070: Tuyau020
+    3300072: Tuyau021
+    3300074: Tuyau022
+    3300076: Tuyau023
+    3300078: Tuyau024
+    3300080: Tuyau025
+    3300082: Tuyau026
+    3300084: Tuyau027
+    3300086: Tuyau028
+    3300088: Tuyau029
+    3300090: Tuyau030
+    4300000: Cockpit
+    4300002: Pilliers
+    4300004: Pilliers001
+    4300006: Plafond001
+    4300008: Sol
+    4300010: Bureau
+    4300012: Bureau001
+    4300014: Tuyau016
+    4300016: Tuyau017
+    4300018: Tuyau018
+    4300020: Tuyau019
+    4300022: Tuyau020
+    4300024: Tuyau021
+    4300026: Tuyau022
+    4300028: Tuyau023
+    4300030: Tuyau024
+    4300032: Tuyau025
+    4300034: Tuyau026
+    4300036: Tuyau027
+    4300038: Tuyau028
+    4300040: Tuyau029
+    4300042: Tuyau030
+    4300044: fenetre
+    4300046: fenetreTriangle
+    4300048: fentre3
+    4300050: fenetre4
+    4300052: Object001
+    4300054: Object002
+    4300056: Object003
+    4300058: Object004
+    4300060: Object005
+    4300062: Barre_Cross
+    4300064: pied _milieu
+    4300066: pied_droit
+    4300068: pied_droit003
+    4300070: Object006
+    4300072: pied_droit004
+    4300074: Object007
+    4300076: Object008
+    4300078: Barre_Cross001
+    4300080: Object009
+    4300082: Object010
+    4300084: pied _milieu001
+    4300086: pied_droit005
+    4300088: pied_droit006
+    4300090: pied_droit007
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
