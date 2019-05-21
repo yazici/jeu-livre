@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7201627901625728307}
   m_Layer: 0
-  m_Name: Rambardes_balcon
+  m_Name: Rambardes_balcon_petit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3844693506005282714}
   m_LocalRotation: {x: -0.00011765957, y: 0.00007238984, z: -0.49296382, w: 0.87004983}
-  m_LocalPosition: {x: -15.549, y: -17.682, z: -0.064812}
+  m_LocalPosition: {x: -16.1, y: -17.933, z: -0.042361}
   m_LocalScale: {x: 0.89716864, y: 2.7071476, z: 1}
   m_Children: []
   m_Father: {fileID: 7201627901625728307}
@@ -313,8 +313,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5523456864999915209}
   m_LocalRotation: {x: -0.00011765957, y: 0.00007238984, z: -0.49296382, w: 0.87004983}
-  m_LocalPosition: {x: -12.502141, y: -15.857088, z: -0.06579304}
-  m_LocalScale: {x: 0.89716864, y: 2.7071476, z: 1}
+  m_LocalPosition: {x: -12.523, y: -15.822, z: -0.066}
+  m_LocalScale: {x: 0.89716864, y: 3.3525314, z: 1}
   m_Children: []
   m_Father: {fileID: 7201627901625728307}
   m_RootOrder: 8
