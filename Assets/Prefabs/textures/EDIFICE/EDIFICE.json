@@ -1,0 +1,128 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 97.87000274658203,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.08992664515972137,
+                        0.3479062616825104,
+                        0.5295451879501343
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader"
+        },
+        "Main shader (Copy)": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.7009999752044678,
+                        0.3009999990463257,
+                        0.3050000071525574
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader (Copy)"
+        }
+    },
+    "texturesets": {
+        "Tronc1": {
+            "shader": "Main shader"
+        },
+        "Tronc1_A": {
+            "shader": "Main shader"
+        },
+        "Tronc1_B": {
+            "shader": "Main shader"
+        },
+        "Tronc1_B_a": {
+            "shader": "Main shader"
+        },
+        "Tronc1_B_b": {
+            "shader": "Main shader"
+        },
+        "Tronc1_B_c": {
+            "shader": "Main shader"
+        },
+        "Tronc1_B_d": {
+            "shader": "Main shader"
+        },
+        "Tronc1_C": {
+            "shader": "Main shader"
+        },
+        "Tronc1_C_a": {
+            "shader": "Main shader"
+        },
+        "Tronc2": {
+            "shader": "Main shader"
+        },
+        "Tronc3": {
+            "shader": "Main shader"
+        },
+        "colonne1": {
+            "shader": "Main shader"
+        },
+        "colonne2": {
+            "shader": "Main shader"
+        },
+        "colonne3": {
+            "shader": "Main shader"
+        },
+        "colonne4c": {
+            "shader": "Main shader"
+        },
+        "colonne5": {
+            "shader": "Main shader"
+        },
+        "colonne5_A": {
+            "shader": "Main shader"
+        },
+        "colonne5_B": {
+            "shader": "Main shader"
+        },
+        "colonne6": {
+            "shader": "Main shader"
+        },
+        "colonne6_A": {
+            "shader": "Main shader"
+        },
+        "colonne7": {
+            "shader": "Main shader"
+        }
+    }
+}
