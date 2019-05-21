@@ -51,7 +51,6 @@ namespace MiseEnRoute
             m_ConsoleTextMinLength = consoleText.Length;
             m_ConsoleText.text = "";
             StartCoroutine(TypeLabelText(consoleText));
-            StartCoroutine(WaitAsyncLoad());
         }
 
         private void Update()
@@ -218,6 +217,7 @@ namespace MiseEnRoute
 
             yield return new WaitForSeconds(0.015f);
             m_CanType = true;
+            StartCoroutine(WaitAsyncLoad());
             StartCoroutine(BlinkCaret());
         }
     }
