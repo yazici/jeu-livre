@@ -1558,7 +1558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.059265137, y: -76.27124}
+  m_AnchoredPosition: {x: 0.059265137, y: -76.2713}
   m_SizeDelta: {x: 0.11853027, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1410568433434510189
@@ -3926,7 +3926,6 @@ MonoBehaviour:
   m_ConsoleText: {fileID: 2439994253647506305}
   m_ValidateButton: {fileID: 3886858613281869690}
   m_ScrollView: {fileID: 1499728124977668926}
-  m_SyntheseValide: 0
 --- !u!1 &3886858613128803274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +3939,8 @@ GameObject:
   - component: {fileID: 3886858613128803270}
   - component: {fileID: 3886858613128803273}
   - component: {fileID: 3886858613128803272}
+  - component: {fileID: 7770817058151575677}
+  - component: {fileID: 7699801625197226688}
   m_Layer: 5
   m_Name: moleculatorCanvas
   m_TagString: Untagged
@@ -4040,6 +4041,40 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7770817058151575677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3886858613128803274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &7699801625197226688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3886858613128803274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!1 &3886858613132825233
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,8 +10127,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 566221894332946444}
   m_HandleRect: {fileID: 3972071053208658724}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.7499999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

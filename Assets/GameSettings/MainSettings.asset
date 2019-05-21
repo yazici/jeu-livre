@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e72fd66ba2153448274c469df1ce0d, type: 3}
   m_Name: MainSettings
   m_EditorClassIdentifier: 
-  m_MainScene: Scenes/PlaytestsV2/MiseEnRoute2
+  m_MainScene: Scenes/VerticalSlice
   m_WalkSpeed: 6
   m_RunSpeed: 11
   m_FrameCounterCameraLag: 2

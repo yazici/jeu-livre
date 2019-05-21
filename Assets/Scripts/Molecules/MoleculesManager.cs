@@ -1,11 +1,10 @@
-﻿using MiseEnRoute;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Molecules
 {
     public class MoleculesManager : MonoBehaviour
     {
-        [SerializeField] private InitDrone m_InitDrone;
+        // [SerializeField] private InitDrone m_InitDrone;
 
         [HideInInspector] public bool m_SyntheseValide;
         
@@ -23,7 +22,7 @@ namespace Molecules
 
         private void Start()
         {
-            m_InitDrone.Init();
+            // m_InitDrone.Init();
         }
     }
 }

@@ -29,6 +29,8 @@ namespace MiseEnRoute
 
         private int m_ConsoleTextMinLength;
 
+        private bool m_CanType;
+
         private void Start()
         {
             //m_InputField.Select();
@@ -49,6 +51,7 @@ namespace MiseEnRoute
 
         private void Update()
         {
+            if (!m_CanType) return;
             foreach (char c in Input.inputString)
             {
                 if (c == '\b') // has backspace/delete been pressed?
@@ -152,7 +155,7 @@ namespace MiseEnRoute
             }
 
             m_ConsoleTextMinLength = m_ConsoleText.text.Length;
-            
+
             m_ScrollRect.verticalNormalizedPosition = 0f;
         }
 
@@ -209,6 +212,7 @@ namespace MiseEnRoute
             }
 
             yield return new WaitForSeconds(0.015f);
+            m_CanType = true;
             StartCoroutine(BlinkCaret());
         }
     }

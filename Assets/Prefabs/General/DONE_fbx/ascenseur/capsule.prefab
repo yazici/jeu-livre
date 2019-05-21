@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4292905575511871934}
   - component: {fileID: 387828800771006352}
   - component: {fileID: 8042097379926558873}
+  - component: {fileID: 8798570147669942024}
   m_Layer: 0
   m_Name: porte
   m_TagString: Untagged
@@ -109,6 +110,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8798570147669942024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493473279146713970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15850249, y: 2.4616368, z: 0.5803088}
+  m_Center: {x: -0.18847321, y: 0.18363672, z: 0.83587384}
 --- !u!1 &850746394856260288
 GameObject:
   m_ObjectHideFlags: 0
