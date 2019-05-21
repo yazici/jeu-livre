@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     public GameObject m_Reticule;
     public GameObject m_PauseCanvas;
 
-    [SerializeField] private Light m_TorchLight;
+    public Light m_TorchLight;
 
     private bool m_IsPaused;
 

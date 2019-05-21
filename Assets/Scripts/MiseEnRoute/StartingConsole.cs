@@ -17,8 +17,6 @@ namespace MiseEnRoute
         //[SerializeField] private TMP_InputField m_InputField;
         [SerializeField] private ScrollRect m_ScrollRect;
 
-        [SerializeField] private GameObject m_ReticuleCanvas;
-
         private string m_IdName;
         private string m_Password;
 
@@ -35,8 +33,6 @@ namespace MiseEnRoute
 
         private void Start()
         {
-            m_ReticuleCanvas.SetActive(false);
-            
             //m_InputField.Select();
             //m_InputField.ActivateInputField();
             m_LoadingBarSlider.gameObject.SetActive(false);
@@ -193,7 +189,6 @@ namespace MiseEnRoute
             m_LoadingBarAnimation.Play();
             yield return WaitForAnimation();
 
-            m_ReticuleCanvas.SetActive(true);
             m_AsyncLoad.allowSceneActivation = true;
         }
 

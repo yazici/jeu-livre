@@ -559,18 +559,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1663603632}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &179304138 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3592545194684353554, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
-    type: 3}
-  m_PrefabInstance: {fileID: 1663603632}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179304134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66cd91b327856144998595a0e1b313e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &225349257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3468,16 +3456,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6404515158486550261, guid: b9430f15b54dcb54894553e5f62e1436,
-        type: 3}
-      propertyPath: m_Player
-      value: 
-      objectReference: {fileID: 179304134}
-    - target: {fileID: 6404515158486550261, guid: b9430f15b54dcb54894553e5f62e1436,
-        type: 3}
-      propertyPath: m_FpController
-      value: 
-      objectReference: {fileID: 179304138}
     - target: {fileID: 8944333324942469792, guid: b9430f15b54dcb54894553e5f62e1436,
         type: 3}
       propertyPath: m_Name
@@ -5256,16 +5234,6 @@ PrefabInstance:
       propertyPath: m_TMPShutdownText
       value: 
       objectReference: {fileID: 1730078112}
-    - target: {fileID: 3592545196681220801, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
-        type: 3}
-      propertyPath: m_SkipAnim
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592545194684353554, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3592545194684353555, guid: 2a5ec3e5e3d134a45a15a79c5dbeec29,
         type: 3}
       propertyPath: m_RootOrder
@@ -5542,6 +5510,46 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1730078111}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730078114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 236786764, guid: 482f87972cce241d1967a661cab252f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1730078111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1730078115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730078114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1730078116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730078114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1735456343
 GameObject:
   m_ObjectHideFlags: 0

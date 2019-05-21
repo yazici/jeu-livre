@@ -17,9 +17,9 @@ public class GameShortcuts : MonoBehaviour
     private IEnumerator MovePlayer(Vector3 target)
     {
         GameManager.m_Instance.m_CinematicMode = true;
-        yield return null;
+        yield return new WaitForSeconds(1);
         m_Player.transform.localPosition = target;
-        yield return null;
+        yield return new WaitForSeconds(1);
         GameManager.m_Instance.m_CinematicMode = false;
 
     }
