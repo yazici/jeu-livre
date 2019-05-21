@@ -27,6 +27,7 @@ namespace Elevator
             if (!other.CompareTag("Player")) return;
 
             AudioManager.m_Instance.PlaySFX("ElevatorInternalButton");
+            AudioManager.m_Instance.StopSFX("DroneMotor");
             StartCoroutine(MoveElevator());
         }
 

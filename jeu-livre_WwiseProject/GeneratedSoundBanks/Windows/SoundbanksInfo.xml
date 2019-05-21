@@ -42,8 +42,8 @@
 				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>
 				<Event Id="2296544690" Name="Play_ServerMotor" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ServerMotor" MaxAttenuation="20.000000"/>
 				<Event Id="3849115581" Name="Play_Synth_Bips_Sequence" ObjectPath="\Events\Default Work Unit\Moleculator\Play_Synth_Bips_Sequence" MaxAttenuation="20.000000"/>
-				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Chimes" MaxAttenuation="20.000000"/>
-				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Drone" MaxAttenuation="20.000000"/>
+				<Event Id="1371242783" Name="Play_Temple_Chimes" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Chimes" MaxAttenuation="70.000000"/>
+				<Event Id="1164784286" Name="Play_Temple_Drone" ObjectPath="\Events\Default Work Unit\Temple\Play_Temple_Drone" MaxAttenuation="70.000000"/>
 				<Event Id="2321095329" Name="Play_TempleInMoleculator_Chimes" ObjectPath="\Events\Default Work Unit\Moleculator\Play_TempleInMoleculator_Chimes" MaxAttenuation="20.000000"/>
 				<Event Id="4155344920" Name="Play_TempleInMoleculator_Drone" ObjectPath="\Events\Default Work Unit\Moleculator\Play_TempleInMoleculator_Drone" MaxAttenuation="20.000000"/>
 				<Event Id="1462694307" Name="Play_TorchlightOff" ObjectPath="\Events\Default Work Unit\Drone\Play_TorchlightOff"/>

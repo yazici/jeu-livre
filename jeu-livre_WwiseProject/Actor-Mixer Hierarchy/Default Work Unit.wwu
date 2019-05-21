@@ -748,7 +748,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Synth Temple Attenuation" ID="{302391AD-7A77-4458-A9CB-290942146366}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+											<ObjectRef Name="TempleAttenuation" ID="{F18B2CED-2BFC-41EE-BBDF-2F5DA554B10D}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
