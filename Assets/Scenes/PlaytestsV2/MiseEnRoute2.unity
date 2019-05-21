@@ -2170,6 +2170,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39999998, y: 0.40000007, z: 8.000002}
   m_Center: {x: 0, y: 0, z: 4.000001}
+--- !u!114 &1705116705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 282304375131324549, guid: 225e3fe7e0f83b14f9337c4f75ac7e9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 963181127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca94d56d68ecedb49ad6a1b0cfb502cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1710182387 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8900324933265936491, guid: bf256d3b9996c1a428bfab4e21e180bc,
@@ -2596,23 +2608,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
-        type: 3}
-      propertyPath: m_text
-      value: "ER%EUR CRITI&UE\u2026\n\nConnexio? \xE0 l'appareil matricul\xE9 XM-12
-        instabl\xA5 \xE0 85%.\nImpo#sible de pours\xA2ivre la comm%nic\xC0tion.\n\nLe
-        sy\xBBt\xE8me va mainte!ant s'@rr\xEAter dans 5"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9127577790634260403, guid: 482f87972cce241d1967a661cab252f7,
         type: 3}
       propertyPath: m_TorchLight
@@ -2631,6 +2626,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
+        type: 3}
+      propertyPath: m_text
+      value: "ER%EUR CRITI&UE\u2026\n\nConnexio? \xE0 l'appareil matricul\xE9 XM-12
+        instabl\xA5 \xE0 85%.\nImpo#sible de pours\xA2ivre la comm%nic\xC0tion.\n\nLe
+        sy\xBBt\xE8me va mainte!ant s'@rr\xEAter dans 5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907035462735316845, guid: 482f87972cce241d1967a661cab252f7,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 714303985, guid: 482f87972cce241d1967a661cab252f7, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3254,6 +3266,11 @@ PrefabInstance:
       propertyPath: m_Servers.Array.data[5]
       value: 
       objectReference: {fileID: 1710182387}
+    - target: {fileID: 1787092651793707198, guid: d2be567fdba42134c964f9a8c60f1c5c,
+        type: 3}
+      propertyPath: m_HangarDoors
+      value: 
+      objectReference: {fileID: 1705116705}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2be567fdba42134c964f9a8c60f1c5c, type: 3}
 --- !u!33 &1995256993105796902
@@ -4668,7 +4685,6 @@ MonoBehaviour:
   m_CanInteractWith: 1
   m_IsInfiniteTrigger: 1
   m_NbLimit: 0
-  animation: {fileID: 0}
 --- !u!114 &8927014621079266218
 MonoBehaviour:
   m_ObjectHideFlags: 0

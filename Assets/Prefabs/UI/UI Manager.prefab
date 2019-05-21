@@ -991,8 +991,8 @@ MonoBehaviour:
   m_TorchLight: {fileID: 0}
   m_SensitivityX: 1
   m_SensitivityY: 1
-  m_SpeedUIRecenterX: 0.1
-  m_SpeedUIRecenterY: 0.01
+  m_SpeedUIRecenterX: 0.5
+  m_SpeedUIRecenterY: 0.2
   m_RobotUI: {fileID: 1085113346}
 --- !u!114 &5436352974754773619
 MonoBehaviour:

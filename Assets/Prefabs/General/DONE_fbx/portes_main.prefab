@@ -427,6 +427,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6163058269577987105}
   - component: {fileID: 4599406425594842780}
+  - component: {fileID: 282304375131324549}
+  - component: {fileID: 8145409658334456949}
   m_Layer: 0
   m_Name: portes_main
   m_TagString: Untagged
@@ -468,6 +470,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &282304375131324549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303416138551386735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca94d56d68ecedb49ad6a1b0cfb502cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8145409658334456949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303416138551386735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41bfbc22cedcd2b4483fa3ca8c20f953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &3989071175230203383
 GameObject:
   m_ObjectHideFlags: 0

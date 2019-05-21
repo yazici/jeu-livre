@@ -50,6 +50,10 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_GarageDoors" ID="{CFA21480-5CF4-425F-B55B-62F5118178CE}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Stop_DroneMotor" ID="{84B08C1F-6C31-4F86-974B-63FC6A346035}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -60,6 +64,10 @@
 						<Module>
 							<ObjectRef Name="Play_ValidationBeep" ID="{CD084AE0-0C1A-404C-88FC-4AB9D4722D9C}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_GarageDoors" ID="{ED9A39AD-E905-4F9E-B3FF-9CFBDF18A429}" WorkUnitID="{75F8B7A6-9F90-4AA7-9EF0-13F6D797E255}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

@@ -36,7 +36,7 @@
 				<Event Id="1304387364" Name="Play_ErrorBeep" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_ErrorBeep"/>
 				<Event Id="2798153457" Name="Play_ErrorTyping" ObjectPath="\Events\Default Work Unit\Drone\Shutdown\Play_ErrorTyping"/>
 				<Event Id="2757069037" Name="Play_Fan" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Fan" MaxAttenuation="100.000000"/>
-				<Event Id="3432241028" Name="Play_GarageDoors" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_GarageDoors"/>
+				<Event Id="3432241028" Name="Play_GarageDoors" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_GarageDoors" MaxAttenuation="50.000000"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Drone\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\RoomTones\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
 				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>

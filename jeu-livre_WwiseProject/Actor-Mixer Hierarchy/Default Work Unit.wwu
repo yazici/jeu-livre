@@ -2519,6 +2519,9 @@
 								</BlendContainer>
 								<BlendContainer Name="GarageDoors" ID="{F3042904-7175-4355-B150-65F68A5020B5}" ShortID="43117236">
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GarageDoorsAttenuation" ID="{F14F13B2-F172-44CE-BC62-B3C89C4357E1}" WorkUnitID="{E9F44618-8F53-45DE-8DE8-E36E908B3C28}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7B535F62-B7F6-4BDF-A738-AB261D6F36C9}"/>
 										</Reference>

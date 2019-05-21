@@ -31,10 +31,9 @@ namespace MiseEnRoute
         [HideInInspector] public string m_ServerPlugged;
 
         [SerializeField] public Server[] m_Servers;
-
         [SerializeField] private string m_RightServerName;
-
         [SerializeField] private InitDrone m_InitDrone;
+        [SerializeField] private HangarDoors m_HangarDoors;
 
         // Singleton
         public static MiseEnRouteManager m_Instance;
@@ -79,6 +78,11 @@ namespace MiseEnRoute
                 .ForEach(s => s.enabled = true);
 
             m_PuzzleStep = 0;
+        }
+
+        public void MiseEnRouteSuccessful()
+        {
+            m_HangarDoors.OpenDoors();
         }
     }
 }
