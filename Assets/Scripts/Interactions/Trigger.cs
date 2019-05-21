@@ -15,7 +15,7 @@ namespace Interactions
         private bool CanBeActivated()
         {
             if (m_IsInfiniteTrigger) return true;
-            return m_NbActivated <= m_NbLimit;
+            return m_NbActivated < m_NbLimit;
         }
 
         public override void Interact()
@@ -27,6 +27,12 @@ namespace Interactions
             m_NbActivated++;
             AfterTrigger();
             IsInteracting = false;
+            if (!CanBeActivated())
+            {
+                StopLooking();
+                m_CanInteractWith = false;
+            }
+               
             // if (soundName != "")
             // {
             //     AudioManager.instance.PlaySoundEffect(soundName, gameObject);

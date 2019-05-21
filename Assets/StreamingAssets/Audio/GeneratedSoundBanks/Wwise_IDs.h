@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID PLAY_ERRORTYPING = 2798153457U;
         static const AkUniqueID PLAY_FAN = 2757069037U;
         static const AkUniqueID PLAY_GARAGEDOORS = 3432241028U;
+        static const AkUniqueID PLAY_GENERICBEEP = 644991361U;
         static const AkUniqueID PLAY_INITDRONE = 3653257362U;
         static const AkUniqueID PLAY_LABO_ROOM_TONE = 2983988087U;
         static const AkUniqueID PLAY_LEVER = 3196500978U;

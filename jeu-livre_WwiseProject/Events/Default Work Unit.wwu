@@ -607,6 +607,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GenericBeep" ID="{396B9EAF-032D-4A3D-A93D-E2DD363782E8}">
+					<ChildrenList>
+						<Action Name="" ID="{954F173A-747B-4AA5-9EA0-45A30FDC5B5B}" ShortID="1058573349">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GenericBeep" ID="{92701EBA-FFDB-4989-B3E7-117038164F91}" WorkUnitID="{81C2775A-6417-4756-9EBA-9680080221CB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

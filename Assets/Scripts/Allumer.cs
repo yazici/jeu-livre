@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class Allumer : Trigger
 {
-    public VLight m_Vlight;
-
+    [SerializeField] private VLight[] m_Vlights;
     [SerializeField] private float m_LightGainBySecond = 0.1f;
+    [SerializeField] private Vector3 m_ElevatorStartPos;
+    [SerializeField] private GameObject m_ElevatorCapsule;
+  
 
     protected override void AfterTrigger()
     {
+        AudioManager.m_Instance.PlaySFX("GenericBeep");
+        m_ElevatorCapsule.transform.localPosition = m_ElevatorStartPos;
         StartCoroutine(LightOn());
-        StartCoroutine(OpenDoor());
     }
 
     private IEnumerator LightOn()
     {
-        while (m_Vlight.lightMultiplier < 0.4)
+        if (m_Vlights.Length == 0) yield break;
+        while (m_Vlights[0].lightMultiplier < 0.4)
         {
-            m_Vlight.lightMultiplier += m_LightGainBySecond * Time.deltaTime;
+            foreach (VLight vLight in m_Vlights)
+            {
+                vLight.lightMultiplier += m_LightGainBySecond * Time.deltaTime;
+            }
+
             yield return null;
         }
-    }
-
-    private IEnumerator OpenDoor()
-    {
-        // TODO
-        yield return null;
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Documents\Unity Projects\jeu-livre\jeu-livre_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -37,6 +37,7 @@
 				<Event Id="2798153457" Name="Play_ErrorTyping" ObjectPath="\Events\Default Work Unit\Drone\Shutdown\Play_ErrorTyping"/>
 				<Event Id="2757069037" Name="Play_Fan" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Fan" MaxAttenuation="100.000000"/>
 				<Event Id="3432241028" Name="Play_GarageDoors" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_GarageDoors" MaxAttenuation="50.000000"/>
+				<Event Id="644991361" Name="Play_GenericBeep" ObjectPath="\Events\Default Work Unit\Play_GenericBeep" MaxAttenuation="20.000000"/>
 				<Event Id="3653257362" Name="Play_InitDrone" ObjectPath="\Events\Default Work Unit\Drone\Play_InitDrone"/>
 				<Event Id="2983988087" Name="Play_Labo_Room_Tone" ObjectPath="\Events\Default Work Unit\RoomTones\Play_Labo_Room_Tone" MaxAttenuation="100.000000"/>
 				<Event Id="3196500978" Name="Play_Lever" ObjectPath="\Events\Default Work Unit\MiseEnRoute\Play_Lever"/>

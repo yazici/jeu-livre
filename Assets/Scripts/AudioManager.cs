@@ -2,6 +2,9 @@
 
 public class AudioManager : MonoBehaviour
 {
+
+    private Camera m_Camera;
+    
     // Singleton
     public static AudioManager m_Instance;
 
@@ -17,18 +20,23 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        m_Camera = Camera.main;
+    }
+
     public void PlaySFX(string sfxName, GameObject gameObj = null)
     {
-        AkSoundEngine.PostEvent("Play_" + sfxName, gameObj == null ? gameObject : gameObj);
+        AkSoundEngine.PostEvent("Play_" + sfxName, gameObj == null ? m_Camera.gameObject : gameObj);
     }
 
     public void StopSFX(string sfxName, GameObject gameObj = null)
     {
-        AkSoundEngine.PostEvent("Stop_" + sfxName, gameObj == null ? gameObject : gameObj);
+        AkSoundEngine.PostEvent("Stop_" + sfxName, gameObj == null ? m_Camera.gameObject : gameObj);
     }
 
     public void SetRTPC(string rtpcName, float value)
     {
-        AkSoundEngine.SetRTPCValue(rtpcName, value, gameObject);
+        AkSoundEngine.SetRTPCValue(rtpcName, value, m_Camera.gameObject);
     }
 }
