@@ -307,7 +307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 0.000051857525}
+  m_AnchoredPosition: {x: 18, y: -0.000043625223}
   m_SizeDelta: {x: 755, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &552059374
@@ -861,7 +861,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1381281638
 RectTransform:
@@ -902,6 +902,7 @@ MonoBehaviour:
   m_LoadingBarSlider: {fileID: 3626480416581206802}
   m_LoadingBarAnimation: {fileID: 3626480416581206801}
   m_ScrollRect: {fileID: 879656545}
+  m_ReticuleCanvas: {fileID: 1801366148}
   m_SceneIsReady: 0
 --- !u!4 &1660887921 stripped
 Transform:
@@ -1086,6 +1087,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1801366148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2158267533461734943, guid: 482f87972cce241d1967a661cab252f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1887118654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1887118654
 PrefabInstance:
   m_ObjectHideFlags: 0

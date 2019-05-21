@@ -17,6 +17,8 @@ namespace MiseEnRoute
         //[SerializeField] private TMP_InputField m_InputField;
         [SerializeField] private ScrollRect m_ScrollRect;
 
+        [SerializeField] private GameObject m_ReticuleCanvas;
+
         private string m_IdName;
         private string m_Password;
 
@@ -33,6 +35,8 @@ namespace MiseEnRoute
 
         private void Start()
         {
+            m_ReticuleCanvas.SetActive(false);
+            
             //m_InputField.Select();
             //m_InputField.ActivateInputField();
             m_LoadingBarSlider.gameObject.SetActive(false);
@@ -47,6 +51,7 @@ namespace MiseEnRoute
             m_ConsoleTextMinLength = consoleText.Length;
             m_ConsoleText.text = "";
             StartCoroutine(TypeLabelText(consoleText));
+            StartCoroutine(WaitAsyncLoad());
         }
 
         private void Update()
@@ -128,7 +133,6 @@ namespace MiseEnRoute
                     m_ConsoleText.text += "\n\nIdentifiant valide\n\nMot de passe : ";
                     m_IsUserValide = true;
                     m_ScrollRect.verticalNormalizedPosition = 0f;
-                    StartCoroutine(WaitAsyncLoad());
                 }
                 else
                 {
@@ -190,6 +194,7 @@ namespace MiseEnRoute
             m_LoadingBarAnimation.Play();
             yield return WaitForAnimation();
 
+            m_ReticuleCanvas.SetActive(true);
             m_AsyncLoad.allowSceneActivation = true;
         }
 

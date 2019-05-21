@@ -113,7 +113,7 @@ namespace Molecules
                 m_ConsoleText.text +=
                     "\n\nAnalyse de la solution...\n\nRésultat : solution valide, la synthèse peut commencer";
                 AudioManager.m_Instance.PlaySFX("ValidationBeep");
-                MoleculesManager.m_Instance.m_SyntheseValide = true;
+                MoleculesManager.m_Instance.PutSyntheseValide();
             }
             else
             {

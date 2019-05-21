@@ -12,6 +12,11 @@ namespace Molecules
         [SerializeField] private GameObject m_Player;
         [SerializeField] private Vector3 m_PlayerDestination;
 
+        [SerializeField] private SpriteRenderer m_SpriteRenderer;
+        [SerializeField] private Sprite m_SpriteFinal;
+
+        [SerializeField] private GameObject m_EdificeFragment;
+        
         private Image m_BlackScreen;
 
         private new void Start()
@@ -23,12 +28,13 @@ namespace Molecules
         protected override void BeforeTrigger()
         {
             // Win
-            if (!MoleculesManager.m_Instance.m_SyntheseValide)
+            if (MoleculesManager.m_Instance.m_SyntheseValide)
             {
+                m_SpriteRenderer.sprite = m_SpriteFinal;
                 AudioManager.m_Instance.PlaySFX("ValidationBeep");
                 ShakeableTransform.OnEarthshakeEnded += CutToEnd;
                 m_ShakeableTransform.enabled = true;
-                m_ShakeableTransform.AddTrauma(1);
+                m_ShakeableTransform.AddTrauma(0.5f);
                 StopLooking();
                 m_CanInteractWith = false;
                 AudioManager.m_Instance.PlaySFX("Earthquake");
@@ -42,6 +48,7 @@ namespace Molecules
         private void CutToEnd()
         {
             AudioManager.m_Instance.StopSFX("Earthquake");
+            m_EdificeFragment.SetActive(true);
             StartCoroutine(WaitThenTeleportPlayer());
         }
 
@@ -88,8 +95,7 @@ namespace Molecules
 
         private void TeleportPlayer()
         {
-            print("Should teleport");
-            // m_Player.transform.localPosition = m_PlayerDestination; TODO
+            m_Player.transform.localPosition = m_PlayerDestination;
         }
     }
 }

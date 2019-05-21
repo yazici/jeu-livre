@@ -28,14 +28,6 @@ public class SuddenShutdown : MonoBehaviour
         m_Animation = GetComponent<Animation>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            CloseSystem();
-        }
-    }
-
     public void CloseSystem()
     {
         m_PixelBoy.enabled = true;

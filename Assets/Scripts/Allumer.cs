@@ -1,31 +1,31 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Interactions;
 using UnityEngine;
 
-public class Allumer : MonoBehaviour
+public class Allumer : Trigger
 {
+    public VLight m_Vlight;
 
-    public VLight vlight;
+    [SerializeField] private float m_LightGainBySecond = 0.1f;
 
-    // Start is called before the first frame update
-    void Start()
+    protected override void AfterTrigger()
     {
-
-
-
+        StartCoroutine(LightOn());
+        StartCoroutine(OpenDoor());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator LightOn()
     {
-        
-        if (vlight.lightMultiplier < 0.4)
+        while (m_Vlight.lightMultiplier < 0.4)
         {
-
-
-            vlight.lightMultiplier += 0.001f;
+            m_Vlight.lightMultiplier += m_LightGainBySecond * Time.deltaTime;
+            yield return null;
         }
+    }
 
-
+    private IEnumerator OpenDoor()
+    {
+        // TODO
+        yield return null;
     }
 }
