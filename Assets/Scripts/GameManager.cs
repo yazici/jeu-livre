@@ -39,7 +39,8 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        UIManager.m_Instance.m_Reticule.SetActive(true);
+        if (UIManager.m_Instance)
+            UIManager.m_Instance.m_Reticule.SetActive(true);
     }
 
     [UsedImplicitly]

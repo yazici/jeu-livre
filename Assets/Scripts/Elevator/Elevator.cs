@@ -71,7 +71,6 @@ namespace Elevator
                 Vector3 newPos = origin * (1 - curvePos) + destination * curvePos;
                 Vector3 delta = newPos - currentPos;
 
-                print("newPos: " + newPos);
                 localPosition = newPos;
                 m_Elevator.transform.localPosition = localPosition;
                 t += Time.deltaTime * m_Speed;
