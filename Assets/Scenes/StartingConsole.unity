@@ -307,7 +307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: -0.000043625223}
+  m_AnchoredPosition: {x: 18, y: 0.0000047350045}
   m_SizeDelta: {x: 755, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &552059374
@@ -902,7 +902,6 @@ MonoBehaviour:
   m_LoadingBarSlider: {fileID: 3626480416581206802}
   m_LoadingBarAnimation: {fileID: 3626480416581206801}
   m_ScrollRect: {fileID: 879656545}
-  m_ReticuleCanvas: {fileID: 0}
   m_SceneIsReady: 0
 --- !u!4 &1660887921 stripped
 Transform:
